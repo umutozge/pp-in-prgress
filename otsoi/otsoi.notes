@@ -1,0 +1,192 @@
+= 
+Why Turkish:
+
+In Turkish what one would take as the standard indefinite is limited in scope. The special form is scopally felxible (except negation).
+
+=
+
+\section{Preliminaries}
+
+This section outlines the basic theoretical assumptions and introduces the formalism and conventions that will be used in the rest of the paper.
+
+I adhere to the following general assumptions. I generally talk of the referent of an NP. This would be misleading unless taken as a verbal simplification of a more complicated relation. The reference relation I assume depends on other assumptions. First I assume the existence of a computational mechanism that maps linguistic expressions onto discourse representation structures that encode the meaning of the expressions as an abstract discourse model with discourse referents, properties and relations predicated over discourse referents, and a structurally defined accessibility relation between discourse referents. The mapping is assumed to be mediated by syntax as typical in generative linguistics.
+
+
+=
+
+negation example:
+
+Konusmasinda onemli bir noktayi atlamadi.
+
+Gen:
+?Onemli bir hatanin izine rastlamadik.
+
+=
+\subsection{Presuppositionality}
+
+In a presuppositionality claim, one needs to be quite general. What we actually
+mean by strong is a trace of the reference in the backward discourse. We have a
+backward relation, one needs to relate to an earlier point -- either existing or
+accommodated. Demonstratives is the extreme form of this backward relation. The
+present paper claims that it would not be adequate to specify this relation too
+much. It has to be left quite abstract. Perhaps one can theorize about the space
+of possible relations, but positing one type of relation would not work.
+
+=
+\subsection{Definiteness}
+
+Let us think of the accusative marking as a form of definiteness. There are
+various things that you could be meaning by ``definiteness'', depending on which
+level of linguistic representation you would want the concept belong in,
+
+There are basically two analyses about definiteness. Uniqueness and
+familiarity \citep{schwarz09}, so one question is what is the type of definiteness involved in
+accusative NPs in Turkish.
+
+\begin{uquestion}
+What is the type of definiteness involved in Turkish accusative NPs? Uniqueness
+or familiarity?
+\end{uquestion}
+
+
+=
+\subsection{Strong/weak distinction and presuppositionality}
+
+\exg.\label{strong-weak}İki film gösterildi.\\
+2 film screened\\
+`Two films were screened.'
+
+We discern three readings:
+
+\ex.
+\a. Weak indefinite: no familiarity as regards the films;
+no background; No knowledge about the particular films.
+Some context like: \emph{How was the meeting, what happened?}
+\b. Strong indefinite: partitive; we know that some films are under discussion.
+A critical observation is that the partitivity does not have to be based on a
+set of films, it may be based on a set with other types of elements in addition
+to films.
+\b. Definite: equivalent to `that two films'.
+
+
+In Turkish, the readings b and c are forefronted with an intonational break
+before the verb; but this intonational structure is not necessary for these
+readings.
+
+=
+
+\section{DRT verb boxes}
+
+Not only quantification but also verb semantics is structured. Indefinites
+travel in this structure.
+
+Yarin toplantiya bir moderator getirecegim.
+
+\#Yarin toplantiya bir moderatoru getirecegim.
+
+
+=
+
+\section{Psuedo-incorporation}
+
+In Turkish caseless indefinites combine with verbs generally, therefore a
+semantic ambiguity account for a limited set of verbs, as argued by
+\ctnm{geenhoven98} seems not very attractive for Turkish.
+
+=
+\subsection{Having a specific individual in mind}
+
+\ex. John plans to invite a professor for dinner.
+
+I take it to be the case that John has a specific professor in mind, if it is
+the same individual that gets invited for dinner in all the possible worlds in
+congruence with John's plans.
+
+I take to be a model of referentiality. A speaker uses an indefinite
+referentially, if the reference of the indefinite is fixed with respect to the
+speaker (-- perhaps a functional story could go here as well).
+
+=
+Does focus have anything to say on VP-internal/external debate?
+
+Mezunlar Dernegi'nde nadir de olsa bir profesor goruYORum.
+
+
+=
+Return to Hawkins 78 p.\ 168 in discussing Enc's formulation; there is a clause:
+'There must not be any other objects in the shared set satisfying the
+descriptive predicate in addition to those referred to by the definite
+description.'
+
+= for diesing vp discussion:
+
+
+*Dunki toplantida kitap okundu, dergi de oyle.
+Dunki toplantida kitap, okundu, dergi de oyle.
+
+\section{Various Data}
+
+Kafamda bir tuhaflik vs. Kafamdaki bir tuhaflik.
+
+\section{data for negation issue}
+Bu sirkete girdi, 8 yil calisti,
+onemli bir problemi cozmeden ayrildi.
+
+Onemli bir tek problemi cozmedi.
+onemli bir problemi bile cozmedi.
+>this latter is interesting, 'bile' scopes into the NP -- what are the other
+>scope possibilities?
+
+\section{acc as a definiteness marker}
+
+For things like button, switch, that are situationally anchored. 
+
+Kabine girdi, kirmizi bir salter*(i) kaldirdi.
+
+'kaldir' is interesting as well.
+it has the meanings:
+raise
+put away
+
+with zero 'raise' is almost obligatory
+
+but `Kabine gir, sagda kirmizi bir salter(*i) goreceksin.
+
+
+\section{presuppositonality}
+
+Verbs like engelle (prevent) are interesting, 
+Geminin şans eseri karaya çarpmaması büyük bir faciayı engelledi (mill2.3)
+
+\section{verbs of creation/improvement}
+
+gelistir, dikmek,
+bir elbise dikmek
+elbiseyi dikmek
+
+
+\section{turkish determiners}
+
+bazi, bir takim needs PLU
+
+cok, her, bir kac, SG
+
+kimi, BOTH
+
+
+Possessive alanlar:
+cok cogu
+bazi bazisi
+bir takim ?bir takimi
+bir kac bir kaci
+kimi kimisi
+
+
+Data:
+
+koydu -- siranin basina bir diplamat(i) koydu.
+
+Check:
+
+dervied nominals?
+Rijkhof p.28
