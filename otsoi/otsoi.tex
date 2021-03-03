@@ -1,8 +1,9 @@
-%\documentclass[11pt,a4paper]{article}
-\documentclass[glov3,smallextended,nospthms,natbib]{svjour3}
+\documentclass[11pt,a4paper]{article}
+%\documentclass[glov3,smallextended,nospthms,natbib]{svjour3}
 
 \usepackage{umut,umuttr}
 \usepackage{uling}
+\usepackage{usynsem}
 \usepackage{udrt}
 \usepackage{utheorem}
 \usepackage{mathptmx}
@@ -19,8 +20,8 @@
 \setlength{\Exlabelsep}{0.5em}
 
 % for the paper problem
-\setlength{\hoffset}{50pt}
-\setlength{\voffset}{40pt}
+%\setlength{\hoffset}{50pt}
+%\setlength{\voffset}{40pt}
 
 
 \newcommand{\encspec}{Enç-specific}
@@ -30,14 +31,14 @@
 
 \author{Umut \"Ozge}
 
-\institute{Umut \"Ozge
-			\at Middle East Technical University \& University of Cologne
- 			\\ \email{tumuum@gmail.com}}
+% \institute{Umut \"Ozge
+% 			\at Middle East Technical University \& University of Cologne
+%  			\\ \email{tumuum@gmail.com}}
+% 
+% \titlerunning{``Strength'' of indefinites}
+% \journalname{}
 
-\titlerunning{``Strength'' of indefinites}
-\journalname{}
-
-\date{\today}
+\date{\today -- PLEASE DO NOT CITE}
 
 
 \begin{document}
@@ -73,8 +74,9 @@ has some interesting data that is relevant to this debate.
 In this paper we are interested in \xref{para-acc}. Two facts make this form
 interesting. One is that the \acc-marker is strongly associated with
 definiteness in Turkish. This is most apparent in the minimal pair
-\xref{para-bare} \versus\ \xref{para-def}. Furthermore, for noun phrases that usually
-considered definite---in the sense of displaying definiteness effect---the marker is obligatory. These constructions are:
+\xref{para-bare} \versus\ \xref{para-def}. Furthermore, for noun phrases that
+are usually considered definite---in the sense of displaying definiteness
+effect---the marker is obligatory. These constructions are:
 
 \ex.
 \a. proper nouns;
@@ -187,7 +189,7 @@ two\mbox{-}girls'(x_1) \quad x_1 \subseteq \anaph{x_2} \quad know'(s',x_1)
 Here the direct object \trtx{iki kız-ı}{two girl-Acc} again contributes two indices, but this time the second index standing for a superset is definite. In modelling definiteness of this sort, I follow the binding theory of presupposition resolution of \cttx{sandt92}. I think at this stage nothing crucial hinges on the choice of definiteness account and its formal representation. In this theory, presupposition resolution is treated on a par with anaphora resolution. Underlining a discourse referent, as is done in \xref{Exencacc1}, indicates that the underlined content needs an antecedent to get bound. This binding relation between the antecedent and the presuppositional content obeys the usual accessibility constraints of DRT. Therefore, for the interpretation in \xref{Exencacc1} to converge this binding requirement needs to be satisfied. Presupposition resolution in this fashion is a non-deterministic process that obeys certain restrictions:
 
 \ex.
-\a. Antecedent should be accessible.
+\a. The antecedent should be accessible.
 \b. If there is an antecedent accessible in a near distance bind to that; unless there are inferential restrictions.
 \b. If an antecedent is not present, accommodate one -- this accommodation process is guided again by inference.
 
@@ -514,14 +516,92 @@ presumably by inference.
 
 \subsection{Generalizing to other NP types}
 
-
 \section{The proposal}
+
+Having motivated the interpretative effect of \acc-marking on indefinites, I turn to the grammatical mechanism that delivers that effect. This calls for a detailed look at the noun phrase semantics in Turkish and this section aims to deliver it.
+
+I first start with the bare NP semantics, attempting to situate the Turkish nominal system along the ``Nominal Mapping Parameter''  of  \ctnm{chierchia98}.
+
+Here is what I understand from \cttx{chierchia98}. 
+
+Our dimensions are count/mass, generic/kind/weak indefinite/indefinite/definite.
+
+FACT 1: Kinds are referred to by singular bare NPs, regardless of count/mass distinction:
+
+\ex.
+\a. Leopar(?*lar)a Anadolu'da rastlanmaz.
+\b. Kemençe(*ler)nin anavatanı Görele'dir.
+\b. Kayısı(*lar) Malatya'da ilk defa 19. Yüzyıl'da yetiştirildi. 
+\b. Kayısı(*lar) Malatya'nın sembolüdür.
+\b. Zımba(*lar) 19. yy'da ABD'de icat edildi.
+
+are all kind predications in the sense of \cttx{krifkaetal95}.
+
+It is also important to observe that a kind-referring NP at the direct object position requires an accusative case:
+
+\ex.
+\a. Amerikalılar zımbayı icat etti.
+\b. Amerkalılar zımba icat etti.
+\b. Amerkalılar yeni bir zımba icat etti.
+
+The second one means that Americans invented a new kind of stapler. The interpretation is still kind-referring. Therefore kind/non-kind distinction is orthogonal to acc-marking.
+
+The question here is whether the kind denotation is a lexical property or these NPs are just definites -- remember that Turkish does not have a definite article and case-marked NPs in argument positions get interpreted as definite. I will now try to find a principled reason to choose one type of interpretation as basic and the other derived.
+
+It appears that kind reference is not uniquely possible by bare NPs, bare plurals seem also fine with denoting kinds, especially with animals. The following pair is apparently synonymous:\footnote{`Motosiklet tehlikelidir' gets 1010 Google hits while `Motosikletler tehlikelidir' gets 162 -- Thu 25 Feb 2021 09:27:48}
+
+
+\ex.
+\a. Aslan etobur bir hayvandır.
+\b. Aslanlar etobur hayvanlardır.
+\b. Timsah olan bir suda yüzülmez.
+\b. Timsahların olduğu bir suda yüzülmez.
+\b. *Timsahın olduğu bir suda yüzülmez.
+\b. Yılanlar (Latince: Serpentes), Pullular (Latince: Squamata) takımına ait uzun, ayaksız etçil sürüngenlerdir. (Vikipedi -- Thu 25 Feb 2021 09:36:50 AM +03)
+
+The plurals here, however, seem to refer to the families of kinds rather than a unique kind:
+
+\ex.
+\a. Çobanaldatan (Caprimulgus europaeus), Çobanaldatanlar (Caprimulgiformes) takımının çobanaldatangiller (Caprimulgidae) familyasına ait Caprimulgus cinsinden bir gece kuşu türü.
+\b. Gitar, parmakla veya pena ile çalınan, esasen sekiz şekline benzeyen, yan kısımları oval, sap üzerinde ses perdeleri olan, telli bir çalgı türü. Gitarlar genelde altı tellidir ve farklı çeşitlerdeki ağaç türlerinden yapılabilirler. Gitar neredeyse her türlü müzik türünde kullanılan bir müzik aletidir. 
+
+
+Nationalities on the other hand are always plural:
+
+\ex.
+\a. İtalyan*(lar) akşamları şarap içer.
+
+I conclude that bare singular NPs denote kinds in Turkish, bare plurals are just plural kind reference, resorted to when the sub-kinds of a kind are at issue.
+
+
+
+Bare plural NPs are for generic reference, plural definite descriptions and weak indefinite reference.
+
+\ex.
+\a. Köpekler bahçeye girmiş. (plural definite)
+\b. Bahçeye köpekler girmiş. (weak indefinite)
+\b. Köpekler çocukları sever. (generic)
+
+I assume that generic statements are also possible with kind terms TODO:check Generic Book.
+
+One interesting aspect of the Turkish nominal system is that weak indefinite interpretation is also possible with bare NPs: 
+
+\ex.
+\a. Bahçeye köpek girmiş. (weak indefinite)
+\b. Köpek bahçeye girmiş. (definite)
+\b. Muz yemek mideme iyi geldi. (weak indefinite)
+\b. Dolapta muz kalmamış. (weak indefinite)
+
+here number is not implied, at least one dog is enough to make the proposition true.
+
+There is one aspect of the NP that differs with respect to its location. What is that aspect?
+
+
 
 The effect of the marker is related to definiteness.
 
 \intx{bir} is an operator, can be poly-typed or not; it applies to a bare NP which is a kind term, and carves out a brand-new individual untied to the context. The same operator applies to an \acc-marked NP which is in a sense definite. In the absence of \intx{bir} the NP becomes standard definite due to maximality. In the presence of \intx{bir} a partitivity is indicated, while the restrictor is still definite. What do I do with scope then? Either schwarzschild -- for some reason I do not like that idea, or some other explanation. Other possibility is this: in the absence of an operator like negation, the two interpretations collapse. But still we need an explanation for why the scope is flexible for \acc-marked indefinites. This I can explain from the other direction. \zero-marked indefinites have an adjacency condition, they are the exceptional ones, not the \acc-marked ones. This in turn might be motivated by information structural concerns.    
 
-Having motivated the interpretative effect of \acc-marking on indefinites, I turn to the grammatical mechanism that delivers that effect.
 
 In combining two semantic objects, the degrees of freedom bearing on the outcome are twofold:
 
@@ -580,6 +660,11 @@ raising out of a verbal domain associated with existential closure. Such objects
 would require their own quantificational force. On the other hand NPs that
 already carry quantificational force will be forced out of the existential
 closure domain, thereby obligatorily receiving the \acc-marker.
+
+
+\begin{uquestion}
+Why anti-uniqueness effect is not observed for IPV acc-NPs.
+\end{uquestion}
 
 
 \begin{comment}
@@ -730,7 +815,7 @@ I do not give the algorithm for $\oplus$; informally what it does is to append t
 \section{The fragment}
 
 
-
+\setlength{\bibsep}{0pt}
 \bibliography{ozge}
 \bibliographystyle{natgig}
 \end{document}
