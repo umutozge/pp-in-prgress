@@ -518,9 +518,22 @@ presumably by inference.
 
 \section{The proposal}
 
-Having motivated the interpretative effect of \acc-marking on indefinites, I turn to the grammatical mechanism that delivers that effect. This calls for a detailed look at the noun phrase semantics in Turkish and this section aims to deliver it.
+Having motivated the interpretative effect of \acc-marking on indefinites, I turn to the grammatical mechanism that delivers that effect. This calls for a detailed look at the noun phrase semantics in Turkish, which this section aims to provide.
 
-I first start with the bare NP semantics, attempting to situate the Turkish nominal system along the ``Nominal Mapping Parameter''  of  \ctnm{chierchia98}.
+Basic assumptions: I follow \cite[p.\ 64]{krifkaetal95} and commit to a basic type of kinds alongside with standard individuals, I will have types \sysm{e} and \sysm{k}. The relation between a kind and its instances will be handled by \sysm{Ins} -- this is Carlson's R, Krifkaetal just remove the stages. The relation is many-to-many, a given object may be an instance of more than one kind and, more obviously, a kind may have more than one instance. Predicates can be true of standard or kind individuals. For instance, the predicate \textit{is invented by Americans} ranges over kind individuals. One alternative would be to take kind-referring NPs to denote the sum of all the individuals that the nominal applies to (see \cite{krifkaetal95} for references).
+
+If I take the genericbook route, which is to take a kind as basic and define the associated property as (lambda x: R(x,k)), then I need genericbooks `We leave it open as to whether every predicate has a corresponding kind'.
+
+Syntax: case filter is fulfilled under adjacency, so bare NPs are also assigned case, but accusative indicates that the NP is not in the adjacent position. Bir is the manifestation of the Carlsonian Realization Relation. When out of the existential closure domain of the immediately preverbal slot, nominals are forced to get argumental/referential interpretation.
+
+
+
+\begin{comment}
+Krifkaetal
+* p87 incorporation and kind-reference.
+\end{comment}
+
+I start with the bare NP semantics, attempting to situate the Turkish nominal system along the ``Nominal Mapping Parameter''  of  \ctnm{chierchia98}.
 
 Here is what I understand from \cttx{chierchia98}. 
 
@@ -537,6 +550,12 @@ FACT 1: Kinds are referred to by singular bare NPs, regardless of count/mass dis
 
 are all kind predications in the sense of \cttx{krifkaetal95}.
 
+
+\ex.
+\a. Son yillarda adada köpek(*ler) bulunmuyor.
+
+
+
 It is also important to observe that a kind-referring NP at the direct object position requires an accusative case:
 
 \ex.
@@ -544,7 +563,7 @@ It is also important to observe that a kind-referring NP at the direct object po
 \b. Amerkalılar zımba icat etti.
 \b. Amerkalılar yeni bir zımba icat etti.
 
-The second one means that Americans invented a new kind of stapler. The interpretation is still kind-referring. Therefore kind/non-kind distinction is orthogonal to acc-marking.
+The second one means that Americans invented a new kind of stapler. The interpretation is still kind-referring. Therefore kind/non-kind distinction is orthogonal to acc-marking (see \cttxp[p.\ 15]{krifkaetal95})
 
 The question here is whether the kind denotation is a lexical property or these NPs are just definites -- remember that Turkish does not have a definite article and case-marked NPs in argument positions get interpreted as definite. I will now try to find a principled reason to choose one type of interpretation as basic and the other derived.
 
@@ -682,7 +701,7 @@ main claim: no agree relation from a higher projection in turkish; case is a loc
 	- Case is a type-shifter, it shifts to kinds and definites but not to E.
 	- N tane is extractable; 69-70. 
 	- WHat unites definties, kinds and spec. indefs. is their being singletons, case can apply to them all.
-	- She dismisses Aydemir data with controversial data.
+		- She dismisses Aydemir data with controversial data.
 	- She dismisses the possibility of anaphora to bir N's as accommodation.
 
 
@@ -817,7 +836,7 @@ I do not give the algorithm for $\oplus$; informally what it does is to append t
 
 \setlength{\bibsep}{0pt}
 \bibliography{ozge}
-\bibliographystyle{natgig}
+\bibliographystyle{apalike}
 \end{document}
 
 * acc marking has syntactic basis: 
