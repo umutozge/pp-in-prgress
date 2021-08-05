@@ -525,9 +525,75 @@ TODO: Cogu ogrenci en az iki kitab(i) okudu.
 
 \section{The proposal}
 
-I begin the present proposal by considering the semantics of bare objects.
-
 Having motivated the interpretative effect of \acc-marking on indefinites, I turn to the grammatical mechanism that delivers that effect. This calls for a detailed look at the noun phrase semantics in Turkish, which this section aims to provide.
+
+\subsection{Preliminary assumptions}
+
+I will assume a Neo-Davidsonian verbal semantics along the lines of \cite{kratzer96}. Transitive verbs will receive the following semantics:
+
+\ex. \interp{\lbrac{V}{oku}} $:=$ \sysm{\lam{x}\lam{e}.reading'x\cnct e \land theme'x\cnct e}
+
+
+
+We have 4 types of nominal direct objects\footnote{My use of ``direct object'' is quite lose, not every author considers bare NPs as direct objects.} in our scope: 1.\ bare NPs, 2.\ zero indefinites, 3.\ acc-indefinites, and 4.\ definites.
+
+In combining two semantic objects, the degrees of freedom bearing on the outcome are threefold:
+
+\ex.
+\a. semantic types of the objects
+\b. the mode of combination
+\b. denotations of the objects
+
+If we take coordination and other ``like-category deletion'' processes to be reliable tests for semantic types in Turkish, the facts suggest that our four categories are type-wise identical. I include here only a number of representative examples.\footnote{Note that when a nominal requires acc-marking, the marking is not deletable under ellipsis:
+
+\ex. Ben Mehmet'i sevdim, Ali de Ayşe*(yi).
+
+}
+
+\ex.
+\a. Ali öğle yemeğinde bazen cips, bazen küçük bir elma, bazen de evden getirdiği yemeği yiyor. 
+\b. Doğumgününde ben Ayşe'ye eski bir kolye verdim, Ali de babannesinden kalan yüzüğü. 
+
+\ex.
+\a. Ahmet ve Ayşe bana geldiklerinde, masanın üzerinde bir dolu kitap vardı.
+\b.\label{typeell} Ayşeye bir romanı verdim, Ahmet'e de bir kadeh viski.
+
+TODO: Explain the examples
+
+On account of these observations, I assume that all the four types of nominal objects are of, or can be shifted to, the same semantic type. I also take the verb semantics to be constant. This decision is justified in Turkish for the following reason: The verbs that take optional accusative are not a small special class, it is quite common among Turkish verbs, and this contrasts with the typical example of this kind of verbal ambiguity, namely Greenlandic \cttxp{geenhoven98}.
+
+Taking the possibly shifted types of objects and their verbs constant also fixes the mode of combination. I simply take the object-verb combination to be function application. In this regime, objects are functions from transitive verb meanings to intransitive verb meanings (or verb phrase meanings):
+
+\ex.
+\a. object type: \smtyp{\Teet}{\Tet} 
+\b. verb type: \Teet 
+
+\subsection{Bare objects}
+
+The syntactic status of bare objects has received considerable attention in the literature, where the central discussion was around the issue of whether the bare objects are phrasal (pseudo-incorporated) or not (head incorporated) (see, among others, \cttx{erguvanli79,nilsson85,knecht86,kornfilt03,aydemir04,kechriotis06,ozturk05,ozturk09,gracaninissever11}). Here I am not concerned with the details of syntactic issues. I would, however, like to distinguish three cases:
+
+\ex.
+\label{exbalik1}
+\a. Ahmet balık tuttu.
+\b. *Ahmet levreğ(i) balık tuttu.
+
+In \xxref{exbalik1}{a} we have a bare object composed with the verb giving a stereotypical verb phrase (= `fishing'). The ungrammaticality of \xxref{exbalik1}{b} indicates that the (pseudo-)incorporation operation saturates the argument slot of the verb \trtx{tut}{catch}, leaving no room for a direct object \trtx{levreğ(i)}{sea bass(-Acc)}, with or without the accusative.
+
+\ex.\label{exbalik2} 
+\a.
+Ahmet balık aldı.
+\b.
+*Ahmet levreği balık aldı.
+
+In \xxref{exbalik2}{a} bare object-verb composition yields a non-stereotypical verb phrase, and \xxref{exbalik2}{b} likewise indicates that the direct object is saturated by this composition.
+
+\ex.
+\label{exbalik3}
+Ahmet (konuşmasında) Mehmet'i hedef aldı.
+
+\xref{exbalik3} shows the composition of the verb we had in the previous two examples with the bare object \trtx{hedef}{target} constructing the complex verb \trtx{hedef al}{target}, which is still transitive after the composition, as it can still combine with the acc-marked direct object \trtx{Mehmet'i}{M.-Acc}.
+
+In what follows I will unite the cases exemplified in \xref{exbalik1} and \xref{exbalik2} under the name ``bare object'', and leave out the complex verb structures exemplified in \xref{exbalik3}. I cannot see any difference between this complex verbs and lexical transitives that would concern the issues under discussion in this paper.
 
 
 \subsection{Syntax}
@@ -535,7 +601,7 @@ Having motivated the interpretative effect of \acc-marking on indefinites, I tur
 I do not follow the idea of DOM, which, following \cite{lopez12}, I take to be claiming a direct morphology/semantics relation between case and specificity (or some other interpretative category) and that this relation operates on the basis of a definiteness scale; for me there is no direct morphology/semantics relation in accusative case in Turkish. Accusative is a reflex of syntactic organization, which itself has an effect on the interpretation.
 
 
-The syntactic status of bare objects has received considerable attention in the literature, where the central discussion was around the issue of whether the bare objects are phrasal (pseudo-incorporated) or not (head incorporated) (see, among others, \cttx{erguvanli79,nilsson85,knecht86,kornfilt03,aydemir04,kechriotis06,ozturk05,ozturk09,gracaninissever11}). A common denominator of this literature is that the overt case is a reflection of syntactic position and this position itself is responsible for the interpretative differences between having and not having overt case. I follow this here. Turkish nominal expressions do not carry overt case when they remain in a domain projected by the verb, and along the logic of \ctnm{diesing92} they thereby receive a sort of non-referential reading in this domain. Below, I articulate the semantics of this.    
+ A common denominator of this literature is that the overt case is a reflection of syntactic position and this position itself is responsible for the interpretative differences between having and not having overt case. I follow this here. Turkish nominal expressions do not carry overt case when they remain in a domain projected by the verb, and along the logic of \ctnm{diesing92} they thereby receive a sort of non-referential reading in this domain. Below, I articulate the semantics of this.    
 
 Turkish accusative is not an instance of DOM \cite{aissen03}. As in the set of languages discussed by \cite{lopez12} objects in small clause constructions and objects that control PRO obligatorily receive overt case.
 
@@ -700,45 +766,6 @@ The effect of the marker is related to definiteness.
 \intx{bir} is an operator, can be poly-typed or not; it applies to a bare NP which is a kind term, and carves out a brand-new individual untied to the context. The same operator app		 lies to an \acc-marked NP which is in a sense definite. In the absence of \intx{bir} the NP becomes standard definite due to maximality. In the presence of \intx{bir} a partitivity is indicated, while the restrictor is still definite. What do I do with scope then? Either schwarzschild -- for some reason I do not like that idea, or some other explanation. Other possibility is this: in the absence of an operator like negation, the two interpretations collapse. But still we need an explanation for why the scope is flexible for \acc-marked indefinites. This I can explain from the other direction. \zero-marked indefinites have an adjacency condition, they are the exceptional ones, not the \acc-marked ones. This in turn might be motivated by information structural concerns.    
 
 
-In combining two semantic objects, the degrees of freedom bearing on the outcome are twofold:
-
-\ex.
-\a. semantics (types) of  the components
-\b. the mode of combination
-
-
-The three possible types for NPs: referential \sysm{e}, predicative \sysm{\sm{e}{t}}, quantificational \sysm{\sm{\sm{e}{t}}{t}}. 
-
-Let us first evaluate a Mapping account along the lines of \cttx{diesing92}. Applying it to the present case, then we will have:
-
-\ex.
-\a. \acc-marked indefinite is \sm{\sm{e}{t}}{t}
-\b. \zero-marked indefinite is \sm{e}{t}
-
-
-An immediate consequence of such an account is to claim that almost all the verbs that subcategorize for a direct object in Turkish are ambiguous with respect to the type of their closest arguments. I do not think this is a satisfactory corollary. The verbs that take optional accusative are not a small special class of Turkish words. It is quite common among Turkish verbs, and this contrasts with the typical example of this kind of verbal ambiguity, namely Greenlandic \cttxp{geenhoven98}. Second, we have direct evidence against this corollary. One piece of such example comes from ellipsis:
-
-First show that case marking is obligatory.
-
-*Ben Mehmeti sevdim, Ali de Ayse
-
-\ex. Ahmet ve Ayşe bana geldıklerinde, masanın üzerinde bir dolu kitap vardı.
-
-
-\ex.\label{typeell} Ayşeye bir romanı verdim, Ahmet'e de bir kadeh viski.
-
-
-In \xref{typeell}, the novel is case marked and the glass of whisky is not. In correlation to this, the novel is understood as coming from the bunch of books introduced before, while the whiskey is completely new to the discourse. 
-
-Given these observations, I conclude that \acc-marked and \zero-marked indefinites have the same semantic types and likewise, the same verb applies both to the \acc-marked and \zero-marked indefinite NPs.
-
-On the other hand, we know that their scope behavior differ, therefore the reason for this difference cannot be a type difference.    
-
-Then the question is what this type is.
-
-\begin{uquestion}
-Can this behavior be made to follow from presuppositionality. Or, is there a way to combine scope behavior and presuppositionality.
-\end{uquestion}
 
 I claim that Turkish data can be captured in a model where syntactic saturation is isomorphic to semantic saturation and where the semantic composition is restricted to function application. The proposed model is most closely related to the combinatory varieties of categorial grammar (\cite{steedman00b,jacobson99}). 
 

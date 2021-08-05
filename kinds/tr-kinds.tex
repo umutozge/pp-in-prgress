@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]{article}
+%\documentclass[glov3,smallextended,nospthms,natbib]{svjour3}
+
+\usepackage{umut,umuttr}
+\usepackage{uling}
+\usepackage{usynsem}
+\usepackage{udrt}
+\usepackage{utheorem}
+\usepackage{mathptmx}
+\usepackage{hyperref}
+	\usepackage{xcolor}
+	\hypersetup{colorlinks=true,linkbordercolor=red,citecolor=magenta,linkcolor=cyan,pdfborderstyle={/S/U/W 1}}
+\usepackage{fancyvrb}
+\usepackage{comment}
+
+\usepackage{tikz-qtree}
+\usepackage[normalem]{ulem}
+
+%linguex adjustment
+\setlength{\Exlabelsep}{0.5em}
+
+% for the paper problem
+%\setlength{\hoffset}{50pt}
+%\setlength{\voffset}{40pt}
+
+
+\title{Observations on reference to kinds in Turkish}
+
+\author{Umut \"Ozge}
+
+\date{\today -- PLEASE DO NOT CITE}
+
+\begin{document}
+
+Basic assumptions: I follow \cite[p.\ 64]{krifkaetal95} and commit to a basic type of kinds alongside with standard individuals, I will have types \sysm{e} and \sysm{k}. The relation between a kind and its instances will be handled by \sysm{Ins} -- this is Carlson's R, Krifkaetal just remove the stages. The relation is many-to-many, a given object may be an instance of more than one kind and, more obviously, a kind may have more than one instance. Predicates can be true of standard or kind individuals. For instance, the predicate \textit{is invented by Americans} ranges over kind individuals. One alternative would be to take kind-referring NPs to denote the sum of all the individuals that the nominal applies to (see \cite{krifkaetal95} for references).
+
+If I take the genericbook route, which is to take a kind as basic and define the associated property as (lambda x: R(x,k)), then I need genericbooks `We leave it open as to whether every predicate has a corresponding kind'.
+
+Syntax: case filter is fulfilled under adjacency, so bare NPs are also assigned case, but accusative indicates that the NP is not in the adjacent position. Bir is the manifestation of the Carlsonian Realization Relation. When out of the existential closure domain of the immediately preverbal slot, nominals are forced to get argumental/referential interpretation.
+
+\begin{comment}
+Krifkaetal
+* p87 incorporation and kind-reference.
+\end{comment}
+
+I start with the bare NP semantics, attempting to situate the Turkish nominal system along the ``Nominal Mapping Parameter''  of  \ctnm{chierchia98}.
+
+Here is what I understand from \cttx{chierchia98}. 
+
+Our dimensions are count/mass, generic/kind/weak indefinite/indefinite/definite.
+
+FACT 1: Kinds are referred to by singular bare NPs, regardless of count/mass distinction:
+
+\ex.
+\a. Leopar(?*lar)a Anadolu'da rastlanmaz.
+\b. Kemençe(*ler)nin anavatanı Görele'dir.
+\b. Kayısı(*lar) Malatya'da ilk defa 19. Yüzyıl'da yetiştirildi. 
+\b. Kayısı(*lar) Malatya'nın sembolüdür.
+\b. Zımba(*lar) 19. yy'da ABD'de icat edildi.
+
+are all kind predications in the sense of \cttx{krifkaetal95}.
+
+
+\ex.
+\a. Son yillarda adada köpek(*ler) bulunmuyor.
+
+
+
+It is also important to observe that a kind-referring NP at the direct object position requires an accusative case:
+
+\ex.
+\a. Amerikalılar zımbayı icat etti.
+\b. Amerkalılar zımba icat etti.
+\b. Amerkalılar yeni bir zımba icat etti.
+
+The second one means that Americans invented a new kind of stapler. The interpretation is still kind-referring. Therefore kind/non-kind distinction is orthogonal to acc-marking (see \cttxp[p.\ 15]{krifkaetal95})
+
+The question here is whether the kind denotation is a lexical property or these NPs are just definites -- remember that Turkish does not have a definite article and case-marked NPs in argument positions get interpreted as definite. I will now try to find a principled reason to choose one type of interpretation as basic and the other derived.
+
+It appears that kind reference is not uniquely possible by bare NPs, bare plurals seem also fine with denoting kinds, especially with animals. The following pair is apparently synonymous:\footnote{`Motosiklet tehlikelidir' gets 1010 Google hits while `Motosikletler tehlikelidir' gets 162 -- Thu 25 Feb 2021 09:27:48}
+
+
+\ex.
+\a. Aslan etobur bir hayvandır.
+\b. Aslanlar etobur hayvanlardır.
+\b. Timsah olan bir suda yüzülmez.
+\b. Timsahların olduğu bir suda yüzülmez.
+\b. *Timsahın olduğu bir suda yüzülmez.
+\b. Yılanlar (Latince: Serpentes), Pullular (Latince: Squamata) takımına ait uzun, ayaksız etçil sürüngenlerdir. (Vikipedi -- Thu 25 Feb 2021 09:36:50 AM +03)
+
+The plurals here, however, seem to refer to the families of kinds rather than a unique kind:
+
+\ex.
+\a. Çobanaldatan (Caprimulgus europaeus), Çobanaldatanlar (Caprimulgiformes) takımının çobanaldatangiller (Caprimulgidae) familyasına ait Caprimulgus cinsinden bir gece kuşu türü.
+\b. Gitar, parmakla veya pena ile çalınan, esasen sekiz şekline benzeyen, yan kısımları oval, sap üzerinde ses perdeleri olan, telli bir çalgı türü. Gitarlar genelde altı tellidir ve farklı çeşitlerdeki ağaç türlerinden yapılabilirler. Gitar neredeyse her türlü müzik türünde kullanılan bir müzik aletidir. 
+
+
+Nationalities on the other hand are always plural:
+
+\ex.
+\a. İtalyan*(lar) akşamları şarap içer.
+
+I conclude that bare singular NPs denote kinds in Turkish, bare plurals are just plural kind reference, resorted to when the sub-kinds of a kind are at issue.
+
+Bare plural NPs are for generic reference, plural definite descriptions and weak indefinite reference.
+
+\ex.
+\a. Köpekler bahçeye girmiş. (plural definite)
+\b. Bahçeye köpekler girmiş. (weak indefinite)
+\b. Köpekler çocukları sever. (generic)
+
+I assume that generic statements are also possible with kind terms TODO:check Generic Book.
+
+One interesting aspect of the Turkish nominal system is that weak indefinite interpretation is also possible with bare NPs: 
+
+\ex.
+\a. Bahçeye köpek girmiş. (weak indefinite)
+\b. Köpek bahçeye girmiş. (definite)
+\b. Muz yemek mideme iyi geldi. (weak indefinite)
+\b. Dolapta muz kalmamış. (weak indefinite)
+
+here number is not implied, at least one dog is enough to make the proposition true.
+
+There is one aspect of the NP that differs with respect to its location. What is that aspect?
+
+Kind predicates:
+Faks kalmadi/yok.
+Yakinda Hamsi tarihe karisacak.
+
+
+
+The effect of the marker is related to definiteness.
+
+\end{document}
+
