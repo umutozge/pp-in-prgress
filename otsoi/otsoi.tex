@@ -527,15 +527,41 @@ TODO: Cogu ogrenci en az iki kitab(i) okudu.
 
 Having motivated the interpretative effect of \acc-marking on indefinites, I turn to the grammatical mechanism that delivers that effect. This calls for a detailed look at the noun phrase semantics in Turkish, which this section aims to provide.
 
+We have 4 types of nominal direct objects\footnote{My use of ``direct object'' is quite lose, not every author considers bare NPs as direct objects.} in our scope: 1.\ bare NPs, 2.\ zero indefinites, 3.\ acc-indefinites, and 4.\ definites. I will have nothing to say about the last category in this paper and explore the relative ``strength'' of the first three categories, all of which I take to be a sub-type of indefiniteness. 
+
 \subsection{Preliminary assumptions}
 
-I will assume a Neo-Davidsonian verbal semantics along the lines of \cite{kratzer96}. Transitive verbs will receive the following semantics:
+I will assume a Neo-Davidsonian verbal semantics along the lines of \cite{kratzer96}. We have three basic types $e$ for individuals, $s$ for eventualities, and $t$ for truth values. Transitive verbs receive the following semantics:
 
-\ex. \interp{\lbrac{V}{oku}} $:=$ \sysm{\lam{x}\lam{e}.reading'x\cnct e \land theme'x\cnct e}
+\ex. \interp{\lbrac{V}{oku}} $=$ \sysm{\lam{x_e}\lam{e_s}.read'x\cnct e}
+
+I will take an empty functional head, say X, to be responsible for mediating the composition of the external argument into the structure.
+
+\ex. \interp{\lbrac{X}{$\emptyset$}} $=$ \sysm{\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.p\cnct{e}\land agent'x\cnct{e}}
+
+Finally, an inflection head existentially closes the event argument, also augmenting the temporal/aspectual information.
+
+\ex. \interp{\lbrac{Fin}{-du}} $=$ \sysm{\lam{q_{\smtyp{s}{t}}}.\exists e. q\cnct{e} \land past'e}
+
+A simple sentence like:
+
+\ex. John Ulysses'i okudu.
+
+is interpreted as follows, where all merges are coupled with function application on the semantics:
 
 
+\begin{tikzpicture}
+\tikzset{level distance=40pt, sibling distance=10pt}
+\tikzset{every tree node/.style={align=center, anchor=north}}
 
-We have 4 types of nominal direct objects\footnote{My use of ``direct object'' is quite lose, not every author considers bare NPs as direct objects.} in our scope: 1.\ bare NPs, 2.\ zero indefinites, 3.\ acc-indefinites, and 4.\ definites.
+		\Tree[.{FinP} [.{DP} John ] [.{Fin'}\\{\sysm{\exists e.read'u'\cnct{e}\land agent'j'\cnct{e} \land past'e}} [.{XP}\\{\sysm{\lam{e_s}.read'u'\cnct{e}\land agent'j'\cnct{e}}} [.{NP} <John>\\{\sysm{j'}} ] [.{X'\\{\sysm{\lam{x_e}\lam{e_s}.read'u'\cnct{e}\land agent'x\cnct{e}}}} [.{VP\\{\sysm{\lam{e_s}.read'u'\cnct e}}} [.{NP} Ulysses'i\\{\sysm{u'}} ] [.{V} oku\\{\sysm{\lam{x_e}\lam{e_s}.read'x\cnct e}} ] ] [.{X} $\emptyset$\\{\sysm{\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.}}\\{\sysm{p\cnct{e}\land agent'x\cnct{e}}} ] ] ] [.{Fin} -du\\{\sysm{\lam{q_{\smtyp{s}{t}}}.\exists e. q\cnct{e} \land past'e}} ] ] ] 
+
+\end{tikzpicture}
+
+I will ignore scrambling and other ``deviations'' from the canonical word order of Turkish. My syntactic assumptions are sketchy and will stay so throughout the paper.
+
+
+\subsection{Semantic types}
 
 In combining two semantic objects, the degrees of freedom bearing on the outcome are threefold:
 
@@ -544,7 +570,7 @@ In combining two semantic objects, the degrees of freedom bearing on the outcome
 \b. the mode of combination
 \b. denotations of the objects
 
-If we take coordination and other ``like-category deletion'' processes to be reliable tests for semantic types in Turkish, the facts suggest that our four categories are type-wise identical. I include here only a number of representative examples.\footnote{Note that when a nominal requires acc-marking, the marking is not deletable under ellipsis:
+If we take coordination and various ``like-category deletion'' processes to be reliable tests for semantic types in Turkish, the facts suggest that our four categories are type-wise identical. I include here only a number of representative examples.\footnote{Note that when a nominal requires acc-marking, the marking is not deletable under ellipsis:
 
 \ex. Ben Mehmet'i sevdim, Ali de Ayşe*(yi).
 
@@ -565,12 +591,12 @@ On account of these observations, I assume that all the four types of nominal ob
 Taking the possibly shifted types of objects and their verbs constant also fixes the mode of combination. I simply take the object-verb combination to be function application. In this regime, objects are functions from transitive verb meanings to intransitive verb meanings (or verb phrase meanings):
 
 \ex.
-\a. object type: \smtyp{\Teet}{\Tet} 
-\b. verb type: \Teet 
+\a. verb type: \smtyp{e}{\smtyp{s}{t}} 
+\b. object type: \smtyp{\smtyp{e}{\smtyp{s}{t}}}{\smtyp{s}{t}} 
 
 \subsection{Bare objects}
 
-The syntactic status of bare objects has received considerable attention in the literature, where the central discussion was around the issue of whether the bare objects are phrasal (pseudo-incorporated) or not (head incorporated) (see, among others, \cttx{erguvanli79,nilsson85,knecht86,kornfilt03,aydemir04,kechriotis06,ozturk05,ozturk09,gracaninissever11}). Here I am not concerned with the details of syntactic issues. I would, however, like to distinguish three cases:
+The syntax of bare objects has received considerable attention in the literature, where the central discussion was around the issue of whether the bare objects are phrasal (pseudo-incorporated) or not (head incorporated) (see, among others, \cttx{erguvanli79,nilsson85,knecht86,kornfilt03,aydemir04,kechriotis06,ozturk05,ozturk09,gracaninissever11}). Here I am not concerned with the details of syntactic issues. I would, however, like to distinguish three cases:
 
 \ex.
 \label{exbalik1}
@@ -595,6 +621,65 @@ Ahmet (konuşmasında) Mehmet'i hedef aldı.
 
 In what follows I will unite the cases exemplified in \xref{exbalik1} and \xref{exbalik2} under the name ``bare object'', and leave out the complex verb structures exemplified in \xref{exbalik3}. I cannot see any difference between this complex verbs and lexical transitives that would concern the issues under discussion in this paper.
 
+I first establish at an intuitive level that bare objects are predicative rather than referential. The argument is based on an observation about kind-level interpretation in Turkish.\footnote{All semantic distinctions we are interested in this paper, like specific/non-specific, predicative/referential etc.\ apply at kind-level as well \cttx[15]{krifkaetal95}.} The reason I employ a kind-level example is that the predicative nature of bare objects is most perspicuous at this level. Take the minimal pair:
+
+\ex.\label{exzimba}
+\a. Amerikalılar 19. yüzyılda  zımbayı icat etti.
+\b. Amerikalılar 19. yüzyılda zımba icat etti.
+
+In \xxref{exzimba}{a} there is a direct reference to the kind \emph{stapler}, while \xxref{exzimba}{b} carries a kind-level predication, resulting in what \ctnm{krifkaetal95} calls a ``taxonomic'' reading.
+
+One way to integrate this predicative meaning into the verb phrase semantics would be to use \ctnms{chungladusaw04} Restrict. This would additionally call for an existential closure operation, since Restrict does not saturate argument slots, while Turkish bare objects do. Assuming that kinds are atoms of type $k$, a Restrict + EC derivation would look like:
+
+\ex.
+
+\begin{tikzpicture}
+\tikzset{level distance=40pt, sibling distance=10pt}
+\tikzset{every tree node/.style={align=center, anchor=north}}
+
+\Tree[.{EC}\\{\sysm{\lam{e_s}\exists x_k.invent'x\cnct{e} \land stapler'x}} [.{Restrict}\\{\sysm{\lam{x_k}\lam{e_s}.invent'x\cnct{e} \land stapler'x}} [.{NP}\\{\sysm{\lam{x_k}.stapler'x}} ] [.{V}\\{\sysm{\lam{x_k}\lam{e_s}.invent'x\cnct{e}}} ] ] ]
+
+\end{tikzpicture}
+
+The same mechanism would give a parallel interpretation for a non-kind example like \trtx{kitap oku}{`book read'}:
+
+\ex.
+\interp{\lbrac{VP}{kitap oku}} $=$ \sysm{\lam{e_s}\exists x_e.read'x\cnct{e} \land book'x}
+
+
+The problem with this solution lies in the existential quantification of the object argument of the verb, directly delivered via semantics. Existential quantification always affords further discourse reference, sometimes modally subordinated. But, as first observed by \ctnm{erguvanli79}, Turkish bare objects do not readily contribute discourse referents and usually result in number-neutral interpretations.
+
+\ex. ??Bugünlerde kitap okuyorum, bitirince sana vereceğim.
+
+\ex. Kampın ilk gününde çocuklar sahilde balık tuttular. Maalesef çoğu tek balık bile yakalayamadı.
+
+(activity with a perfective aspect)
+
+
+\ex. \a. Ahmet keman çalıyor.
+\b.  Yeni mi?
+
+
+\ex. \a. Dün bütün gece şiir yazdım.
+\b. Kaç tane yazdın?
+\b. Sıfır! Çok!
+
+As we will see in the next section, this behavior sharply contrasts with zero indefinites, where discourse reference is guaranteed.
+
+There are cases where bare objects seem to contribute discourse referents, however. This possibility appears to be dependent on the aspectual class and conceptual details of the verb. For instance, it seems rather impossible to think of an onion chopping process that does not involve some amount of onions, and it is also expected that the use of a bare object expression may foreground the amount or kind of onions involved. 
+The present point is that such contributions to the discourse model by bare objects are not semantically driven, but possible thanks to some inferential processes that we do not get concerned here.
+
+The present paper proposes that what is contributed by a bare object construction is the instantiation of an eventuality type rather than an individual discourse referent. In this proposal the bare object is an event modifier.
+
+
+
+
+\subsection{Zero indefinites}
+
+
+\ex.
+\a. Bugünlerde bol bol kitap okuyorum.
+\b. *Bugünlerde bol bol bir kitap okuyorum.
 
 \subsection{Syntax}
 
@@ -675,11 +760,7 @@ Krifkaetal
 * p87 incorporation and kind-reference.
 \end{comment}
 
-I start with the bare NP semantics, attempting to situate the Turkish nominal system along the ``Nominal Mapping Parameter''  of  \ctnm{chierchia98}.
-
-Here is what I understand from \cttx{chierchia98}. 
-
-Our dimensions are count/mass, generic/kind/weak indefinite/indefinite/definite.
+Our dimensions are count/mass, generic/kind/weak indefinite/definite.
 
 FACT 1: Kinds are referred to by singular bare NPs, regardless of count/mass distinction:
 
