@@ -531,11 +531,43 @@ We have 4 types of nominal direct objects\footnote{My use of ``direct object'' i
 
 \subsection{Preliminary assumptions}
 
-I will assume a Neo-Davidsonian verbal semantics along the lines of \cite{kratzer96}. We have three basic types $e$ for individuals, $s$ for eventualities, and $t$ for truth values. Transitive verbs receive the following semantics:
+In standard formal semantics, a nominal expression, be it referential, predicative or quantificational, contributes basically two things: 1.\ an $e$ type argument for a verb or predicate and 2.\ a predication (aka restriction) of the contributed argument. In this approach, barring ``selectional restrictions'' that are usually informally stated, verb meanings themselves are construed as independent of the meanings of their complements. It is quite well-known, however, that most, if not all, verb meanings are functions of the meaning of their complements, not only at the argument-saturation level, but also at a rather conceptual level. Here are some examples from Turkish:\footnote{See \cttx{kratzer96} for examples from English.}
 
-\ex. \interp{\lbrac{V}{oku}} $=$ \sysm{\lam{x_e}\lam{e_s}.read'x\cnct e}
+\ex.
+\a. elmayı ye.
+\b. parayı ye.
+\b. yalanı ye.
 
-I will take an empty functional head, say X, to be responsible for mediating the composition of the external argument into the structure.
+\ex.
+\a. kitabı oku.
+\b. hislerimi oku.
+\b. biyoloji oku.
+
+
+It is important to note that none of these examples are idioms, they are quite flexible.\footnote{Compare here with:
+
+\ex. Ayvayı ye.
+
+where no other fruit or object would result in the same meaning.
+}
+
+As \ctnm{carlson03} observes, if we take verbs to be fundamentally denoting eventualities (in the sense of \cttx{bach86a}), it is conceivable that one function of nominal complements is to futher specify these eventualities. As we will we see below in more detail, \ctnm{carlson03} utilizes this idea for incorporation structures. Here, I will generalize the same idea to the entire spectrum of verb-complement composition.
+
+The atomic types of my ontology are $e$ for individuals, $s$ for eventualities, $p$ for properties (or concepts) in the sense of \ctnm{mcnally98}, and $t$ for truth values. I ignore worlds and times for the sake of simplicity.
+
+I will assume and modify a Neo-Davidsonian verbal semantics along the lines of \cite{kratzer96}, where external arguments are composed into the semantics by a functional head rather than as a complement of the verb itself. I will in addition assume that verb meanings have a slot for a property argument. The verb first applies to this argument to yield a further specified eventuality semantics. In such a setting, transitive verbs receive the following semantics:
+
+\ex. \interp{\lbrac{V}{oku}} $=$ \sysm{\lam{p_p}\lam{x_e}\lam{e_s}.read'p\cnct{}x\cnct e}
+
+Some modifications to NP semantics are in order so that an NP interpretation provides the argument types that the verbal semantics requires. I will assume that every nominal comes with both a prperty denotation and an ordinary restrictor predicate. For instance a nominal that is headed by the lexical noun \emph{book} would have both a property, which I will designate as \sysm{Book'} and a restrictor predicate \sysm{book'}. The former stands for a prototypical, or generic depending on the particular theory, book concept, while the latter stands for the usual model-theoretic notion of the set of entities that are taken to be books in the model. With these assumptions a definite description \xxref{exdefprov}{a} and a proper name \xxref{exdefprov}{b}, both type-raised to apply to the verb, would look like:
+
+\ex.\label{exdefprov}
+\a.
+\interp{\lbrac{NP$_{acc}$}{kitabı}} $=$ \sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{Book'}\cnct{(the'book')}\cnct{e}} 
+\b.
+\interp{\lbrac{NP$_{acc}$}{Ulysses'i}} $=$ \sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{Book'}\cnct{u'}\cnct{e}} 
+
+External arguments are composed into the structure via a (possibly empty) functional head, which I will simply call X.
 
 \ex. \interp{\lbrac{X}{$\emptyset$}} $=$ \sysm{\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.p\cnct{e}\land agent'x\cnct{e}}
 
@@ -554,11 +586,13 @@ is interpreted as follows, where all merges are coupled with function applicatio
 \tikzset{level distance=40pt, sibling distance=10pt}
 \tikzset{every tree node/.style={align=center, anchor=north}}
 
-		\Tree[.{FinP} [.{DP} John ] [.{Fin'}\\{\sysm{\exists e.read'u'\cnct{e}\land agent'j'\cnct{e} \land past'e}} [.{XP}\\{\sysm{\lam{e_s}.read'u'\cnct{e}\land agent'j'\cnct{e}}} [.{NP} <John>\\{\sysm{j'}} ] [.{X'\\{\sysm{\lam{x_e}\lam{e_s}.read'u'\cnct{e}\land agent'x\cnct{e}}}} [.{VP\\{\sysm{\lam{e_s}.read'u'\cnct e}}} [.{NP} Ulysses'i\\{\sysm{u'}} ] [.{V} oku\\{\sysm{\lam{x_e}\lam{e_s}.read'x\cnct e}} ] ] [.{X} $\emptyset$\\{\sysm{\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.}}\\{\sysm{p\cnct{e}\land agent'x\cnct{e}}} ] ] ] [.{Fin} -du\\{\sysm{\lam{q_{\smtyp{s}{t}}}.\exists e. q\cnct{e} \land past'e}} ] ] ] 
+\Tree[.{FinP} [.{DP} John ] [.{Fin'}\\{\sysm{\exists e.read'Book'u'\cnct{e}\land agent'j'\cnct{e} \land past'e}} [.{XP}\\{\sysm{\lam{e_s}.read'u'\cnct{e}\land agent'j'\cnct{e}}} [.{NP} <John>\\{\sysm{j'}} ] [.{X'\\{\sysm{\lam{x_e}\lam{e_s}.read'u'\cnct{e}\land agent'x\cnct{e}}}} [.{VP\\{\sysm{\lam{e_s}.read'Book'u'\cnct e}}} [.{NP} Ulysses'i\\{\sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.}}\\{\sysm{v\cnct{Book'}\cnct{u'}\cnct{e}}} ] [.{V} oku\\{\sysm{\lam{p_p}\lam{x_e}\lam{e_s}.read'p\cnct{}x\cnct e}} ] ] [.{X} $\emptyset$\\{\sysm{\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.}}\\{\sysm{p\cnct{e}\land agent'x\cnct{e}}} ] ] ] [.{Fin} -du\\{\sysm{\lam{q_{\smtyp{s}{t}}}.\exists e. q\cnct{e} \land past'e}} ] ] ] 
 
 \end{tikzpicture}
 
-I will ignore scrambling and other ``deviations'' from the canonical word order of Turkish. My syntactic assumptions are sketchy and will stay so throughout the paper.
+What is non-standard about the present scheme is the integration of properties into the derivation; sepcifically, (i) every NP comes with a property denotation coupled with standard restrictor denotation, and (ii) what would appear as the normal functional semantics of a verb is computed as the result of the application \sysm{read'Book'}, the rest is standard.
+
+My syntactic assumptions are and will stay sketchy. I will also ignore scrambling and other ``deviations'' from the canonical word order of Turkish.
 
 
 \subsection{Semantic types}
@@ -647,7 +681,7 @@ The same mechanism would give a parallel interpretation for a non-kind example l
 \interp{\lbrac{VP}{kitap oku}} $=$ \sysm{\lam{e_s}\exists x_e.read'x\cnct{e} \land book'x}
 
 
-The problem with this solution lies in the existential quantification of the object argument of the verb, directly delivered via semantics. Existential quantification always affords further discourse reference, sometimes modally subordinated. But, as first observed by \ctnm{erguvanli79}, Turkish bare objects do not readily contribute discourse referents and usually result in number-neutral interpretations.
+The problem with this solution lies in the existential quantification of the object argument of the verb, directly delivered via semantics. Existential quantification always affords (possibly modally subordinated) discourse reference. But, as first observed by \ctnm{erguvanli79}, Turkish bare objects do not readily contribute discourse referents and usually result in number-neutral interpretations.
 
 \ex. ??Bugünlerde kitap okuyorum, bitirince sana vereceğim.
 
@@ -656,26 +690,60 @@ The problem with this solution lies in the existential quantification of the obj
 (activity with a perfective aspect)
 
 
-\ex. \a. Ahmet keman çalıyor.
+\ex.
+\a. Ahmet keman çalıyor.
 \b.  Yeni mi?
 
 
-\ex. \a. Dün bütün gece şiir yazdım.
+\ex.
+\a. Dün bütün gece şiir yazdım.
 \b. Kaç tane yazdın?
-\b. Sıfır! Çok!
+\b. Sıfır!/Çok!
 
 As we will see in the next section, this behavior sharply contrasts with zero indefinites, where discourse reference is guaranteed.
 
 There are cases where bare objects seem to contribute discourse referents, however. This possibility appears to be dependent on the aspectual class and conceptual details of the verb. For instance, it seems rather impossible to think of an onion chopping process that does not involve some amount of onions, and it is also expected that the use of a bare object expression may foreground the amount or kind of onions involved. 
-The present point is that such contributions to the discourse model by bare objects are not semantically driven, but possible thanks to some inferential processes that we do not get concerned here.
+The present point is that such contributions to the discourse model by bare objects are not semantically driven, but possible, thanks to some inferential processes that we do not get concerned here.
 
-The present paper proposes that what is contributed by a bare object construction is the instantiation of an eventuality type rather than an individual discourse referent. In this proposal the bare object is an event modifier.
+The present paper proposes that what is contributed by a bare object construction is the instantiation of an eventuality type rather than an individual discourse referent. In this proposal the bare object is a sort of event modifier in a very similar fashion argued for by \ctnm{carlson03}. In this respect I take bare objects to be basically denoting properties, totally devoid of quantificational force and not contributing discourse referents into the discourse model. There is an apparent conflict in this list of requirements. We at the same time no referent to be contributed, yet we know from above that the bare object saturates the direct object slot of its verb. I solve this conflict by stipulating that bare objects contribute a semantically inert argument to the verb, which I will depict as \sysm{null'}. A type-raised bare object takes the following interpretation: 
 
+\ex.\label{exintbare}
+\interp{\lbrac{NP}{kitap}} $=$ \sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{}Book'null'e}
 
+The derivation of the VP semantics is as follows:
+
+\ex.\label{exdervpbare}
+\begin{tabular}[t]{l@{\hspace{0.2em}}l}
+\interp{\lbrac{VP}{kitap oku}} &$=$  (\sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{Book'}null'e}) (\sysm{\lam{p_p}\lam{x_e}\lam{e_s}.read'p\cnct{}x\cnct e})\\
+&$=$ \sysm{\lam{e_s}.read'Book'null'e} \\
+\end{tabular}
+
+Integrating the subject via the X head and closing the event argument with inflection head yields the final result through the following steps:
+
+\ex.\label{exbareresult} 
+\a.
+\begin{tabular}[t]{l@{\hspace{0.2em}}l}
+\interp{\lbrac{\ubar{X}}{\lbrac{VP}{kitap oku} \lbrac{X}{$\emptyset$}}} & \\
+&\kern -60pt $=$  \sysm{(\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.p\cnct{e}\land agent'x\cnct{e})(\sysm{\lam{e_s}.read'\cnct{Book'}\cnct{null'}\cnct{e}})}\\
+&\kern -60pt $=$  \sysm{\lam{x_e}\lam{e_s}.read'\cnct{Book'}\cnct{null'}\cnct{e}\land agent'x\cnct{e}}
+\end{tabular}
+\b.
+\begin{tabular}[t]{l@{\hspace{0.2em}}l}
+\interp{\lbrac{XP}{\lbrac{NP}{John} \lbrac{\ubar{X}}{kitap oku $\emptyset$}}} & \\
+&\kern -40pt  $=$ \sysm{(\lam{x_e}\lam{e_s}.read'\cnct{Book'}\cnct{null'}\cnct{e}\land agent'x\cnct{e})j'}\\
+&\kern -40pt  $=$ \sysm{\lam{e_s}.read'Book'null'e \land agent'j'\cnct{e}}\\
+\end{tabular}
+\b.
+\begin{tabular}[t]{l@{\hspace{0.2em}}l}
+\interp{\lbrac{\ubar{Fin}}{\lbrac{XP}{John kitap oku $\emptyset$} \lbrac{Fin}{-du}}} & \\
+& \kern -120pt $=$ \sysm{(\lam{q_{\smtyp{s}{t}}}.\exists e. q\cnct{e} \land past'e)(\lam{e_s}.read'Book'null'e \land agent'j'e)}\\
+& \kern -120pt $=$ \sysm{\exists e.read'Book'null'e \land agent'j'e \land past'e}\\
+\end{tabular}
+
+The reader might wonder why I choose a little complex mechanics to model the argument decrement behavior of bare objects, wouldn't a valence-changing operation suffice. The reason is that bare objects show some degree of syntactic flexibility, therefore they live in syntax rather than morphology.
 
 
 \subsection{Zero indefinites}
-
 
 \ex.
 \a. Bugünlerde bol bol kitap okuyorum.
