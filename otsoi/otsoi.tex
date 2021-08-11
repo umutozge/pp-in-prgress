@@ -742,12 +742,46 @@ Integrating the subject via the X head and closing the event argument with infle
 
 The reader might wonder why I choose a little complex mechanics to model the argument decrement behavior of bare objects, wouldn't a valence-changing operation suffice. The reason is that bare objects show some degree of syntactic flexibility, therefore they live in syntax rather than morphology.
 
+With this formulation we model the following empirical facts:
+
+\ex.
+\a. Bare objects yield number neutral interpretations.
+\b. They do not readily provide discourse referents.
+\b. They saturate the internal argument of the verb. 
+\b. They foreground the type of the eventuality rather than the internal argument.
+
 
 \subsection{Zero indefinites}
+
+I will argue that the only difference between a bare object construction and a zero indefinite is the discourse referent contributed by the zero indefinite. The common denominator of the two NP types is that their predications are at the property (or concept) level. They are contextually unbound in the sense that the eventuality in the bare object case and the discourse referent in the zero indefinite case carries no information beyond what is available at the general concept level. In exactly this respect they will differ from acc-indefinites.
+
+%I will assume that the expression \emph{bir} is ambiguous between the numeral one and the indefinite determiner, and likewise for other numerals. It may be possible to collapse the two interpretations into one, but I will not attempt this here.
+
+The function of the indefinite determiner is to carve out individuals from properties and predicates. The number semantics carried by the determiner decides on the cardinality of these individuals. A zero indefinite has the following interpretation:
+
+\ex.
+\interp{\lbrac{DP}{\lbrac{D}{bir} \lbrac{NP}{kitap}}} =
+\sysm{
+	\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.
+	v\cnct{Book'}(sk'(
+					   \lam{x}.ins'Book'x \land |x|=1))e}
+
+The function \sysm{sk'} is a non-parametrized Skolem function and when applied to a property, returns a prototypical/arbitrary instance of that property.
+
+The most crucial aspect of this formulation is that there is no way the sentential or utterance context to affect the interpretation of the book instance. Different from the bare object case, this time we have an individual, albeit a generic one, contributed to the discourse model.
 
 \ex.
 \a. Bugünlerde bol bol kitap okuyorum.
 \b. *Bugünlerde bol bol bir kitap okuyorum.
+
+
+
+To summarize:
+\ex.
+\a. Bare objects are contextually unbound eventuality modifiers.
+\b. Zero-indefinites are contextually unbound individual contributors.
+\c. Acc-indefinites are contextually bound individual contributors with presupposed restrictors.
+
 
 \subsection{Syntax}
 
@@ -763,6 +797,8 @@ Turkish accusative is not an instance of DOM \cite{aissen03}. As in the set of l
 \b. Gözetmenlik yapmaya bir öğrenci*(yi) ikna edeceğim. 
 
 Also note that possessive DPs obligatorily receive case-marking, regardless of their interpretative properties.
+
+TODO: Bir soru(yu) *bile* sormadim.
 
 TODO: Give a list of interpretative/scopal/IS-related effects in the first section.
 
