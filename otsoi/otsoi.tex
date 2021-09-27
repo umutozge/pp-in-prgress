@@ -1,6 +1,8 @@
 \documentclass[11pt,a4paper]{article}
 %\documentclass[glov3,smallextended,nospthms,natbib]{svjour3}
 
+\usepackage{stmaryrd}
+\usepackage[T1]{fontenc}
 \usepackage{umut,umuttr}
 \usepackage{uling}
 \usepackage{usynsem}
@@ -209,7 +211,6 @@ two\mbox{-}girls'(x_1) \quad x_1 \subseteq z \quad know'(s',x_1)
 }
 
 \subsubsection{\encspec ity under negation}
-
 
 Having seen how \encspec ity works for Enç's example \xref{Exenc17}, let us modify the example to be able to derive further predictions of her account. Here is a minimal pair, where the verb \trtx{tanı}{know} is negated:
 
@@ -520,14 +521,13 @@ TODO: Basit hatalari gormesi onemli degil; yeter ki kritik bir hatayi gormesin.
 TODO: Cogu ogrenci en az iki kitab(i) okudu. 
 
 
-
 \subsection{Generalizing to other NP types}
 
 \section{The proposal}
 
 Having motivated the interpretative effect of \acc-marking on indefinites, I turn to the grammatical mechanism that delivers that effect. This calls for a detailed look at the noun phrase semantics in Turkish, which this section aims to provide.
 
-We have 4 types of nominal direct objects\footnote{My use of ``direct object'' is quite lose, not every author considers bare NPs as direct objects.} in our scope: 1.\ bare NPs, 2.\ zero indefinites, 3.\ acc-indefinites, and 4.\ definites. I will have nothing to say about the last category in this paper and explore the relative ``strength'' of the first three categories, all of which I take to be a sub-type of indefiniteness. 
+We have 4 types of nominal direct objects\footnote{My use of ``direct object'' is quite lose, not every author considers bare NPs as direct objects.} in our scope: 1.\ bare NPs, 2.\ zero indefinites, 3.\ acc-indefinites, and 4.\ definites. I will have nothing to say in this paper about the last category. I will explore the relative ``strength'' of the first three categories, all of which are taken here to be a sub-type of indefiniteness. 
 
 \subsection{Preliminary assumptions}
 
@@ -544,22 +544,22 @@ In standard formal semantics, a nominal expression, be it referential, predicati
 \b. biyoloji oku.
 
 
-It is important to note that none of these examples are idioms, they are quite flexible.\footnote{Compare here with:
+It is important to note that none of these examples are idioms, they are quite flexible.\footnote{Compare with:
 
 \ex. Ayvayı ye.
 
 where no other fruit or object would result in the same meaning.
 }
 
-As \ctnm{carlson03} observes, if we take verbs to be fundamentally denoting eventualities (in the sense of \cttx{bach86a}), it is conceivable that one function of nominal complements is to futher specify these eventualities. As we will we see below in more detail, \ctnm{carlson03} utilizes this idea for incorporation structures. Here, I will generalize the same idea to the entire spectrum of verb-complement composition.
+As \ctnm{carlson03} observes, if we take verbs to be fundamentally denoting eventualities (in the sense of \cttx{bach86a}), it is conceivable that one function of nominal complements is to further specify these eventualities. As we will see below in more detail, \ctnm{carlson03} utilizes this idea for incorporation structures. Here, I will generalize the same idea to the entire spectrum of verb-complement composition.
 
 The atomic types of my ontology are $e$ for individuals, $s$ for eventualities, $p$ for properties (or concepts) in the sense of \ctnm{mcnally98}, and $t$ for truth values. I ignore worlds and times for the sake of simplicity.
 
-I will assume and modify a Neo-Davidsonian verbal semantics along the lines of \cite{kratzer96}, where external arguments are composed into the semantics by a functional head rather than as a complement of the verb itself. I will in addition assume that verb meanings have a slot for a property argument. The verb first applies to this argument to yield a further specified eventuality semantics. In such a setting, transitive verbs receive the following semantics:
+I will assume and modify a Neo-Davidsonian verbal semantics along the lines of \cite{kratzer96}, where external arguments are composed into the semantics by a functional head rather than as a complement of the verb itself. I will also assume that verb meanings have a slot for a property argument. The verb first applies to this argument, yielding a further specified eventuality semantics. With these assumptions, transitive verbs receive the following semantics:
 
 \ex. \interp{\lbrac{V}{oku}} $=$ \sysm{\lam{p_p}\lam{x_e}\lam{e_s}.read'p\cnct{}x\cnct e}
 
-Some modifications to NP semantics are in order so that an NP interpretation provides the argument types that the verbal semantics requires. I will assume that every nominal comes with both a prperty denotation and an ordinary restrictor predicate. For instance a nominal that is headed by the lexical noun \emph{book} would have both a property, which I will designate as \sysm{Book'} and a restrictor predicate \sysm{book'}. The former stands for a prototypical, or generic depending on the particular theory, book concept, while the latter stands for the usual model-theoretic notion of the set of entities that are taken to be books in the model. With these assumptions a definite description \xxref{exdefprov}{a} and a proper name \xxref{exdefprov}{b}, both type-raised to apply to the verb, would look like:
+Some modifications to NP semantics are also called for, so that an NP interpretation provides the argument types required by the verb. I will assume that every nominal comes with both a property denotation and an ordinary restrictor predicate. For instance a nominal that is headed by the lexical noun \emph{book} would have both a property, which I will designate as \sysm{Book'}, and an ordinary restrictor predicate \sysm{book'}. The former stands for a prototypical (or generic, depending on the particular theory) book concept, while the latter stands for the usual model-theoretic notion of the set of entities that are taken to be books in the model. In this setting, a definite description \xxref{exdefprov}{a} and a proper name \xxref{exdefprov}{b}, both type-raised to apply to the verb,\footnote{The rationale behind this particular choice of type-raising will appear below.} would look like:
 
 \ex.\label{exdefprov}
 \a.
@@ -590,9 +590,9 @@ is interpreted as follows, where all merges are coupled with function applicatio
 
 \end{tikzpicture}
 
-What is non-standard about the present scheme is the integration of properties into the derivation; sepcifically, (i) every NP comes with a property denotation coupled with standard restrictor denotation, and (ii) what would appear as the normal functional semantics of a verb is computed as the result of the application \sysm{read'Book'}, the rest is standard.
+What is non-standard about the present scheme is the integration of properties into the derivation; specifically, (i) every NP comes with a property denotation coupled with standard restrictor denotation, and (ii) what would appear as the normal functional semantics of a verb is computed as the result of the application \sysm{read'Book'}, the rest is standard.
 
-My syntactic assumptions are and will stay sketchy. I will also ignore scrambling and other ``deviations'' from the canonical word order of Turkish.
+My syntactic assumptions are and will stay sketchy. I will also ignore scrambling and other ``deviations'' from the canonical SOV order of Turkish.
 
 
 \subsection{Semantic types}
@@ -653,9 +653,9 @@ Ahmet (konuşmasında) Mehmet'i hedef aldı.
 
 \xref{exbalik3} shows the composition of the verb we had in the previous two examples with the bare object \trtx{hedef}{target} constructing the complex verb \trtx{hedef al}{target}, which is still transitive after the composition, as it can still combine with the acc-marked direct object \trtx{Mehmet'i}{M.-Acc}.
 
-In what follows I will unite the cases exemplified in \xref{exbalik1} and \xref{exbalik2} under the name ``bare object'', and leave out the complex verb structures exemplified in \xref{exbalik3}. I cannot see any difference between this complex verbs and lexical transitives that would concern the issues under discussion in this paper.
+In what follows I will unite the cases exemplified in \xref{exbalik1} and \xref{exbalik2} under the name ``bare object'', and leave out the complex verb structures exemplified in \xref{exbalik3}. I cannot see any difference between such verbs and lexical transitives that would concern us in this paper.
 
-I first establish at an intuitive level that bare objects are predicative rather than referential. The argument is based on an observation about kind-level interpretation in Turkish.\footnote{All semantic distinctions we are interested in this paper, like specific/non-specific, predicative/referential etc.\ apply at kind-level as well \cttx[15]{krifkaetal95}.} The reason I employ a kind-level example is that the predicative nature of bare objects is most perspicuous at this level. Take the minimal pair:
+I first establish at an intuitive level that bare objects are predicative rather than referential. The argument is based on an observation about kind-level interpretation in Turkish.\footnote{As \cttx[15]{krifkaetal95} observe, all semantic distinctions we are interested in this paper, like specific/non-specific, predicative/referential etc.\ apply at kind-level as well.} The reason I employ a kind-level example is that the predicative nature of bare objects is most perspicuous at this level. Take the minimal pair:
 
 \ex.\label{exzimba}
 \a. Amerikalılar 19. yüzyılda  zımbayı icat etti.
@@ -703,9 +703,9 @@ The problem with this solution lies in the existential quantification of the obj
 As we will see in the next section, this behavior sharply contrasts with zero indefinites, where discourse reference is guaranteed.
 
 There are cases where bare objects seem to contribute discourse referents, however. This possibility appears to be dependent on the aspectual class and conceptual details of the verb. For instance, it seems rather impossible to think of an onion chopping process that does not involve some amount of onions, and it is also expected that the use of a bare object expression may foreground the amount or kind of onions involved. 
-The present point is that such contributions to the discourse model by bare objects are not semantically driven, but possible, thanks to some inferential processes that we do not get concerned here.
+The point is that such contributions to the discourse model by bare objects are not semantically driven, but possible, thanks to some inferential processes that we do not examine here.
 
-The present paper proposes that what is contributed by a bare object construction is the instantiation of an eventuality type rather than an individual discourse referent. In this proposal the bare object is a sort of event modifier in a very similar fashion argued for by \ctnm{carlson03}. In this respect I take bare objects to be basically denoting properties, totally devoid of quantificational force and not contributing discourse referents into the discourse model. There is an apparent conflict in this list of requirements. We at the same time no referent to be contributed, yet we know from above that the bare object saturates the direct object slot of its verb. I solve this conflict by stipulating that bare objects contribute a semantically inert argument to the verb, which I will depict as \sysm{null'}. A type-raised bare object takes the following interpretation: 
+The present paper proposes that what is contributed by a bare object construction is the instantiation of an eventuality type rather than an individual discourse referent. In this proposal the bare object is a sort of event modifier in a very similar fashion argued for by \ctnm{carlson03}. In this respect I take bare objects to be basically denoting properties, totally devoid of quantificational force and not contributing discourse referents into the discourse model. There is an apparent conflict in this list of requirements. On one hand we do not want a discourse referent to be contributed, on the other hand we know from above that the bare object saturates the direct object slot of its verb. I deal with this conflict by stipulating that bare objects contribute a semantically inert argument to the verb, which I will represent as \sysm{null'}. A type-raised bare object takes the following interpretation:
 
 \ex.\label{exintbare}
 \interp{\lbrac{NP}{kitap}} $=$ \sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{}Book'null'e}
@@ -740,7 +740,8 @@ Integrating the subject via the X head and closing the event argument with infle
 & \kern -120pt $=$ \sysm{\exists e.read'Book'null'e \land agent'j'e \land past'e}\\
 \end{tabular}
 
-The reader might wonder why I choose a little complex mechanics to model the argument decrement behavior of bare objects, wouldn't a valence-changing operation suffice. The reason is that bare objects show some degree of syntactic flexibility, therefore they live in syntax rather than morphology.
+\textcolor{red}{
+The reader might wonder why I choose a little complex mechanics to model the argument decrement behavior of bare objects, wouldn't a valence-changing operation suffice. The reason is that bare objects show some degree of syntactic flexibility, therefore they live in syntax rather than morphology.}
 
 With this formulation we model the following empirical facts:
 
@@ -770,17 +771,21 @@ The function \sysm{sk'} is a non-parametrized Skolem function and when applied t
 
 The most crucial aspect of this formulation is that there is no way the sentential or utterance context to affect the interpretation of the book instance. Different from the bare object case, this time we have an individual, albeit a generic one, contributed to the discourse model.
 
-\ex.
+\ex.\label{exbolbol}
 \a. Bugünlerde bol bol kitap okuyorum.
 \b. *Bugünlerde bol bol bir kitap okuyorum.
 
+\xref{exbolbol} shows that with zero indefinites individual reading is foregrounded where the eventuality denotation is not available for adverbial modification (see also \cttx{aydemir04}).
 
+
+
+\subsection{Acc-indefinites}
 
 To summarize:
 \ex.
 \a. Bare objects are contextually unbound eventuality modifiers.
 \b. Zero-indefinites are contextually unbound individual contributors.
-\c. Acc-indefinites are contextually bound individual contributors with presupposed restrictors.
+\b. Acc-indefinites are contextually bound individual contributors with presupposed restrictors.
 
 
 \subsection{Syntax}
