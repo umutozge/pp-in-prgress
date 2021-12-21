@@ -13,9 +13,11 @@
 \usepackage{mathptmx}
 \usepackage{hyperref}
 	\usepackage{xcolor}
-\hypersetup{colorlinks=true,linkbordercolor=red,citecolor=magenta,linkcolor=cyan,pdfborderstyle={/S/U/W 1}}
+\hypersetup{colorlinks=false,linkbordercolor=red,citecolor=gray,linkcolor=gray,pdfborderstyle={/S/U/W 0}}
 \usepackage{fancyvrb}
 \usepackage{comment}
+
+\usepackage{microtype}
 
 \usepackage{tikz-qtree}
 \usepackage[normalem]{ulem}
@@ -23,7 +25,7 @@
 %linguex adjustment
 \setlength{\Exlabelsep}{0.5em}
 
-% for the paper problem
+% paper problem
 %\setlength{\hoffset}{50pt}
 %\setlength{\voffset}{40pt}
 
@@ -31,15 +33,16 @@
 \newcommand{\encspec}{Enç-specific}
 
 
-\title{On the ``strength'' of indefinites: The view from Turkish}
+
+\title{On the strength of indefinites: The view from Turkish}
 
 \author{Umut \"Ozge}
 
 % \institute{Umut \"Ozge
 % 			\at Middle East Technical University \& University of Cologne
-%  			\\ \email{tumuum@gmail.com}}
+%  			\\ \email{u}}
 % 
-% \titlerunning{``Strength'' of indefinites}
+% \titlerunning{Strength of indefinites}
 % \journalname{}
 
 \date{\today -- PLEASE DO NOT CITE}
@@ -82,22 +85,23 @@ has some interesting data that is relevant to this debate.
 `John read a book.' (``strong'')
 
 
-TODO: cite vonhuesingerkornfilt in discussing that the alternation is
-not unconditionally applicable.
+% TODO: cite vonhuesingerkornfilt in discussing that the alternation is not unconditionally applicable.
 
 
-
-In this paper we are interested in \xref{para-acc}. Two facts make this form
-interesting. One is that the \acc-marker is strongly associated with
-definiteness in Turkish. This is most apparent in the minimal pair
-\xref{para-bare} \versus\ \xref{para-def}. Furthermore, for noun phrases that
-are usually considered definite---in the sense of displaying definiteness
+In this paper we are interested in \xref{para-acc}. Two facts make
+this form interesting. One is that the \acc-marker is strongly
+associated with definiteness in Turkish. This is most apparent in the
+minimal pair \xref{para-bare} \versus\ \xref{para-def}.
+\cttx{geurts10} associates specificity with definiteness, and this is
+what we will do below. Furthermore, for noun phrases that are usually
+considered definite---in the sense of displaying definiteness
 effect---the marker is obligatory. These constructions are:
 
 \ex.
 \a. proper nouns;
 \b. pronouns and demonstratives;
-\b. ``strong'' DPs (TODO: give a list).
+\b. definite descriptions;
+\b. ``strong'' DPs; % TODO: give a list
 \b. derived nominals;
 \b. genitive possessive constructions.\footnote{Genitive-possessives
 are the only type of construction in the list for which an indefinite
@@ -113,8 +117,8 @@ indicator of definiteness.
 The second fact that makes \xref{para-acc} interesting is that the marker is
 optional on indefinites for some verbs (\ref{para-indef} \versus\
 \ref{para-acc}), exemplifying a case of Differential Object Marking
-\cttxp{aissen03}. This optionality has certain interpretative effects (see
-section~\ref{sec-review}).
+\cttxp{aissen03}. This optionality has certain interpretative effects
+that will be discussed in detail below.
 
 The following research questions follow from the observations above:
 
@@ -130,7 +134,7 @@ answers these three questions in a unified way.
 
 Turkish indefinites are interesting in a couple of respects. First,
 the literature on the notions like (in)definiteness, specificity,
-``strength``, referentiality, and so on, somehow concentrates on
+``strength``, referentiality, and so on, usually concentrate on
 subjects. This might be a confounding factor for semantic analysis of
 these notions. In Turkish we are dealing with the mentioned properties
 as attributed to objects rather than subjects.  Second, as I will be
@@ -138,14 +142,16 @@ arguing in the rest of the paper, the notion of ``strength'' that
 needs to be associated with case-marked indefinites in Turkish is
 slightly different from the similar notions in the literature. This, I
 believe, makes the investigation of Turkish \acc-marked indefinites
-worthwhile from a broader semantics perspective. 
+worthwhile from a broader perspective. 
 
 The central issue of the present paper is sometimes discussed under
 the name of Differential Object Marking \cttxp{aissen03}. I agree with
-\ctnm{lopez12} that ...TODO... Therefore, I will not use the terminology and
+\ctnm{lopez12} that ... Therefore, I will not use the terminology and
 hierarchy idea of this literature.
+% TODO: Complete Lopez.
 
-Although syntactic issues are not my main concern, a few points regarding the syntactic status of Acc-indefinites are in order.
+Although syntactic issues are not my main concern, a few points
+regarding the syntactic status of Acc-indefinites are in order.
 
 I think the accusative case alternation on indefinite objects is not a
 clear case of Differential Object Marking, which, following
@@ -164,7 +170,6 @@ case when they remain in a domain projected by the verb, and along the
 logic of \ctnm{diesing92} they thereby receive a sort of
 non-referential reading in this domain.
 
-
 Another reason to think that the presence of Acc-marking is a
 syntactic requirement, observe that possessive DPs obligatorily
 receive case-marking, regardless of their interpretative properties.
@@ -180,18 +185,28 @@ obligatorily receive overt case:
 \b. Gözetmenlik yapmaya bir öğrenci*(yi) ikna edeceğim. 
 
 
-\section{Description of the phenomena}
+\section{Notes on syntactic issues}
 
 In this section I aim to provide a critical overview of the
 descriptive aspects of the \acc- versus \zero-marked indefinites,
 concentrating on their interpretative differences.
 
+My syntactic assumptions are and will stay sketchy. I will also ignore
+scrambling and other ``deviations'' from the canonical SOV order of
+Turkish.
 
-\subsection{Information structure}
+\section{Information structure}
 
-TODO: Return to Coppock and Wechsler.
+% TODO: Return to Coppock and Wechsler.
 
-\subsection{Epistemic specificity}
+\zero-indefinites can also appear in the non-focal part of an
+utterace:
+
+\ex.\label{exmezun}%
+Mezunlar Dernegi'nde nadir de olsa bir profesor goruYORum.
+
+
+\section{Epistemic specificity}
 
 Use \trtx{bazı}{certain} for arguing against epistemic specificity
 association for \acc-marking.
@@ -204,8 +219,18 @@ association for \acc-marking.
 \b. Bazı hataları görmedim.
 
 
-\subsection{Scope and word order}
+\section{Scope and word order}
 \label{scscope}
+
+I concur with \cite[3]{enc91} that semantics of \acc-indefinites is not
+directly related to scope. Scopal properties come as a side-effect. 
+Enc: specs can be low, but tend to be high, this must be explained.
+
+The main argument of this section is that \acc can take the narrowest
+scope, the effect is not directly related to scope, but definiteness
+in the sense defended in the present paper is what allows for wide
+scope.
+
 
 As in many other languages, two types of indefinites differ in their
 scopal behavior. Slightly adapting from \cttx{ozge11}:
@@ -241,18 +266,26 @@ Scope and specificity are different things:
 \a. Bolivyalı bir şair barış ödülünü alamadı.
 \b. Barış ödülünü Bolivyalı bir şair alamadı. 
 
-\subsection{``Partitive'' specificity} %chungladusaw still cite enc for specificity.
+
+Perhaps we can include intensional verbs here.
+
+\ex.
+\a. Ogretmen bir kitap listesi vermisti.
+\b. Cogu ogrenci iki kitab(i) okudu.
+
+
+\section{\encspec{ity}} %chungladusaw still cite enc for specificity.
 \label{scpartspec}
 
 The seminal work of \ctnm{enc91}, besides being the most influential
 account of the interpretative effect of \acc-marking on Turkish
 indefinites, provides some important insights for noun phrase
 semantics in general. The significance of this work for our present
-purposes is likewise twofold: In what follows, (i) I will expose a
-critical explanatory weakness of \ctnms{enc91} account and then modify
-it into a more successful explanation of the facts at issue; and (ii)
-I will claim that there are important lessons to draw from this
-modified account for the noun phrase semantics in general.
+purposes is likewise twofold: (i) I will expose a critical explanatory
+weakness of \ctnms{enc91} account and then modify it into a more
+successful explanation of the facts at issue; and (ii) I will claim
+that there are important lessons to draw from this modified account
+for the noun phrase semantics in general.
 
 \ctnm{enc91} claims that a Turkish indefinite noun phrase carries the
 \acc-marker if and only if it is ``specific''.  \ctnm{enc91} relates
@@ -260,10 +293,11 @@ her notion of ``specificity'' to ``partitivity'', ``strong''/``weak''
 \cttxp{milsark77} and to D(iscourse)-linking \cttxp{pesetsky87}. Care
 should be taken to distinguish this notion of ``specificity'' from
 other varieties of this notoriously elusive category (see
-\cttx{farkas02a,heusinger11} for clarification). For this
-reason, I will call the notion of ``specificty'' advocated by
-\ctnm{enc91} \encspec{ity}, from here on. Here is one of her examples
-illustrating \encspec{ity}.
+\cttx{farkas02a,heusinger11} for guidance into the literature). For this
+reason, I will call the notion of ``specificity'' advocated by
+\ctnm{enc91} \encspec{ity}.
+
+Here is her famous example illustrating \encspec{ity}.
 
 \exg.\label{exencintro}%
 {Odam-a}  {birka\c{c}} {\c{c}ocuk} {girdi.}\\
@@ -271,57 +305,35 @@ illustrating \encspec{ity}.
 `Several children entered my room.'
 
 \ex.\label{exenc}
-\ag.\label{exenca}{\.iki}  {k\i{}z-\textbf{\i}} {tan\i{}yordum}.\\
+\ag.\label{exenca}İki  kız-\textbf{ı} tanıyordum.\\
 {two}  {girl-{\bf Acc}}  {knew.1sg}\\
 `I knew two girls (among the children). '\hfill (\encspec)
-\bg.\label{exencz}\#{\.Iki}  {k\i{}z}  {tan\i{}yordum.} \\
+\bg.\label{exencz}\#İki  kız  tanıyordum. \\
 {two}  {girl}  {knew.1sg}\\
 `I knew two girls.'\hfill (non-\encspec)
 
 \ctnm{enc91} observes that in a discourse initiated by
 \xref{exencintro}, only with the form \xref{exenca}, where the
 indefinite \trtx{iki kız}{`two girls'} is \acc-marked, the girls are
-understood to be coming from the set of children; otherwise, in the
-absence of the marker as in \xref{exencz}, hearers tend to interpret
-the girls to be out of the set of children introduced in
-\xref{exencintro}. 
+understood to be coming from the set of children recently introduced;
+whereas in the absence of the marker as in \xref{exencz}, the girls
+are indicated to be independent from the set of children,
+resulting in pragmatic anomaly. 
 
-At this point it might be tempting to equate the notion of
-\encspec ity with ``partitivity'' and/or ``strong'' interpretation in
-the sense of \cite{milsark77} and especially \cite{diesing92}. It is
-crucial, however, not to do so.
-
-Although \ctnm{enc91} associates the maker with ``partitivity'',
-\acc-marked indefinites are clearly different from ordinary
-partitives. An ordinary partitive like the one in \xref{exordpart}
-entails that the restrictor is larger than the referents of the
-partitive, as the translation shows.
-
-\ex.\label{exordpart} Kızlardan ikisini tanıyordum.
-
-
-Whereas, the situation is different with an \acc-marked indefinite.
-Observe that the English translation for \xref{exenca} is not `I knew
-two of the girls'; the sentence is non-committal on whether there are
-more girls among the children than the two mentioned.  Therefore
-\acc-marker is not simply a partitivity indicating item.
-
-The same difference goes for Diesingian ``strong'' indefinites. A
-``strong'' indefinite like \intx{some apples}, in comparison to
-\intx{sm apples}, implies partitivity. Likewise for a ``strongly''
-interpreted NP like \intx{two boys}. \acc-marked indefinites in
-Turkish do not trigger such entailments.
-
-
-%%%%%%%%%
 
 Before I embark on a critical assessment of this important proposal, I
-would like to cast it in a formal framework to clarify what we are
-dealing with. \ctnm{enc91} extends the dynamic model of noun phrase
-semantics, which associates every noun phrase with an index (or,
-equivalently, a discourse referent) that gets bound by an operator
-sourced outside of the NP semantics.  \ctnm{enc91} adds a second
-index, standing for a \textbf{superset} of the first index. Let us
+would like to cast it in a formal framework in order both to clarify
+\ctnms{enc91} proposal and to lay a foundation on which I will build
+my modifications. My choice of framework is Discourse Representation
+Theory \cttxp{kamp81,kampreyle93}, equipped with the Binding Theory
+of Presupposition Justification \cttxp{sandt92,geurts99}. I will have
+more to say below on this particular choice of framework.
+
+\citeauthor{enc91} starts with a standard dynamic model of noun phrase
+semantics, which associates every noun phrase with an index (or a
+discourse referent) that gets bound by an operator external to the NP
+itself. \citeauthor{enc91} extends this picture by adding a second
+index, standing for a \textbf{superset} of the first index.  Let us
 call the latter the superset index and the former referent index.
 Here is the formal definition from \cttx{enc91}:
 
@@ -331,17 +343,19 @@ $x_i \subseteq x_j$ if $\text{NP}_{\langle i,j\rangle}$ is plural;\\
 $\{x_i\} \subseteq x_j$ if $\text{NP}_{\langle i,j\rangle}$ is
 singular.
 
-\ctnm{enc91} further claims that the usual definiteness feature ([+definite]
-for familiar, [-definite] for novel) applies separately to both the referent
-and the superset index. In this setting, a standard definite NP has
-[+definite], and a standard indefinite has [-definite] on their both indices.
-\encspec ity corresponds to the case where the referent index has [-definite]
-and the superset index has [+definite].\footnote{\cttx{enc91} does not discuss
-the case ([+definite], [-definite]). TODO:check.}
+\ctnm{enc91} further claims that the usual definiteness feature
+([+definite] for familiar, [-definite] for novel) applies separately
+to both the referent and the superset index. In this setting, a
+standard definite NP has [+definite], and a standard indefinite has
+[-definite] on their both indices.  \encspec{ity} corresponds to the
+case where the referent index has [-definite] while the superset index
+has [+definite].
 
-Let us see how the proposal works, over \xref{exenc}. The discourse opener
-\xref{exencintro} contributes the simplified main DRS in \xref{exencmaindrs},
-containing the referents for the speaker and a set of children:
+Let us see how the proposal works, over \xref{exenc}. The discourse
+opener \xref{exencintro} contributes the simplified main DRS in
+\xref{exencmaindrs}, containing the referents for the speaker and a
+set of children:\footnote{I follow the tradition of distinguishing
+constants from variables by ``priming'' the former.}
 
 \ex.\label{exencmaindrs}
 \a. Several children entered my room.
@@ -356,13 +370,16 @@ First take the non-case-marked continuation:
 two\mbox{-}girls'(x_1) \quad x_1 \subseteq x_2 \quad know'(s',x_1)
 }
 
-Indices $x_1$ and $x_2$ are both indefinite carrying a novelty condition. We
-assume that this novelty condition makes sure that the set type indices $x_1$
-and $x_2$ are disjoint with any already established index, a condition not
-included in (\ref{exenczerodrs}b).  Thanks to the novelty condition on both
-indices, the girls are understood to be not included in the set of children
-established in the discourse model, eventually giving rise to inappropriateness
-in the context of \xref{exencintro}.
+Indices $x_1$ and $x_2$ are both indefinite and therefore carry a
+novelty condition. We assume that this novelty condition makes sure
+that the set type indices $x_1$ and $x_2$ are disjoint with any
+already established index, a condition not included in
+(\ref{exenczerodrs}b).  Thanks to the novelty condition on both
+indices, the girls are understood to be not included in the set of
+children established in the discourse model, eventually giving rise to
+inappropriateness in the context of \xref{exencintro}, which is
+expected as the introduction of the set of children is left
+unmotivated and therefore does not cohere with what comes after it.
 
 Let us now turn to the analysis of the case-marked continuation
 \xref{exenca}.
@@ -385,20 +402,21 @@ get bound. This binding relation between the antecedent and the
 presuppositional content obeys the usual accessibility constraints of DRT.
 Therefore, for the interpretation in \xref{exencacc1} to converge this binding
 requirement needs to be satisfied. Presupposition resolution in this fashion is
-a non-deterministic process that obeys certain restrictions(TODO:
-citation):
+a non-deterministic process that obeys certain restrictions
+\cttxp{geurts10}:
+% TODO: elaboration and further citations
 
 \ex.
-
 \a. The antecedent should be accessible.
 \b. If there is an antecedent accessible in a near distance bind to
 that; unless there are inferential restrictions.
 \b. If an antecedent is not present, accommodate one -- this
-accommodation process is guided again by inference.
+accommodation process is guided again by inference and global
+is favored over local accommodation.
 
 In the present case the presupposition carried by the superset index $x_2$ is
 resolved through identification with the set $z$ of children already
-established in the model:
+established in the main DRS:
 
 \ex.
 \udrs{s',z,x_1,\anaph{x_2}}{children'(z)\\
@@ -407,95 +425,203 @@ two\mbox{-}girls'(x_1) \quad x_1 \subseteq \anaph{x_2} \quad know'(s',x_1)\\
 }
 
 
-If all the presuppositions of a DRS are bound, than the algebraic cancellation of identical terms yields a DRS without any underlined terms. This holds for the current case. The representation we arrive at correctly captures Enç's observation for the \acc-marked continuation to \xref{Exenc16}:
+If all the presuppositions of a DRS are bound, than the algebraic
+cancellation of identical terms yields a DRS without any underlined
+terms. This holds for the current case. The representation we arrive
+at correctly captures Enç's observation for the \acc-marked
+continuation \xref{exenca}:
 
 \ex.\udrs{s',z,x_1}{children'(z)\\
 two\mbox{-}girls'(x_1) \quad x_1 \subseteq z \quad know'(s',x_1)
 }
 
+\subsection{Issues with \encspec{ity}}
+
 \ctnms{enc91} proposal has been empirically challenged on the basis of
-\acc-marked out-of-the-blue indefinites as well as non-case-marked
-indefinites that are yet \encspec\
-(\cttx{taylanzimmer94,zidani97,kelepir01,heusingerkornfilt05,heusingerkornfilt17,kilicaslan06,issever07,nakipoglu09,ozge11}
-among others).  In this paper, I will gloss over the gaps in the data
+both \acc-marked indefinites that are \emph{not} \encspec\ and
+\zero-marked indefinites that \emph{are} \encspec\
+(\cttx{taylanzimmer94, zidani97, kelepir01, heusingerkornfilt05,
+heusingerkornfilt17, kilicaslan06, issever07, nakipoglu09, ozge11}
+among others).  In this paper, I will gloss over such gaps in the data
 regarding the semantic effects of the \acc-marker and concentrate on
-the cases where the presence of the marker has an effect related to
-previous discourse that is absent for unmarked indefinites. I will
-show that \encspec ity, as the semantic correlate of \acc-marking,
-cannot hold up to the facts of Turkish under close scrutiny. I will
-instead argue that the semantics of the marker is more closely related
-to ``strong''/``weak'' distinction of \ctnm{milsark77}.  This might
-appear paradoxical, given that \ctnm{enc91} equates her notion of
-``specificity'' with ``strong''/``weak'' (and also with
-D(iscourse)-linking of \ctnm{pesetsky87}), I will show, however, that
-this equivalence does not hold.  \encspec ity\ is implicit domain
-restriction, which is a weaker relation than ``strength''; and it is
-not the semantic property that the Turkish \acc-marker indicates. In
-order to proceed in this direction, first we need to look at \encspec
-ity in more detail.
+the cases where the presence versus absence of the marker has a clear
+effect as in \ctnms{enc91} example \xref{exenc}.  I will show
+in Section~\ref{sccontraenc} that \encspec{ity}, as the semantic
+correlate of \acc-marking, cannot hold up to the facts of Turkish,
+even when we concentrate on such clear cases. Before that, in the next
+section, we need to take guard against a potential misunderstanding
+concerning the semantics of \acc-marked indefinites. 
 
-Partitivity is a side-effect rather than directly coded in the
-semantics.
+%I will instead argue that the semantics of the marker is more closely
+%related to ``strong''/``weak'' distinction of \ctnm{milsark77}.  This
+%might appear paradoxical, given that \ctnm{enc91} equates her notion
+%of ``specificity'' with ``strong''/``weak'' (and also with
+%D(iscourse)-linking of \ctnm{pesetsky87}), I will show, however, that
+%this equivalence does not hold.  \encspec[ity} is implicit domain
+%restriction, which is a weaker relation than ``strength''; and it is
+%not the semantic property that the Turkish \acc-marker indicates. In
+%order to proceed in this direction, first we need to look at \encspec
+%ity in more detail.
 
-This is of course different than implicit domain restriction, as it
-involves some familiarity for the way the domain is restricted.
+\subsubsection{Covert partitivity}
+\label{sccovertpartitivity}
 
-TODO: Identifiability vs. familiarity.
+\ctnm{enc91} analyzes the semantics of specificity in two classes.
+In the first class, ``link by inclusion'', there is a superset
+antecedent established in the context for the indefinite; specificity
+is equivalent to covert partitivity in this case. The second class,
+``link by assignment'', includes the cases where referent of the
+indefinite is linked to its antecedent by a designated function
+recoverable from the context ala \cite{hintikka86}, in the presence of
+specificity adjectives like \emph{certain} (or Turkish
+\trtx{belli}{certain}) and/or verbs of assignment like \emph{give},
+\emph{appoint}, \emph{assign}.\footnote{\cite{enc91} slightly extends
+\cite{hintikka86} in ways that do not concern us here.}
 
-TODO: Acc-marking is not strong/weak in the sense of Diesing (1992). In sm
-apples versus some apples, the strong version implies partitivity.
+\cite{enc91} explicitly associates her notion of specificity with
+partitivity, taking \xref{exenca} to be equivalent to the
+following overt partitive (her Ex.\ 19):
+
+\ex.\label{exovertpart} Kız-lar-dan iki-sin-i tanıyordum.\\
+girl-Plu-Abl two-Agr-Acc I-knew\\
+`I knew two of the girls.'
+
+This observation, however, is not correct: \xref{exenca} is not
+equivalent to \xref{exovertpart}, because the latter, but not the
+former, implies that there are more than two girls in the context, a
+typical implication of overt partitives. For the \acc-marked
+indefinite in \ref{exenca}, there may be just two or more girls among
+the children who entered the room, \acc-marked indefinite has simply
+no commitment on this count. For this reason when you make the
+explicit partitive a continuation to the discourse opener, what you
+get is anomaly. The reason is that the presupposition triggered by the
+explicit partitive is hard to accommodate in the present context.
+
+One case that foregrounds a partitive interpretation is when the
+antecedent noun and the head of the indefinite are the
+same:\footnote{Besides changing the head noun of the \acc-marked
+indefinite, I also adapted the opening sentence
+\xref{exencsamehead}{a}, because the modifier
+\trtx{birkaç}{several/a few} in the original already implies that
+there were more than two children entering the room.}
+
+\ex.\label{exencsamehead}
+\ag.\label{exencsameheada}{Odam-a}  {\c{c}ocuk-lar} {girdi.}\\
+{my-room-Dat} {child-Plu}  {entered}\\
+`(Some) children entered my room.'
+\bg.\label{exencsameheadb}İki  çocuğ-\textbf{u} tanıyordum.\\
+{two}  {child-{\bf Acc}}  {knew.1sg}\\
+`I knew two children (among the children). '\hfill (\encspec)
 
 
-TODO: Can I make acc-effect came by the mechanics of DRT. When the NP is
-outside of the root DRS it gets interpreted strongly, case is just a
-syntactic correlate of this outsideness. But then what to do with
-scrambled acc's: maybe they are inside the VP anyway
-(gracanin-issever).
+\xref{exencsameheadb} do imply that there are more than two
+children in the context.\footnote{Note that \xref{exencsameheadb}
+has also a definite reading we are not interested in here.} This
+implication, however, can be derived via the Gricean inference ``If
+the number of children entering the speaker's room were two, then the
+speaker would not use the weaker determiner \trtx{bir kaç}{several/a
+few} in \xref{exencsameheada}'', and therefore need not be coded in
+the semantics of the \acc-marked indefinite.
 
-TODO: make numeral/determiner distinction stem from Roothian
-alternatives.
+A second option for an \encspec\ indefinite is to be linked to an
+already established discourse referent with an assignment or some
+other recoverable relation. This also does not seem to hold for the
+present example. Any head noun that do not conceptually clash with
+\emph{child} would be appropriate in place of \emph{girl}.
 
-\subsubsection{\encspec ity under negation}
+Given these facts, I conclude that the following hold. 
 
-Having seen how \encspec ity works for Enç's example \xref{Exenc17}, let us modify the example to be able to derive further predictions of her account. Here is a minimal pair, where the verb \trtx{tanı}{know} is negated:
+\ex.
+\a. Although \acc-marked indefinites can yield partitive
+interpretations, this  does not follow from the semantics of the NP,
+but rather from a property of the context.
+\b. The linking relation does not have to be regulated by a systematic
+assignment, it can just be circumstantial.
 
-\exg.\label{Exenc16neg}%
+
+%and/or ``strong'' interpretation in the sense of \cite{milsark77} and
+%especially \cite{diesing92}. 
+
+%
+%Acc-marking is not strong/weak in the sense of Diesing (1992). In sm
+%apples versus some apples, the strong version implies partitivity.
+%
+%The same difference goes for Diesingian ``strong'' indefinites. Take
+%an example from \cttx[ex.\ 9]{vonfintel98}, slightly shortened:
+%
+%\ex.\label{exfintelstrong}I’m not sure yet whether there any mistakes at all in this book manuscript, but
+%we can definitely not publish it
+%\a. If some major mistakes are found.
+%\b. \label{exfintelstrongb}\#If some mistakes are major.
+%
+%
+%The ``strong'' (or presuppositional) indefinite in
+%\xref{exfintelstrongb} is substitutable with \emph{some of the
+%mistakes}. Turkish \acc-marked indefinites diverge from this pattern
+%in not implying partitivity. 
+%
+%On the reverse side, Turkish \acc-indefinites do not imply
+%exhaustivity either. 
+
+\subsubsection{Implicit domain restriction} \label{sccontraenc}
+\label{scencneg}
+
+In this section, I will show that the semantics formulated by
+\ctnm{enc91} is implicit domain restriction,\footnote{\cttx{nilsson85}
+is the first author to attribute implicit domain restriction to
+\acc-marking of Turkish indefinites, as far as I know.} This makes
+\encspec{ity} an unsatisfactory account of Turkish \acc-indefinites,
+since \acc-marking indicates a stronger relation than implicit domain
+restriction.
+
+Having seen how \encspec{ity}works for Enç's example \xref{exenc}, let
+us modify the example to be able to derive further predictions of her
+account. Here is a minimal pair, where the verb \trtx{tanı}{know} is
+negated:
+
+\exg.\label{exenc16neg}%
 {Odam-a}  {birka\c{c}} {\c{c}ocuk} {girdi.}\\
 {my-room-Dat} {several}  {child}  {entered}\\
 `Several children entered my room.'
 
-\ex.\label{Exenc17neg}
-\ag.\label{Exencnegacc}{\.Iki}  {k\i{}z-\textbf{\i}} {tan\i{}-m-ıyordum}.\\
+\ex.\label{exenc17neg}
+\ag.\label{exencnegacc}{\.Iki}  {k\i{}z-\textbf{\i}} {tan\i{}-m-ıyordum}.\\
 {two}  {girl-{\bf Acc}}  {knew.Neg.1sg}\\
 `I didn't know two girls (among the children). '\hfill (case-marked)
-\bg.\label{Exencnegzero}\#{\.Iki}  {k\i{}z}  {tan\i{}-m-ıyordum.} \\
+\bg.\label{exencnegzero}\#{\.Iki}  {k\i{}z}  {tan\i{}-m-ıyordum.} \\
 {two}  {girl}  {knew.Neg.1sg}\\
 `I didn't know two girls.'\hfill (non-case-marked)
 
-Before commenting on the available interpretations of these negated variants of Enç's examples, let us first observe the interpretation assigned by her account. Let us assume that negation in \xref{Exenc16neg} is at VP level, which contains the verb and the direct object in both case-marked and non-case-marked variants. Under this assumption, the non-case marked \xxref{Exenc17neg}{b} gets the following interpretation:
+Let us analyze the interpretations assigned to these examples by
+\ctnms{enc91} account. I will initially assume that negation in
+\xref{exenc16neg} is at VP level, which contains the verb and the
+direct object in both case-marked and non-case-marked variants. Under
+this assumption, the non-case marked \xref{exencnegzero} gets the
+following interpretation:
 
-\ex.\label{Exencnegzerodrs}
+\ex.\label{exencnegzerodrs}
 \udrs{s',z}{children'(z)\\
 	\udrs[\neg]{x_1,x_2}{
 	two\mbox{-}girls'(x_1) \quad x_1 \subseteq x_2  \quad know'(s',x_1)
 	}
 }
 
-Given $x_2$ is [-definite] and therefore disjoint with $z$,
-\xref{Exencnegzerodrs} is satisfied in a model where it is impossible to find
-at least two girls not belonging to the children in the room such that the
-speaker knows them. Therefore, \xref{Exencnegzerodrs} would be satisfied in a
-model where there are girls among the children known to the speaker.  Then how
-does this intepretation fair with what could actually be meant by
-\xxref{Exenc17neg}{b}? If \xxref{Exenc17neg}{b} coheres with \xref{Exenc16neg}
-at all, it means that there are not at least two girls among the children known
-to him/her, with the proviso that this reading is available only under further
-specification of the context such that whether the speaker knew two girls among
-the children or not. In any event the interpretation delivered in
-\xref{Exencnegzerodrs} is hardly satisfactory.
+Given that $x_2$ is [-definite] and therefore disjoint with $z$,
+\xref{exencnegzerodrs} is satisfied in a model where it is impossible
+to find at least two girls known to the speaker that are outside the
+set of children.   As in the non-negated original example
+\xref{exencz}, \xref{exencnegzero} hardly coheres with
+\xref{exenc16neg}, making it difficult to obtain reliable judgments.
+For this reason, although the interpretation appears to be
+unsatisfactory,\footnote{\xref{exencnegzerodrs} would be satisfied in
+a model where there are girls known to the speaker among the children,
+which appears to confuse the native speaker judgments.} I leave it as
+an open empirical question whether \xref{exencnegzerodrs} is the
+correct interpretation or not, as this is not central to our present
+concerns.
 
-Let us now turn to the case-marked variant \xxref{Exenc17neg}{a}, which is
-interpreted in three steps:
+Let us now turn to the case-marked variant \xref{exencnegacc},
+which is interpreted in the following three steps:
 
 \ex.
 \a.
@@ -511,29 +637,31 @@ interpreted in three steps:
 	\anaph{x_2} = z
 	}
 }
-\b.\label{Exencnegaccdrs}
+\b.\label{exencnegaccdrs}
 \udrs{s',z}{children'(z)\\
 	\udrs[\neg]{x_1}{
 	two\mbox{-}girls'(x_1) \quad x_1 \subseteq z  \quad know'(s',x_1)
 	}
 }
 
-The DRS \xref{Exencnegaccdrs} is satisfied in any model where it is impossible
-to find at least two girls known to the speaker and belong to the set of the
-children at the same time. A critical observation here is that
-\xref{Exencnegaccdrs} gets satisfied in a model where there were no girls at
-all among the children. By this token, \xref{Exencnegaccdrs} diverges from the
-actual meaning of \xref{Exencnegacc}: In its primary reading,
-\xref{Exencnegacc} gets satisfied only if there are  at least two girls among
-the children such that the speaker does not know them. In DRT notation:
-\footnote{The reading \xref{Exencwide} is not the only reading the form
-\xref{Exencnegacc} can get. I will discuss another type of reading for such
-sentences below. What is crucial for now is that \xref{Exencnegacc} simply
-lacks any reading that does \emph{not} commit to the existence of at least two
-girls among the children.}
+The DRS \xref{exencnegaccdrs} is satisfied in any model where it is
+impossible to find at least two girls known to the speaker within the
+set of children. A critical observation here is that
+\xref{exencnegaccdrs} gets satisfied in a model where there were no
+girls \label{at} all among the children. By this token,
+\xref{exencnegaccdrs} diverges from the actual meaning of
+\xref{exencnegacc}: In its primary reading, \xref{exencnegacc} gets
+satisfied only if there are at least two girls among the children
+unknown to the speaker, which is represented in DRT as follows:\footnote{The reading
+		\xref{exencwide} is not the only reading \xref{exencnegacc}
+		can get. I will discuss another type of reading for such
+		sentences below. What is crucial for now is that
+		\xref{exencnegacc} simply lacks any reading that does
+\emph{not} commit to the existence of at least two girls among the
+children.}
 
 
-\ex.\label{Exencwide}
+\ex.\label{exencwide}
 \udrs{s',z,x_1}{children'(z)\\
 	two\mbox{-}girls'(x_1) \quad x_1 \subseteq z\\
 	\udrs[\neg]{}{
@@ -541,111 +669,133 @@ girls among the children.}
 	}
 }
 
-Again, we end up with an unsatisfactory interpretation.
+Therefore, \ctnms{enc91} semantic formulation assigns the wrong
+interpretation to \xref{exencnegacc}.
 
-Is there a way to keep \encspec ity as it is and resort to other factors to
+
+Is there a way to keep \encspec{ity} as it is and resort to other factors to
 explain the incorrect predictions of the account? \ctnm{enc91} proposes such a
-solution.\footnote{From this proposal, I infer that she is already aware of the
-problem, although she does not discuss negation.TODO:check} One major aim of
-\ctnm{enc91} is to motivate a notion of specificity that is orthogonal to scope
-phenomena. It is well-known that the two notions are closely related
-\cttx{farkas02a}). She first observes that \acc-marking indefinites tend to
-take wide-scope. She explains this fact by claiming that in cases where
-case-marking and non-marking yields the same interpretation, the case-marked
-version is interpreted as taking wider-scope with respect to a commanding
-operator, through a Gricean inference.
+solution.\footnote{From this proposal, I infer that she is already
+aware of the problem, although she does not discuss negation.} One
+major aim of \ctnm{enc91} is to motivate a notion of specificity that
+is orthogonal to scope phenomena. It is well-known that the two
+notions are closely related \cttxp{farkas02a}. \ctnm{enc91} first observes that
+\acc-marked indefinites tend to take wide-scope. She explains this
+fact by claiming that in cases where case-marking and non-marking
+yields the same interpretation, the case-marked version is interpreted
+as taking wider-scope with respect to a commanding operator, through a
+Gricean inference.
 
-Adapting the argument to the present would yield,
+Adapting the argument to the present case would yield,
 
 \ex.\label{encgrice}
-\a. \xref{Exencnegaccdrs} is indeed the semantic interpretation that would be assigned by the grammar to \xref{Exencnegacc};
-\b. The non-case-marked version is assigned the same interpretation by the grammar. Therefore,  \xref{Exencnegaccdrs} and \xref{Exencnegzerodrs} are equivalent.
-\b. Because of this equivalence, the hearer of \xref{Exencnegacc} unconsciously reasons as follows: ``The speaker could have expressed the same content with a non-marked version, but she uses the marked one. Therefore, she is trying to convey a non-standard interpretation, which I take to be the one where the indefinite takes scope over negation''. Through, this reasoning the hearer ends up with interpreting \xref{Exencnegacc} as \xref{Exencwide}.
+\a. \xref{exencnegaccdrs} is the semantic interpretation that
+would be assigned by the grammar to \xref{exencnegacc};
+\b. The non-case-marked version is assigned the same interpretation by
+the grammar. Therefore,  \xref{exencnegaccdrs} and
+\xref{exencnegzerodrs} are equivalent.
+\b. Because of this equivalence, the hearer of \xref{exencnegacc}
+unconsciously reasons as follows: ``The speaker could have expressed
+the same content with a non-marked version, but she uses the marked
+one. Therefore, she is trying to convey a non-standard interpretation,
+which I take to be the one where the indefinite takes scope over
+negation''. As a result of this reasoning, the hearer ends up with
+interpreting \xref{exencnegacc} as \xref{exencwide}.
 
 
 An immediate problem with this argument concerns the equivalence of
-\xref{Exencnegaccdrs} and \xref{Exencnegzerodrs}. This cannot be
-truth-conditional equivalence, since in a model where the speaker knows two
-girls outside of the children set, the former representation gets satisfied
-while the latter does not. Therefore, the argument in \xref{encgrice} is at
-least in need of specifying a notion of equivalence that would hold between
-these two representations, such that it will serve the ground for the Gricean
-reasoning proposed. Otherwise, the reason why \xref{Exencnegacc} is not
-understood in the way predicted by \ctnms{enc91} account remains unexplained.
+\xref{exencnegaccdrs} and \xref{exencnegzerodrs}. This cannot be
+truth-conditional equivalence, since in a model where the speaker
+knows two girls outside of the children set, the former representation
+gets satisfied while the latter does not. Therefore, the argument in
+\xref{encgrice} is at least in need of specifying a notion of
+equivalence that would hold between these two representations, such
+that it will serve the ground for the Gricean reasoning proposed.
+Otherwise, the reason why \xref{exencnegacc} is not understood in the
+way predicted by \ctnms{enc91} account remains unexplained.
 
-There is another source of the wide-scope behavior of the indefinite
-in \xref{Exencnegacc}, namely the grammar. The indefinite could be
-forced to move out of its local domain for case-checking or some other
-reason along the lines of \ctnms{diesing92} Mapping Hypothesis or some
-variant of it.\footnote{For the syntactic position of \acc-marked
-indefinites see \cttx{kelepir01,aydemir04,ozturk05}.} Such an
-independent motivation for the indefinite in \xref{Exencnegacc} to
-take wide-scope would explain why \ctnms{enc91} prediction for the
-example is not full-filled: The marker indicates \encspec ity, but at
-the same time the indefinite is forced to move to a position higher
-than the negation operator, and by this token \xref{Exencnegacc} gets
-interpreted as \xref{Exencwide}, rather than as \xref{Exencnegaccdrs}.
-At the moment, we do not need to get concerned about the exact
-position the indefinite is forced to move. One possibility would be:
+There is another potential source of the wide-scope behavior of the
+indefinite in \xref{exencnegacc}, namely the syntax. The indefinite
+could be forced to move out of its local domain for case-checking or
+some other reason along the lines of \ctnms{diesing92} Mapping
+Hypothesis or some variant of it, resulting in a structure
+like:\footnote{For the syntactic position of \acc-marked indefinites
+see \cttx{kelepir01,aydemir04,ozturk05}.}
 
-\ex.\begin{tikzpicture}
-\tikzset{sibling distance=25pt}
-\Tree [.{CP} [.C  {two girls} ]  
- 			[.IP [.{NP} \textit{pro}  ] [.I$'$ [.{NegP}  	[.{VP} 
-								[.{NP} {\sout{two girls}} ]
-								[.V know ]
-				  			] 
-							{Neg}
-					  ] 
-					  [.I ]
-				  ]
-			]
-	]
-\end{tikzpicture}
-
-\ex.\label{wscopeaccount}{\it Forced wide-scope account of \acc-marked indefinites:}
-\a. The accusative case on Turkish indefinite direct objects marks \encspec ity, as formulated in \xref{encform}. 
-\b. An accusative marked direct object is required to raise to a position that is at least higher than the verbal\footnote{Turkish has another negation operator \textit{değil} with sentential scope.} negation operator.
+\ex. [\ldots two girls \ldots [$_{NegP}$ \ldots \sout{two girls} \ldots ] \ldots]
 
 
-I will argue that \xref{wscopeaccount} cannot fully explain the semantic reflex
-of the case-marker on the indefinites in Turkish. The reason is that
-\acc-marked indefinites do not necessarily get a wide-scope reading as was the
-case in \xref{Exencnegacc}. Such an argument requires a closer look at the
-scopal semantics of \acc-marked indefinites, to which I will directly turn. Let
-me diverge from \ctnms{enc91} example and  replace the numeral quantifier
-\trtx{iki}{`two'} with the indefinite determiner \trtx{bir}{`a/one'} and
-negation with antecedent of a conditional; I return to \ctnms{enc91} example
-below.
+With this syntactically motivated movement, one can formulate
+the following:
 
-\ex.Context: John is a referee reviewing an article under discussion.
-\ag.\label{conda}John bir hata{\bf-yı} görür-se, makale-yi reddeder.\\
-	J. a error{\bf-Acc} sees-Cond article-Acc rejects\\
-	Rd.\ 1: `If John sees an error, he'll reject the article.'' (It's common
-	ground that there are errors in the article.)\\
-	Rd.\ 2: `An error is such that if John sees it, he'll reject the article.
-\bg.\label{condz}John bir hata görür-se, makale-yi reddeder.\\
-	J. a error sees-Cond article-Acc rejects\\
-	`If John sees an error, he'll reject the article.'' (no commitment to the existence of errors.)
+\ex.\label{wsa}{\it Forced wide-scope account of \acc-marked
+indefinites:}
+\a.\label{wsaa}The accusative case on Turkish indefinite direct objects marks
+\encspec{ity}, as formulated in \xref{encform}. 
+\b.\label{wsab}  An accusative marked direct object is required to raise to a
+position that is at least higher than the phrasal
+negation.\footnote{Turkish also has a clausal negation operator 
+ \textit{değil}.}
 
 
-A crucial difference between \xref{conda} and \xref{condz} is that while the
-former presupposes the existence of errors in the article, no such
-presupposition is involved in the latter. Another important fact concerning
-\xref{conda} is that besides a wide-scope reading of the indefinite, it has
-another reading where the indefinite stays within the scope of the antecedent
-of the conditional, while its restrictor stays out. The two readings are as
-follows in DRT notation:
+If it can be maintained, \xref{wsa} can explain why
+\ctnms{enc91} prediction for the interpretation of \xref{exencnegacc}
+is not fulfilled; it is \xref{wsaa}  \emph{and}
+\xref{wsab} working together that causes
+\xref{exencnegacc} get interpreted as \xref{exencwide} rather than as
+\xref{exencnegaccdrs}.
+
+I argue, however, that \xref{wsa} can at best be a partial account
+of the semantics of \acc-marked indefinites in Turkish. The reason is
+that \acc-marked indefinites do not necessarily get a wide-scope
+reading as was the case for \xref{exencnegacc}. My argument
+requires a closer look at the scopal semantics of \acc-marked
+indefinites, to which I will directly turn. 
+
+Let me diverge from \ctnms{enc91} example, to return to it below, and
+replace the numeral \trtx{iki}{`two'} with the indefinite determiner
+\trtx{bir}{`a/one'} and alter the syntactic environment from negation
+to antecedent of a conditional:\footnote{The example is inspired by
+\cttx{vonfintel98}.}
+
+% TODO: Basit hatalari gormesi onemli degil; yeter ki kritik bir hatayi gormesin.
+
+\ex.\label{excond}%
+Context: John is a referee reviewing an article under discussion.
+\ag.\label{exconda}%
+	John (kritik) bir hata{\bf-yı} görür-se, makale-yi reddeder.\\
+	J. critical a error{\bf-Acc} sees-Cond article-Acc rejects\\
+	Rd.\ 1: `If John sees an (critical) error, he'll reject the article.'' (It's
+	common ground that there are (critical) errors in the article.)\\
+	Rd.\ 2: `An (critical) error is such that if John sees it, he'll reject the
+	article.
+\bg.\label{excondz}%
+	John (kritik) bir hata görür-se, makale-yi reddeder.\\
+	J. critical a error sees-Cond article-Acc rejects\\
+	`If John sees an (critical) error, he'll reject the article.'' (no commitment
+	to the existence of errors.)
+
+
+A crucial difference between \xref{exconda} and \xref{excondz} is that
+while the former presupposes the existence of errors in the article,
+no such presupposition is involved in the latter. Another important
+fact concerning \xref{exconda} is that besides a wide-scope reading of
+the indefinite, it has another reading where the indefinite stays
+within the scope of the antecedent of the conditional, while its
+restrictor stays out. I will call this latter type of reading ``hybrid
+scope'' reading. The two readings are rendered as follows in
+DRT:\footnote{\ref{excondanar} is an instance of covert partitivity in
+\ctnms{enc91} terminology.}
 
 \ex. 
-\a.\label{condawide}Wide scope reading:
+\a.\label{excondawide}Wide scope reading:
 \udrs{j',x,y}{article'(x) \quad error'(y)\\
 \ccon
 {\udrs{}{see'(j',y)}}
 {\udrs{}{reject'(j',x)}}
 {\Rightarrow}
 }
-\b.\label{condanar}Mixed scope reading:
+\b.\label{excondanar}Hybrid scope reading:
 \udrs{j',x,Y}{article'(x) \quad error'(Y)\\
 \ccon
 {\udrs{z}{z\in Y \quad see'(j',z)}}
@@ -654,9 +804,7 @@ follows in DRT notation:
 }
 
 
-The non-case marked variant \xref{condz} is interpreted as follows:\footnote{An
-interpretation along \cttx{enc91} would have an indefinite superset, which
-would not have any truth-conditional effect.}
+The non-case marked variant \xref{excondz} is interpreted as follows:
 
 \ex. \udrs{j',x}{article'(x)\\
 \ccon
@@ -666,12 +814,16 @@ would not have any truth-conditional effect.}
 }
 
 
-The reading \xref{condanar}, which appears to be the primary reading for
-\xref{conda}, is impossible to arrive at by coupling \encspec ity and
-wide-scope behavior, namely \xref{wscopeaccount}. What is predicted by that
-account instead is only \xref{condawide}.
+The hybrid scope reading \xref{excondanar}, which is the primary reading
+for \xref{exconda} in a context where it is common ground that there are
+a multiplicity of errors all equally critical, is impossible to arrive
+at by coupling \encspec{}ity and wide-scope behavior, namely the
+account formulated in \xref{wsa}. What is predicted by
+that account instead is only \xref{excondawide}. For this reason,
+\xref{wsa} fails to be adequate for the semantics of
+\acc-marked indefinites in Turkish.
 
-\ctnm{enc91} actually has a similar example involving an intensional verb
+\ctnm{enc91} also has a hybrid scope example involving the intensional verb
 \trtx{iste}{want}:
 
 \ex.Context: A musical instrument store.
@@ -680,105 +832,147 @@ A. a piano-Acc hire-INF wants\\
 Rd.\ 1: `Ali wants to hire a piano from among those in the store (but he did not decide which).'\\
 Rd.\ 2: `There is a piano from among those in the store such that Ali wants to hire it.'
 
-Again, what I translate as ``Rd.\ 1'' is not possible to get via \xref{wscopeaccount}.
+Again, what I translate as ``Rd.\ 1'' is not possible to get via
+\xref{wsa}.\footnote{A potential objection can be
+		based on the fact that \xref{wsa} is formulated on
+		the basis of scope in relation to negation, not intensional
+verbs. This objection is not viable, because hybrid scope is
+still available with negation on the embedded or the matrix verb.}
 
-The scopal behavior of \acc-marked indefinites is quite general, it is
-straightforward to have similar examples with other types of scope variation
-inducing operators. Here is one with the imperative, assume a context of two
-interviewers discussing what to ask to an interviewee:
+The scopal behavior of \acc-marked indefinites exemplified above is
+quite general. It is straightforward to have similar examples with
+other types of scope variation inducing operators. Here is one with
+the imperative, assume a context of two interviewers discussing what
+to ask to an interviewee:
 
 \ex.
 \ag.\label{impz}{On-a} {zor} {bir} {soru} {sor}.\\
 {her-Dat} {hard} {a} {question} {ask}\\
-`Ask her a hard question.'
+`Ask her a difficult question.'
 \bg.\label{impa}{On-a} {zor} {bir} {soru\bf{-yu}} {sor}.\\
 {her-Dat} {hard} {a} {question\bf{-Acc}} {ask}\\
 `Ask her a hard question.'\hfill (D-linked)\\
-Rd.\ 1: `Ask her one of the hard questions.'\\
+Rd.\ 1: `Ask her one of the difficult questions.'\\
 Rd.\ 2: ??A specific question is intended, to be continued by naming the question
 explicitly.
 
+This time, the hybrid scope reading appears to be the only
+pragmatically plausible interpretation of \xref{impa}.
+
+% TODO: herhangi ve digerleri..
 
 Let me return to negation. In order to avoid the interference of
-meta-linguistic negation, I follow \ctnms{szabolcsi04} suggestion of using
-reason contextualization. Take an examination context where the examinee looks
-happy after the exam. When inquired about the source of her happiness, both
-answers below are appropriate:  
+meta-linguistic negation, I follow \ctnms{szabolcsi04} suggestion of
+using reason contextualization. Take an exam context where the
+a test-taker looks happy after the exam. When inquired about the source of
+her happiness, both answers below are appropriate:  
 
 \ex.
 \a.\label{sorunegz}Öğretmen zor bir soru sor-ma-dı.\\
-teacher hard a question ask-Neg-Past\\
-`The teacher didn't ask a hard question.' (No commitment to the
-existence of hard questions beforehand.)\\
+teacher difficult a question ask-Neg-Past\\
+`The teacher didn't ask a difficult question.' (No commitment to the
+existence of difficult questions beforehand.)
 \b.\label{sorunega}Öğretmen zor bir soru{\bf-yu} sor-ma-dı.\\
-teacher hard a question{\bf-Acc} ask-Neg-Past\\
-Rd.\ 1: `The teacher didn't ask a hard question.' (It's
-common-ground that there were hard questions prepared beforehand that could be asked.)\\
-Rd.\ 2: `There was a question such that (fortunately) the teacher didn't ask
-it.'
+teacher difficult a question{\bf-Acc} ask-Neg-Past\\
+Rd.\ 1: `The teacher didn't ask a difficult question.' (It's
+common-ground that there were difficult questions prepared beforehand.)\\
+Rd.\ 2: `There was a question that the teacher (fortunately) didn't ask.'
 
-Again the crucial observation is that \xref{sorunega} necessarily commits to
-the existence of hard questions known to the examinee. No such existence
-presupposition is present in the non-marked variant \xref{sorunegz}.
+Again the crucial observation is that \xref{sorunega} necessarily
+commits to the existence of difficult questions known to the examinee. No
+such existence presupposition is present in the non-marked variant
+\xref{sorunegz}.\footnote{A more straightforward way of
+		expressing the hybrid scope reading might be to use an overt
+		partitive like:
 
-So far I have been reviewing the behavior of the \acc-marked indefinite in
-relation to different types of operators, and demonstrating that there are
-readings that are not accounted for by \xref{wscopeaccount}, namely mixed scope
-readings where the restrictor is wide scope, but the indefinite is narrow
-scope. In all the examples I have considered so far, the restrictor of the
-indefinite and the contextually established set that the indefinite is linked
-to are identical. In \ctnms{enc91} example \xref{Exen}, however, the restrictor
-of the indefinite (\intx{girls}) and the antecedent set (\intx{children}) were
-different. While discussing this example, I underlined the fact that the effect
-of the marker was not simply a partitive reading like ``two of the girls.''
-Here I provide a model example where this is again the case and we have a mixed
-scope reading, as in other examples I discussed above. My aim is again to show
-that \xref{wscopeaccount} cannot deliver all the available readings. 
+		\ex. Öğretmen zor sorulardan birini sor-ma-dı.\\
+		`The teacher didn't ask one of the difficult questions.'
+
+		However, as I argued above, equivalence to an overt partitive
+		applies only in certain contexts. The point here, on the other
+		hand, is that the \acc-indefinite \emph{can} be used to convey
+		the meaning that can be conveyed by an overt partitive.  There
+		will be cases below where \acc-marked indefinite is the only
+		option to convey a hybrid scope reading.
+
+		Also note that the hybrid scope reading with an \acc-marked
+		indefinite is more readily available with a clausal model like
+		\emph{fortunately}: 
+
+		\exg. Çok şükür öğretmen zor bir soru{\bf-yu} sor-ma-dı.\\
+		much gratitude teacher difficult a question{\bf-Acc} ask-Neg-Past\\
+		`Fortunately/Thank God The teacher didn't ask a difficult question'
+		(It is common-ground that there were difficult questions prepared
+		beforehand.)
+
+		This is expected, since, as \cttx{krifka08} observes,
+		adverbials like \emph{fortunately} facilitate the comparison of
+		Roothian alternatives, in this case putting the comparison of
+		difficult versus easy questions in perspective.}
+
+In all the examples we had so far, the restrictor of the indefinite
+and the contextually established set that the indefinite is linked to
+are identical. In \ctnms{enc91} example \xref{exenc}, however, the
+restrictor of the indefinite (\intx{girls}) and the antecedent set
+(\intx{children}) were different. While discussing this example, I
+underlined the fact that the effect of the marker was not simply a
+partitive reading like ``two of the girls.'' Here I provide a model
+example where this is again the case and we have a hybrid scope
+reading, as in other examples I discussed above. My aim is again to
+show that \xref{wsa} cannot deliver all the available
+readings.
  
-Take a scenario where Alice has a number of dogs in her farm and her niece
-Betty comes to visit her. Betty wants a dog among them as a birthday present
-and she wants a Retriever. Alice gives the present, but Betty does not look
-happy with what he get. Someone asks the reason for Betty's not being heppy.
-Alice answers:\footnote{The verb \trtx{hediye et}{present make} is a light verb
-construction that behaves identically to a lexical verb, as far as the grammar
-of zero versus case-marked objects are concerned. Examples similar to this one
+Take a scenario where Alice has a number of dogs in her farm and her
+niece Betty comes to visit her. Betty wants a dog among them as a
+birthday present and she wants a Retriever. Alice gives the present,
+but Betty does not look happy with what she got. Someone asks the
+reason for Betty's not being happy.  Alice answers:\footnote{The verb
+		\trtx{hediye et}{present make} is a light verb construction
+		that behaves identically to a lexical verb, as far as the
+grammar of zero versus case-marked objects are concerned.  Similar examples
 can be constructed with lexical verbs as well.}
 
 \ex.
-\ag.\label{retz}Çünkü on-a bir Retriever hediye et-me-dim.\\
+\ag.\label{exretz}Çünkü on-a bir Retriever hediye et-me-dim.\\
  because her-Dat a Retriever present make-Neg-Past.1sg\\
 `Because I didn't give her a Retriever as present.'
-\bg.\label{reta}Çünkü on-a bir Retriever-ı hediye et-me-dim.\\ 
+\bg.\label{exreta}Çünkü on-a bir Retriever-ı hediye et-me-dim.\\ 
 because her-Dat a Retriever-Acc present make-Neg-Past.1sg\\
 `Because I didn't give her a Retriever as present.'
 
 
-First, the \acc-marked version \xref{reta} is inappropriate in the absence of
-the antecedent set of dogs; and it is ambiguous between a wide scope Retriever
-reading and a mixed scope Retriever reading. Once again \xref{wscopeaccount}
-can only deliver the wide-scope reading and therefore is not adequate in
-capturing all the available readings.  
+As expected \zero-marked \xref{exretz} does not link to the previous
+discourse and therefore is fine out-of-the-blue. The \acc-marked
+version \xref{exreta} on the other hand is inappropriate in the
+absence of the antecedent set of dogs;\footnote{Any set that comprises
+of items to be given as present would also provide the appropriate
+context.} and it is ambiguous between a wide scope and a hybrid scope
+reading. Once again \ctnm{enc91} semantics coupled with forced wide
+scope for \acc-indefinites can only deliver the wide scope reading and
+therefore is not adequate in capturing all the available readings.
 
-Finally, one might ask why a mixed-scope reading is not available for the
-negation of \ctnms{enc91} example given as \xref{Exencnegacc} above.
-Furrhermore, one might think that the absence of that sort of reading for
-\xref{Exencnegacc} is due to having a numeral \trtx{iki}{two} instead of
-\trtx{bir}{a/one}. The reason is that the typical context accommodated with the
-examples cannot support that sort of reading. There is simply no potential
-reason for the speaker to deny that she knows two girls from amont the children
-entering the room. Once the needed contextual support is provided, mixed scope
-readings arise for the numeral \trtx{iki}{two} as well.
+Finally, one might ask why a hybrid scope reading is not available for
+the negation of \ctnms{enc91} example given as \xref{exencnegacc}
+above.  Furthermore, one might think that the absence of that sort of
+reading for \xref{exencnegacc} is due to having the numeral
+\trtx{iki}{two} instead of \trtx{bir}{a/one}. The reason is that the
+typical context accommodated for the example cannot support that sort
+of reading, namely it is hard to provide a potential reason for the
+speaker to deny that she knows two girls from among the children
+entering the room. Once the needed contextual support is provided,
+hybrid scope readings arise for the numeral \trtx{iki}{two} as well.
 
-For instance imagine a scenario where a bunch of children is to be assigned to
-dormitory rooms that accommodates two. Also imagine that there is a rule
-dictating not to put two girls in the same room, rooms should be either two
-boys, a boy and a girl, or a single girl. The speaker of \xref{odaa} is
-succesful in stating that she observed the rule applied to the bunch of
-children already established in the discourse, given our scenario. In the
-absence of such an established set of children, the approriate form would be
-\xref{odaz} and the \acc-marked version \xref{odaa} would be
-inappripriate.\footnote{I am grateful to Daniel Büring for pointing these types
-of contexts out to me.} 
+For instance, imagine that an even number of children are to be
+assigned to dormitory rooms, each room accommodating two. Also imagine
+that there is a rule dictating not to put two girls in the same room,
+rooms should be either two boys or a boy and a girl. The speaker of
+\xref{odaa} is successful in stating that she observed the rule
+applied to the bunch of children already established in the discourse,
+given our scenario. In the absence of such an established set of
+children, the appropriate form would be \xref{odaz} and the
+\acc-marked version \xref{odaa} would be inappropriate.\footnote{I am
+		grateful to Daniel Büring for pointing these types of contexts
+out to me.} 
 
 \ex.
 \ag.\label{odaz}Aynı oda-ya iki kız koy-ma-dım.\\
@@ -788,54 +982,250 @@ same room-Dat  two girl put-Neg-Past.1sg\\
 same room-Dat  two girl-Acc put-Neg-Past.1sg\\
 ``I didn't put two girls in the same room.'
 
+To sum up, in this section we first saw that \ctnm{enc91} semantics
+for \acc-marked indefinites is inadequate on its own to account for
+the fact that the use of an \acc-indefinite commits the user to the
+existence of the restrictor of the indefinite (``existential
+import''). Then, we saw that a syntactically motivated wide-scope
+constraint for an \acc-indefinite cannot remedy this deficiency. The
+reason was the existence of cases of hybrid scope in which while the
+restrictor is wide-scope, the discourse referent associated with the
+indefinite stays narrow. Now I turn to a proposal that aims to provide
+a more satisfactory semantics for \acc-marked indefinites in Turkish.
 
 
-% Conclude the section:
-To summarize, we have seen that \acc-marked indefinites are flexible in taking scope, they trigger existence presuppositions, the interpretative effect of the marker is orthogonal to topicality.
+% TODO: This is of course different than implicit domain restriction,
+% as it involves some familiarity for the way the domain is
+% restricted.
 
 
-\section{\acc-indefinites are ``strong''}
-\label{scstrong}
+% TODO: Can I make acc-effect came by the mechanics of DRT. When the
+% NP is outside of the root DRS it gets interpreted strongly, case is
+% just a syntactic correlate of this outsideness. But then what to do
+% with scrambled acc's: maybe they are inside the VP anyway
+% (gracanin-issever).
 
-As the examples we considered above show, \encspec ity misses the notion of
-``existential import''.  In relation to an operator, \acc-indefinites receive
-both a wide-scope reading and mixed scope reading, where the domain takes wide
-scope while the discourse marker stays narrow-scope.  These facts immediately
-suggest that the \acc-marked indefinites should be considered as
-presuppositional or ``strong'' indefiniteness.  As we saw above,
-\acc-indefinites project existence presuppositions at standard test contexts
-like antecedent of a conditional, imperatives and negation. 
+% TODO: Ahmet giderken kitaplarini bize birakmisti. Umut gecen
+% haftasonu bir romani bitirdi. Asiye de bu haftasonu/ Asiye de oyle
+%
+% Makaleyi ikimiz de okuduk. Ben kritik bir hatayi gormemisim. Asiye
+% de oyle.
+%
+% Makaleyi ikimiz de okuduk. Ben kritik iki hatayi gormemisim. Asiye
+% de uc.
+% 
+% Mehmet de sen de zor bir soru(yu) sorun. Zor bir soru sor/hazirla.
+% Zor bir soruyu sor/*hazria.
+% 
+% Mehmet (nispeten) zor bir soruyu sordu. Ahmet de oyle.
 
-Within the light of these observations I claim that what is involved in
-\acc-marked versus zero-marked indefinites is that the former type of
-indefinites are ``strong''.  In an attempt to clarify the grammar of
+
+% TODO: Binding heuristics: prefer binding over accom; prefer global
+% over local.
+
+\section{The proposal}
+\label{scproposal}
+
+% TODO: Identifiability vs. familiarity.
+
+As the data we considered above show, \encspec{ity} misses the crucial
+property of ``existential import'' associated with \acc-marked
+indefinites in Turkish.  In relation to an operator,
+\acc-indefinites can receive a wide scope reading and a hybrid scope
+reading. In the latter case, the restrictor takes wide scope while the
+discourse marker stays narrow. It is almost never the case that both
+restrictor and the marker falls within the scope of a commanding
+operator at the same time.\footnote{See below for an exception.} 
+
+These facts suggest that the central aspect of \acc-marking for
+indefinites is ``strength''. In an attempt to clarify the grammar of
 existential sentences in English, \cite{milsark77} introduced the
-``strong''/``weak'' distinction in determiners. ``Strong'' determiners are
-those that quantify over a domain denoted by their restrictor terms. A typical
-effect of ``strength'' is that the restrictor predicate is presupposed to exist
-at the point of quantification. One can think of this as a two step process:
-first you fix the domain, then you go on with quantification. ``Weak''
-determiners on the other hand lack quantificational force of their own; what
-they provide is a cardinality predicate that specifies the size of the
-restrictor. ``Strongly'' determined NPs overlap with the syntactic/semantic
-notion of definiteness but not completely. \ctnm{milsark77} credits to
-\ctnm{postal66} the observation that ``strong''/``weak'' cross cuts the
-territory of indefiniteness. 
+``strong''/``weak'' distinction for determiners. ``Strong''
+determiners are those that quantify over a domain denoted by their
+restrictor terms. A typical effect of ``strength'' is that the
+restrictor predicate is presupposed to exist at the point of
+quantification. One can think of this as a two step process: first you
+fix the domain, then you go on with quantifying over that domain.
+``Weak'' determiners on the other hand lack quantificational force of
+their own; what they provide is a cardinality predicate that specifies
+the size of the restrictor.  ``Strongly'' determined NPs overlap with
+the syntactic/semantic notion of definiteness but not completely.
+\ctnm{milsark77} credits \ctnm{postal66} for the observation that
+``strong''/``weak'' cross cuts the territory of indefiniteness.  Being
+``strong'' implies presuppositionality by definition, where what is
+presupposed is existence. My proposal will be built over the idea
+that \acc-marking indicates are ``strong'', on the basis of
+the observation made above that \acc-indefinites project existence
+presuppositions at standard test environments like antecedent of a
+conditional, imperatives and negation.\footnote{The present work is
+		not the first to argue that \acc-indefinites are
+		presuppositional. Remember that \cttx{enc91} also associates
+		her notion of specificity with ``strength'' in the sense I am
+		using the term here. We saw above that her semantics falls
+		short of modeling this notion.  \cttx{ketrez05} and
+		\cttx{kelepir01} also attribute presuppositionality to \acc-marking.
+		As far as I know, the present paper is, however, the first to make a
+		detailed case for presuppositionality and model its semantics.}
 
-In a DRT setting, the most straightforward way to model ``strength'' is to
-adopt ``presuppositionality as anaphoricity'' perspective
-(\cttx{sandt92,geurts99}).  According to this view, ``[a] strong quantifier
-does not merely presuppose that its domain is non-empty; rather, the purpose of
-its presupposition is to \emph{recover} a suitable domain from the context''
-(\cttx[253]{geurts07}). Applying it to the present case yields:
+
+
+\subsection{Partitive/non-partitive and determiner/numeral}
+
+Before I state my proposal, I would like to analyze and clarify two
+binary distinctions. One is the distinction between having and not
+having a partitive interpretation. What I mean by partitive
+interpretation is the case where the use of an expression \emph{bir
+$p$} implies that there are more $p$s in the context. The second
+distinction is between a numeral and a determiner reading for the
+expression \emph{bir}. I distinguish these readings with the aid of
+English translations: the expression \emph{bir} results in a numeral
+reading when it gets translated as \emph{one}, and results in a
+determiner reading when it gets translated  as \emph{a(n)}. 
+
+Let us organize the discussion around two cases: 1.\ the restrictors
+of the indefinite and the antecedent are identical, 2.\ they are not
+identical. Initially, the identity I mean here is surface (or string)
+identity, not set-theoretic (or denotational) identity. I exemplify
+the distinction over an example where I manipulate the restrictor of
+the antecedent.  The alternative opening sentences are given in
+\xref{exromanintro} and the alternative case-markings are given in
+\xref{exromancont}.\footnote{When I test this type of examples with
+		native speakers in their from without a modifier
+		(\trtx{kalın}{thick} in this case), the response I usually get
+		is: Well, this is grammatical, but a more natural expression
+		would be:
+		
+\ex. Geçen Pazar (romanlardan) birini okudum.
+
+}
+
+\ex.\label{exromanintro}
+\a.\label{exromanirom}Ali bana bir koli roman bıraktı.\hfill{(identical restrictors)}
+\b.\label{exromanikit}Ali bana bir koli kitap bıraktı.\hfill{(non-identical restrictors)}
+
+\ex.\label{exromancont}
+\a.\label{exromanz}Geçen Pazar (kalın) bir roman okudum.\hfill{(\zero-marked continuation)}
+\b.\label{exromana}Geçen Pazar (kalın) bir romanı
+okudum.\hfill{(\acc-marked continuation)}
+
+
+We first put \xref{exromanz} out of our way. The \zero-marked version
+is not an appropriate continuation to neither \xref{exromanikit} nor
+\xref{exromanirom}.
+
+The \acc-marked \xref{exromana} implies partitivity (=there is more
+than one novel in the box) when ıt follows \xref{exromanirom}, but
+loses this implication when uttered after \xref{exromanikit}. There is
+no reason to expect this difference stem from the \acc-marked
+indefinite itself; a satisfactory account should make it follow from
+the change in the context.
+
+I claim that \xref{exromana} results in a partitive reading through
+inference. The expression \emph{a box of novels} entails a
+multiplicity of novels and the indefinite specifies the number of read
+novels as one, therefore, it is straightforward to get the
+interpretation ``one of the novels.'' Furthermore, this inference is
+independent of the number specification in the indefinite. In the case
+of the speaker reading two novels last night, since a box of novels
+normally contains more than two novels, hearers are still expected to
+get the ``two of the novels'' reading. Likewise for greater numerals
+as long as the number stays within pragmatic limits.
+
+An observation that is more crucial for my proposal is the following.
+When restrictors overlap, Roothian (\citeyear{rooth92}) alternatives
+are activated along the dimension of cardinality rather than the
+restrictor, and the numeral gets intonationally focused.\footnote{The
+focus pattern of \emph{bir} is observed by \cttx{kornfilt97}.} The
+most proper English translation would be ``one novel''.
+
+When the context provides the antecedent under a description different
+from that of the indefinite, we lose the partitive interpretation.
+The same example \xref{exromana} posed as a continuation to
+\xref{exromanikit} does not imply that there was more than one novel
+in the box, there is simply no commitment on the total number of
+novels, it may well be one or more. Again, shifting to numerals
+greater than or equal to two does not alter this fact. Here, the
+alternatives are activated along the dimension of restrictor
+predicates (e.g.\ novels, short stories, biographies etc.).
+Accordingly, the intonational focus falls over the restrictor. The
+English translation would be ``a novel''.
+
+In this connection, I claim that Turkish expression \emph{bir} is not
+lexically ambiguous between a numeral and a determiner reading, it has
+a single reading that I will formalize below. It results in numeral
+(English \emph{one}) and determiner (English \emph{a(n)}) readings
+along its interaction with the alternatives provided in the context of
+its use.
+
+In summary, I claim that the decision on two binary distinctions,
+partitive versus non-partitive and numeral versus determiner are both
+left to pragmatics. Now I begin to develop a proposal for the
+conventional semantics of \acc-indefinites which will be put to
+interaction with context in order to derive the readings we have been
+discussing all along.
+
+\subsection{The semantics of indefinite objects}
+
+One way to model ``strength'' in a DRT setting is to adopt
+``presuppositionality as anaphoricity'' perspective
+(\cttx{sandt92,geurts99}).  According to this view, ``[a] strong
+quantifier does not merely presuppose that its domain is non-empty;
+rather, the purpose of its presupposition is to \emph{recover} a
+suitable domain from the context'' (\cttx[253]{geurts07}). Applying it
+to the present case, I claim that:
 
 \ex. The restrictor of an accusative indefinite is anaphoric.
 
 
-It is straightforward to model this claim by a slight modification to
-\ctnms{enc91} proposal. An \acc-marked indefinite is inserted to a DRS with a
-presuppositional (=anaphoric) restrictor.  Going back to \ctnms{enc91} example,
-the state of the discourse is as follows after the indefinite is inserted,
+In formal terms, \acc-indefinites gets the following schematic
+semantics:
+
+\ex.\label{exsema1}
+The semantics of \acc-indefinites (to be revised):\\
+\a.\interp{[$n$ N-Acc]} $=$ 
+\udrs{\anaph{x}, y}
+{\interp{N}(\anaph{x}) \quad n'(y) \quad y \subseteq \anaph{x} }
+\b.
+\interp{\trtx{bir kızı}{a/one girl.Acc}} $=$ 
+\udrs{\anaph{x}, y}
+{girls'(\anaph{x}) \quad one'(y) \quad y \subseteq \anaph{x} }
+\b.
+\interp{\trtx{iki kızı}{two girl.Acc}} $=$ 
+\udrs{\anaph{x}, y}
+{girls'(\anaph{x}) \quad two'(y) \quad y \subseteq \anaph{x} }
+
+My proposal is in the spirit of \ctnm{enc91}, as it encodes the
+semantics of the restrictor and individual introducing parts
+separately. An \acc-marked indefinite is inserted to a DRS
+with a presuppositional (=anaphoric) restrictor. 
+
+We have two options for the \zero-marked indefinites. The question is
+Do we need to separate the restrictor from the referent. I give the
+two variants. The only reason for selecting \xref{exsemz11} over
+\xref{exsemz12} might be uniformity with \acc-indefinites.
+
+\ex.\label{exsemz1}
+The semantics of \zero-indefinites:\\
+\a.\label{exsemz11}
+\interp{[$n$ N]} $=$ 
+\udrs{x, y}
+{\interp{N}(x) \quad n'(y) \quad y \subseteq x }
+\b.\label{exsemz12}
+\interp{[$n$ N]} $=$ 
+\udrs{x}
+{\interp{N}(x) \quad n'(x)}
+%\b.
+%\interp{\trtx{bir kız}{a/one girl}} $=$ 
+%\udrs{x, y}
+%{girls'(x) \quad one'(y) \quad y \subseteq x }
+%\b.
+%\interp{\trtx{iki kız}{two girl}} $=$ 
+%\udrs{x, y}
+%{girls'(x) \quad two'(y) \quad y \subseteq x }
+
+
+Going back to \ctnms{enc91} example, the state of the discourse is as
+follows after the indefinite is inserted,
 
 \ex.
 \a. Several children entered my room.
@@ -847,16 +1237,20 @@ the state of the discourse is as follows after the indefinite is inserted,
 girls'(\anaph{x}) \quad two'(y) \quad y \subseteq \anaph{x} \quad know'(s',y)
 }
 
-Here the set of girls is presuppositional. As there is no established set of
-girls in the context, one option is to accommodate one. I claim that it is by
-inference that this accommodated set of girls is most naturally understood to
-be included in the set of children introduced in the opening sentence of the
-discourse. I do not have a systematic account of why the inference should yield
-that result, apart from suggesting that it is the least costly assumption to
-make to maintain the coherence of the text.  In formal terms, \xref{prencaccom}
-depicts the accommodation of the antecedent set and the resolution of the
-presupposition; \xref{prencfin} depicts the final form of the representation
-after eliminating redundant information:
+Here the set of girls is presuppositional. As there is no established
+set of girls in the context, one needs to accommodate one, in order to
+obtain a coherent discourse. I claim that by inference this
+accommodated set of girls is most naturally understood to be included
+in the set of children introduced in the opening sentence of the
+discourse. I do not have a systematic account of why the inference
+should yield that result, apart from suggesting that it is the least
+costly assumption to make to maintain the coherence of the text.  In
+formal terms, \xref{prencaccom} depicts the accommodation of the
+antecedent set and the resolution of the presupposition;
+\xref{prencfin} depicts the final form of the representation after
+eliminating the redundant information:
+
+% TODO: obtain the antecedent by abstraction ala Kamp and Reyle 2010:907.
 
 \ex. 
 \a.\label{prencaccom}
@@ -874,664 +1268,682 @@ girls'(v) \quad v \subseteq z\\
 }
 
 
-It is by transitivity of set inclusion that the girls are understood to belong
-to the set of children established in the discourse; it does not follow
-directly from the semantics of the NP as a definite superset. 
+It is by the transitivity of set inclusion that the girls are understood
+to belong to the set of children established in the discourse; it does
+not follow directly from the semantics of the NP as a definite
+superset, contrary to \cite{enc91}. 
 
-As for the zero marking, I do not propose anything special about it. It is a
-standard indefinite analysis and I do not claim a disjointness semantics. I
-leave it open that there arise disjointness implicatures, supported by the
-existence of a formal device to signal presuppositionality, it is natural to
-expect the zero-marked version to implicate disjointness. 
+Crucially, the present proposal does not generate a partitivity
+implication, thanks to the condition `$y\subseteq v$'; if the semantics
+were encoding a proper subsethood, then partitivity would follow.
 
-Now, back to \xref{conda}, repeated below:
+As we saw above, when the restrictors of the indefinite and the antecedent
+overlap, we get a partitive implication. Let us observe the present
+semantics under such a condition. I simply change the discourse opener
+from introducing children to introducing girls.
 
-
-\exg.\label{cond-w}John bir hata{\bf-yı} görür-se, makale-yi reddeder.\\
-	J. a error{\bf-Acc} sees-Cond article-Acc rejects\\
-	Rd.\ 1: `If John sees an error, he'll reject the article.'' (It's common
-	ground that there are errors in the article.)\\
-	Rd.\ 2: `An error is such that if John sees it, he'll reject the article.
+\ex.
+\a. Several girls entered my room.
+\b. I knew two girls.\hfill (Acc-marked)
 
 
-\noindent Reading 1 of \xref{cond-w}:
+This two sentence discourse receives the following intermediate representation:
+
+\ex.
+\udrs{s',z,\anaph{x},y}
+{girls'(z)\\
+girls'(\anaph{x}) \quad two'(y) \quad y \subseteq \anaph{x} \quad know'(s',y)
+}
+
+in which case, accommodation is not called for, since we already have
+a suitable antecedent established in the context. The anaphor gets
+bound and redundancies are eliminated as follows: 
+
+\ex. 
+\a.
+\udrs{s',z,\anaph{x},y}
+{girls'(z)\\
+girls'(\anaph{x}) \quad two'(y) \quad y \subseteq \anaph{x} \quad know'(s',y)\\
+\anaph{x} = z
+}
+\b.
+\udrs{s',z,y}
+{girls'(z)\\
+ two'(y) \quad y \subseteq z \quad know'(s',y)
+}
+
+
+Our semantics does not guarantee partitivity on its own, since the
+condition `$y \subseteq z$' does not rule out a model in which the
+girls known to the speaker exhaust the girls introduced to the context
+via the first sentence. Here, I claim, a Gricean inference is in
+action, ruling out this semantically available interpretation: Since
+there is a stronger expression that would convey this particular
+meaning, namely the plural definite in \xref{expludef} that would
+provide this particular meaning; the use of the weaker \emph{two
+girls} indicates that the speaker lacks the ground for the use of the
+stronger alternative.
+
+\ex.\label{expludef}Kızları tanıyordum.\\
+`I knew the girls.'
+
+
+Now I will consider indefinites carrying \trtx{bir}{`a/one'}. We
+discuss the matter over a previous example
+(\ref{exromanintro}-\ref{exromancont}), repeated here.
+
+\ex.\label{exromanintrorep}
+\a.\label{exromaniromrep}Ali bana bir koli roman bıraktı.\hfill{(identical restrictors)}
+\b.\label{exromanikitrep}Ali bana bir koli kitap bıraktı.\hfill{(non-identical restrictors)}
+
+\ex.\label{exromancontrep}
+Geçen Pazar bir romanı okudum.\hfill{(\acc-marked continuation)}
+
+We first examine \xref{exromanikitrep} followed by
+\xref{exromancontrep}. The state of the discourse after processing
+the two sentences is:
+
+\ex. 
+\udrs{s',z,\anaph{x},y}
+{
+books'(z)\\
+novels'(\anaph{x}) \quad one'(y) \quad y \subseteq \anaph{x} \quad read'(s',y)
+}
+
+A set of novels needs to be accommodated into the discourse, and
+this is most easily done by assuming/inferring that the set of books
+introduced before contains a subset of novels. After accommodating
+such a set, binding can proceed as usual. The end product of these
+operations is articulated as follows, where the second DRS is the
+result of housekeeping.
 
 \ex.
 \a.
-\udrs{j',x}{article'(x)}
+\udrs{s',z,\anaph{x},y,v}
+{
+books'(z)\\
+novels'(v) \quad v \subseteq z\\
+novels'(\anaph{x}) \quad one'(y) \quad y \subseteq \anaph{x} \quad read'(s',y)\\
+\anaph{x} = v
+}
 \b.
+\udrs{s',z,y,v}
+{
+books'(z)\\
+novels'(v) \quad v \subseteq z\\
+one'(y) \quad y \subseteq v \quad read'(s',y)
+}
+
+
+
+Likewise, the discourse comprising of
+\xref{exromaniromrep} followed by \xref{exromancontrep}, would yield
+the following representation, differing from the previous one by not
+involving an ``intermediary'' set of novels.
+
+\ex.
+\udrs{s',z,y}
+{
+novels'(z)\\
+one'(y) \quad y \subseteq z \quad read'(s',y)
+}
+
+\subsection{Indefinites versus definites}
+
+At this point one might wonder how my formulation for
+\emph{bir}-indefinites differs from that of a proper definite, since a
+definite description is expected to contribute a ``underlined''
+discourse marker whose restrictor is of cardinality one. Here is the
+variant at issue:
+
+\ex.\label{exromandef}
+\a. Geçen Pazar romanı okudum.
+
+
+\xref{exromandef} differs from \xref{exromancontrep}. The former, but
+not the latter implies a unique identifiability of the novel. Such
+identifiability is not afforded by the context and the missing
+contextual requirement is more difficult to accommodate in comparison
+to the requirement imposed by  \xref{exromancontrep}. The reason is as
+follows: A box of books is fairly likely to contain at least one
+novel, but it is not likely, without further information, that it
+contains a novel uniquely identifiable by the hearer.
+
+The definite in \xref{exromandef} will get the following
+interpretation:
+
+\ex.
+\udrs{z,\anaph{x}}
+{
+		books'(z)\\
+		novel'(\anaph{x}) \quad one'(\anaph{x}) \quad UNIQ'(\anaph{x}) 
+}
+
+Interpretation gets blocked at this point due to the impossibility of
+accommodating the presuppostions contributed by the definite. In
+present terms, the difference between an \acc-indefinite and a
+definite is the unique identifiability constraint contributed by the
+latter but not the former.
+
+As \cite{lyons99} observes, definiteness is a multi-faceted notion. In
+Turkish we seem to be faced with two varieties of it.  Semantics of
+definiteness is usually associated with (subsets of) the following
+notions: uniqueness, exhaustivity, identifiability, existence and
+familiarity \cttxp{abbott04,heim11}. Some of these dimensions may
+apply both at the referent and restrictor level. I will argue that for
+an \acc-indefinite, the relevant notions are familiarity and
+existence; uniqueness, maximality and identifiability do not play a
+role. Furthermore, familiarity and existence involved with
+\acc-indefinites apply at the restrictor level only. In this picture
+referents are indefinite and the restrictor is definite, akin to
+\ctnm{enc91}. For \ctnm{enc91} definiteness involves the existence of
+a familiar superset of the restrictor, while in the present account,
+what is definite is the restrictor itself, in the sense of familiarity
+and existence. In the case of a proper definite (i.e.\ a DP with case
+but without the indefinite determiner) we have unique identifiability.
+
+Return to Hawkins 78 p.\ 168 in discussing Enc's formulation; there is a clause:
+'There must not be any other objects in the shared set satisfying the
+descriptive predicate in addition to those referred to by the definite
+description.'
+
+
+
+
+This completes the exposition of the present proposal. In the next
+section we will look at how it is applied to a set of constructions.
+
+
+%\ex.
+%\a. Bunların yerine geçen hafta iki roman okudum.
+%\b. Bunların yerine geçen hafta iki romanı okudum.
+
+\section{The proposal at work}
+
+\subsection{Hybrid scope}
+\label{schybrid}
+
+I now turn back to hybrid scope phenomenon observed in
+Section~\ref{scencneg}. 
+
+\ex.\label{exsorudia}
+\a. Why did Berta failed?
+\b. \label{exsorudiaa}
+Belki de komite zor bir soruyu sordu.
+\b. \label{exsorudiaz}%
+Belki de komite zor bir soru sordu.
+
+
+The answer \xref{exsorudiaa} differs from the answer \xref{exsorudiaz}
+in committing its speaker to the existence of some difficult questions
+already in place before the exam. The answer \xref{exsorudiaz} without
+case-marking does not carry any such link to the previous discourse.
+The \acc-marked version \xref{exsorudiaa} receives the following
+initial DRS:\footnote{To keep things tidy, I gloss over the details
+associated with \emph{the committee}, taking it simply to be a
+discourse referent with an ordinary restrictor, rather than treating
+it as a definite description.}
+
+\ex.
+\udrs{z}
+{
+		committee'(z)\\
+\udrs[\Diamond]
+{y,\anaph{x}}
+{
+difficult'(\anaph{x})\quad question'(\anaph{x})\quad one'(y)\quad
+y\subseteq \anaph{x}\\
+asked'(z,y)
+}
+}
+
+The hearer is forced to accommodate an antecedent for the indefinite's
+restrictor and this is preferrably done at the global DRS in the
+absence of any conflicting information:\footnote{I skip the steps of
+binding and deletion of reducndancies.}
+
+\ex.
+\udrs{z,v}
+{
+		committee'(z)\\
+		difficult'(v)\quad question'(v)\\
+\udrs[\Diamond]
+{y}
+{
+one'(y)\quad y\subseteq v\\
+asked'(z,y)
+}
+}
+
+Let me return to another previous example, \xref{excond}, repeated
+here for convenience:
+
+\ex.\label{excondr}%
+Context: John is a referee reviewing an article under discussion.
+\ag.\label{excondar}%
+	John (kritik) bir hata{\bf-yı} görür-se, makale-yi reddeder.\\
+	J. critical a error{\bf-Acc} sees-Cond article-Acc rejects\\
+	Rd.\ 1: `If John sees an (critical) error, he'll reject the article.'' (It's
+	common ground that there are (critical) errors in the article.)\\
+	Rd.\ 2: `An (critical) error is such that if John sees it, he'll reject the
+	article.
+\bg.\label{excondzr}%
+	John (kritik) bir hata görür-se, makale-yi reddeder.\\
+	J. critical a error sees-Cond article-Acc rejects\\
+	`If John sees an (critical) error, he'll reject the article.'' (no commitment
+	to the existence of errors.)
+
+
+
+The Reading 1 of \xref{excondar} is represented as:\footnote{I leave
+the discussion of Reading 2 to Section~\ref{scwide}.}
+
+\ex.
+\a.
 \udrs{j',x}{article'(x)\\
 \ccon
-{\udrs{z,\anaph{Y}}{\anaph{error'(Y)}\quad  z\in \anaph{Y} \quad see'(j',z)}}
+{\udrs{z,\anaph{y}}{error'(\anaph{y})\quad  z\subseteq \anaph{y} \quad see'(j',z)}}
 {\udrs{}{reject'(j',x)}}
 {\Rightarrow}
 }
 \b.
-\udrs{j',x,V}{article'(x)\quad error'(V) \quad in'(V,x)\\
+\udrs{j',x,v}{article'(x)\quad error'(v) \quad belong'(v,x)\\
 \ccon
-{\udrs{z,\anaph{Y}}{\anaph{error'(Y)}\quad  z\in \anaph{Y} \quad see'(j',z)\\
-\anaph{Y}=V}}
+{\udrs{z}{z\subseteq v \quad see'(j',z)}}
 {\udrs{}{reject'(j',x)}}
 {\Rightarrow}
 }
+
+
+Here I modeled the interpretation as accomplished by accommodating a
+set of errors belonging to the article. The same utterance is of
+course would be appropriate in a context where the existence of errors
+in the article were common ground, in which case there would be just
+binding without accommodation.
+
+Also, recall that I drew the conclusion in
+Section~\ref{sccovertpartitivity} that the link tying \acc-indefinites
+to previous discourse need not be one of set membership or an
+assignment relation as claimed by \cite{enc91}, but can be quite
+flexible. This example testifies positively to this conclusion, as the
+accommodated set of errors is inferred to belong to the article, which
+is neither a set membership nor an assignment.
+
+
+
+In a setting where the presuppositions of an \acc-indefinite is argued
+to be satisfied via accommodation in cases where the context is
+inadequate in justifying the presupposition, it is expected to observe
+non-local accommodation. I will close this section with such an
+example. I slightly alter the previous example.  Imagine a context
+where an editor is angry with John, who was one of the reviewers of an
+article. Someone poses the question why the editor is angry at John.
+Here are the candidates for an answer: 
+
+\ex.\label{exinter}
+\a.\label{exintera}%
+Belki de John kritik bir hatayı görmemiştir.
+\b.\label{exinterz}%
+Belki de John kritik bir hata görmemiştir.
+
+
+The \zero-marked variant \xref{exinterz} is fairly odd in this
+context: Why should an editor get angry with a referee for not finding
+any errors in an article? But the \acc-marked variant \xref{exintera}
+is an appropriate answer, it states that John might have failed to
+notice a critical error. Crucially, the \acc-marked \xref{exintera} is
+appropriate both in a context where it is common ground that there
+were critical errors in the article and in a context where it is not.
+Our semantics predicts the existence of these possibilities through the
+availability of global and intermediate accommodation:
+
+\ex.
+\a.
+\udrs%
+{j'}
+{
+		\udrs[\Diamond]%
+		{}
+		{
+				\udrs[\neg]%
+				{y,\anaph{x}}
+				{
+						error'(\anaph{x})\quad one'(y)\quad y\subseteq \anaph{x} \\
+						see'(j',y)
+				}
+		}
+}\hfill (initial DRS)
 \b.
-\udrs{j',x,V}{article'(x)\quad error'(V) \quad in'(V,x)\\
+\udrs%
+{j',v}
+{
+		error'(v)\\
+		\udrs[\Diamond]%
+		{}
+		{
+				\udrs[\neg]%
+				{y}
+				{
+						one'(y)\quad y\subseteq v \\
+						see'(j',y)
+				}
+		}
+}\hfill (global accomodation)
+\b.
+\udrs%
+{j'}
+{
+		\udrs[\Diamond]%
+		{v}
+		{
+				error'(v)\\
+				\udrs[\neg]%
+				{y}
+				{
+						one'(y)\quad y\subseteq v \\
+						see'(j',y)
+				}
+		}
+}\hfill (intermediate accomodation)
+
+% TODO: Bir Nazim Hikmet siirine yapilmis ilk beste: Bana Bak Hey Avanak
+
+\subsection{Wide scope}
+\label{scwide}
+ 
+Remember that \xref{excondar} repeated here has the reading where the indefinite behaves as if taking wide scope with respect to the conditional.
+
+\ex.\label{excondrr}%
+Context: John is a referee reviewing an article under discussion.
+\ag.\label{excondarr}%
+	John (kritik) bir hata{\bf-yı} görür-se, makale-yi reddeder.\\
+	J. critical a error{\bf-Acc} sees-Cond article-Acc rejects\\
+	Rd.\ 1: `If John sees an (critical) error, he'll reject the article.'' (It's
+	common ground that there are (critical) errors in the article.)\\
+	Rd.\ 2: `An (critical) error is such that if John sees it, he'll reject the
+	article.
+
+
+
+
+The most straightforward rendering of this reading, given as Rd.\ 2,
+would be as follows:
+
+\ex.
+\udrs{j',x,z}{article'(x)\\
+error'(z)\\ 
 \ccon
-{\udrs{z}{z\in V \quad see'(j',z)}}
+{\udrs{}{see'(j',z)}}
 {\udrs{}{reject'(j',x)}}
 {\Rightarrow}
 }
 
-Caution: $V$ should be guaranteed to exhaust the errors in the article --
-presumably by inference.
+which is a standard ``existential quantifier taking scope over
+negation'' reading. If this is the right representation for Rd.\ 2,
+then Turkish must have an existential quantifier interpretation for an
+\acc-indefinite which is forced to take scope over negation. In
+Section~\ref{scencneg} we saw that this formulation is not capable of
+capturing the facts due to the existence of hybrid scope readings.
+Therefore, even if we admit a standard existential reading for
+\acc-indefinites, we would still need to have the present formulation
+along side with it, thereby admitting an ambiguity for
+\acc-indefinites.
 
-TODO: Basit hatalari gormesi onemli degil; yeter ki kritik bir hatayi gormesin.
-
-TODO: Cogu ogrenci en az iki kitab(i) okudu. 
-
-TODO: obtain the antecedent by abstraction ala Kamp and Reyle
-2010:907.
-
-TODO: entity introducing diagnostics from Coppock and Beaver 2015.
-
-\section{The proposal}
-
-Having motivated the interpretative effect of \acc-marking on indefinites, I
-turn to the grammatical mechanism that delivers that effect. This calls for a
-detailed look at the noun phrase semantics in Turkish, which this section aims
-to provide.
-
-We have 4 types of nominal direct objects\footnote{My use of ``direct object''
-is quite lose, not every author considers bare NPs as direct objects.} in our
-scope: 1.\ bare NPs, 2.\ zero indefinites, 3.\ acc-indefinites, and 4.\
-definites. I will have nothing to say in this paper about the last category. I
-will explore the relative ``strength'' of the first three categories, all of
-which are taken here to be a sub-type of indefiniteness. 
-
-\subsection{Preliminary assumptions}
-
-In standard formal semantics, a nominal expression, be it referential,
-predicative or quantificational, contributes basically two things: 1.\ an $e$
-type argument for a verb or predicate and 2.\ a predication (aka restriction)
-of the contributed argument. In this approach, barring ``selectional
-restrictions'' that are usually informally stated, verb meanings themselves are
-construed as independent of the meanings of their complements. It is quite
-well-known, however, that most, if not all, verb meanings are functions of the
-meaning of their complements, not only at the argument-saturation level, but
-also at a rather conceptual level. Here are some examples from
-Turkish:\footnote{See \cttx{kratzer96} for examples from English.}
+Besides the usual hesitations on admitting a potentially dispensable
+ambiguity, there is a further problem with having a standard
+existential reading for \acc-indefinites. Take the following minimal
+pair:
 
 \ex.
-\a. elmayı ye.
-\b. parayı ye.
-\b. yalanı ye.
+\a. Dün gece bir kitap okudum.
+\b. Dün gece bir kitabı okudum.
+
+
+There is simply no operator in these sentences that we can demonstrate
+\acc-indefinite taking scope above and the \zero-indefinite taking
+scope below. Then why do not we have a synonymy here? 
+
+
 
 \ex.
-\a. kitabı oku.
-\b. hislerimi oku.
-\b. biyoloji oku.
-
-
-It is important to note that none of these examples are idioms, they are quite
-flexible.\footnote{Compare with:
-
-\ex. Ayvayı ye.
-
-where no other fruit or object would result in the same meaning.
+\a.\label{exdrswide1}%
+\udrs{j',x}{article'(x)\\
+\ccon
+{\udrs{z,\anaph{y}}{error'(\anaph{y})\quad  z\subseteq \anaph{y} \quad see'(j',z)}}
+{\udrs{}{reject'(j',x)}}
+{\Rightarrow}
+}\vspace{10pt}
+\b.\label{exdrswide2}%
+\udrs{j',x,v,z}{article'(x)\quad error'(v) \quad belong'(v,x)\\
+z\subseteq v \\ 
+\ccon
+{\udrs{}{see'(j',z)}}
+{\udrs{}{reject'(j',x)}}
+{\Rightarrow}
 }
 
-As \ctnm{carlson03} observes, if we take verbs to be fundamentally denoting
-eventualities (in the sense of \cttx{bach86a}), it is conceivable that one
-function of nominal complements is to further specify these eventualities. As
-we will see below in more detail, \ctnm{carlson03} utilizes this idea for
-incorporation structures. Here, I will generalize the same idea to the entire
-spectrum of verb-complement composition.
 
-The atomic types of my ontology are $e$ for individuals, $s$ for eventualities,
-$p$ for properties (or concepts) in the sense of \ctnm{mcnally98}, and $t$ for
-truth values. I ignore worlds and times for the sake of simplicity.
-
-I will assume and modify a Neo-Davidsonian verbal semantics along the lines of
-\cite{kratzer96}, where external arguments are composed into the semantics by a
-functional head rather than as a complement of the verb itself. I will also
-assume that verb meanings have a slot for a property argument. The verb first
-applies to this argument, yielding a further specified eventuality semantics.
-With these assumptions, transitive verbs receive the following semantics:
-
-\ex. \interp{\lbrac{V}{oku}} $=$ \sysm{\lam{p_p}\lam{x_e}\lam{e_s}.read'p\cnct{}x\cnct e}
-
-Some modifications to NP semantics are also called for, so that an NP
-interpretation provides the argument types required by the verb. I will assume
-that every nominal comes with both a property denotation and an ordinary
-restrictor predicate. For instance a nominal that is headed by the lexical noun
-\emph{book} would have both a property, which I will designate as \sysm{Book'},
-and an ordinary restrictor predicate \sysm{book'}. The former stands for a
-prototypical (or generic, depending on the particular theory) book concept,
-while the latter stands for the usual model-theoretic notion of the set of
-entities that are taken to be books in the model. In this setting, a definite
-description \xxref{exdefprov}{a} and a proper name \xxref{exdefprov}{b}, both
-type-raised to apply to the verb,\footnote{The rationale behind this particular
-choice of type-raising will appear below.} would look like:
-
-\ex.\label{exdefprov}
-\a.
-\interp{\lbrac{NP$_{acc}$}{kitabı}} $=$ \sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{Book'}\cnct{(the'book')}\cnct{e}} 
-\b.
-\interp{\lbrac{NP$_{acc}$}{Ulysses'i}} $=$ \sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{Book'}\cnct{u'}\cnct{e}} 
-
-External arguments are composed into the structure via a (possibly empty)
-functional head, which I will simply call X.
-
-\ex. \interp{\lbrac{X}{$\emptyset$}} $=$ \sysm{\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.p\cnct{e}\land agent'x\cnct{e}}
-
-Finally, an inflection head existentially closes the event argument, also
-augmenting the temporal/aspectual information.
-
-\ex. \interp{\lbrac{Fin}{-du}} $=$ \sysm{\lam{q_{\smtyp{s}{t}}}.\exists e. q\cnct{e} \land past'e}
-
-A simple sentence like:
-
-\ex. John Ulysses'i okudu.
-
-is interpreted as follows, where all merges are coupled with function application on the semantics:
-
-
-\begin{tikzpicture}
-\tikzset{level distance=40pt, sibling distance=10pt}
-\tikzset{every tree node/.style={align=center, anchor=north}}
-
-\Tree[.{FinP} [.{DP} John ] [.{Fin'}\\{\sysm{\exists e.read'Book'u'\cnct{e}\land agent'j'\cnct{e} \land past'e}} [.{XP}\\{\sysm{\lam{e_s}.read'u'\cnct{e}\land agent'j'\cnct{e}}} [.{NP} <John>\\{\sysm{j'}} ] [.{X'\\{\sysm{\lam{x_e}\lam{e_s}.read'u'\cnct{e}\land agent'x\cnct{e}}}} [.{VP\\{\sysm{\lam{e_s}.read'Book'u'\cnct e}}} [.{NP} Ulysses'i\\{\sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.}}\\{\sysm{v\cnct{Book'}\cnct{u'}\cnct{e}}} ] [.{V} oku\\{\sysm{\lam{p_p}\lam{x_e}\lam{e_s}.read'p\cnct{}x\cnct e}} ] ] [.{X} $\emptyset$\\{\sysm{\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.}}\\{\sysm{p\cnct{e}\land agent'x\cnct{e}}} ] ] ] [.{Fin} -du\\{\sysm{\lam{q_{\smtyp{s}{t}}}.\exists e. q\cnct{e} \land past'e}} ] ] ] 
-
-\end{tikzpicture}
-
-What is non-standard about the present scheme is the integration of properties
-into the derivation; specifically, (i) every NP comes with a property
-denotation coupled with standard restrictor denotation, and (ii) what would
-appear as the normal functional semantics of a verb is computed as the result
-of the application \sysm{read'Book'}, the rest is standard.
-
-My syntactic assumptions are and will stay sketchy. I will also ignore
-scrambling and other ``deviations'' from the canonical SOV order of Turkish.
-
-
-\subsection{Semantic types}
-
-In combining two semantic objects, the degrees of freedom bearing on the
-outcome are threefold:
+It is not possible to obtain \xref{exdrswide2} from \xref{exdrswide1}
+only by accommodation and binding, since these mechanisms concern only
+the restrictor of the indefinite, not the referent represented by the
+discourse marker $z$. Therefore if \xref{exdrswide2} is the right
+representation for \xref{exocndarr}, then we would need an independent
+mechanism that causes the indefinite to take wide scope with respect
+to conditional. In such a setting the derivational steps would be:
 
 \ex.
-\a. semantic types of the objects
-\b. the mode of combination
-\b. denotations of the objects
+\a.\label{exdrswidedrv1}%
+\udrs{j',x}{article'(x)\\
+\ccon
+{\udrs{z,\anaph{y}}{error'(\anaph{y})\quad  z\subseteq \anaph{y} \quad see'(j',z)}}
+{\udrs{}{reject'(j',x)}}
+{\Rightarrow}
+}\hfill(Initial representation)\vspace{10pt}
+\b.\label{exdrswidedrv2}%
+\udrs{j',x,z,\anaph{y}}{article'(x)\\
+error'(\anaph{y})\quad  z\subseteq \anaph{y}\\
+\ccon
+{\udrs{}{see'(j',z)}}
+{\udrs{}{reject'(j',x)}}
+{\Rightarrow}
+}\hfill (Taking wide-scope)\vspace{10pt}
+\b.\label{exdrswidedrv2}%
+\udrs{j',x,v,z}{article'(x)\quad error'(v) \quad belong'(v,x)\\
+z\subseteq v \\ 
+\ccon
+{\udrs{}{see'(j',z)}}
+{\udrs{}{reject'(j',x)}}
+{\Rightarrow}
+}\hfill (Accomodation and binding)
 
-If we take coordination and various ``like-category deletion'' processes to be
-reliable tests for semantic types in Turkish, the facts suggest that our four
-categories are type-wise identical. I include here only a number of
-representative examples.\footnote{Note that when a nominal requires
-acc-marking, the marking is not deletable under ellipsis:
 
-\ex. Ben Mehmet'i sevdim, Ali de Ayşe*(yi).
+Have narrowing to a singleton as the model of ``having an individual
+in mind''
 
+\subsection{Referentially opaque verbs}
+\label{scopaque}
+
+\ctnm[158--9]{dede86} observes that \acc-marked indefinites are bound to
+receive transparent interpretations as arguments of referentially
+opaque verbs.\footnote{\cttx{dede86} also argues that this behavior
+applies only for animate objects, which none of my informants so
+far has confirmed.} Here is an example:
+
+\ex.\label{exseek}
+\a.\label{exseekz}%
+Polis bir çocuk arıyor. Bulamıyor.\hfill(opaque or transparent)\\ 
+`The police are seeking a child, but cannot find one/him'.
+\b.\label{exseeka}%
+Polis bir çocuğu arıyor. Bulamıyor.\hfill(only transparent)\\
+`The police are seeking a child, but cannot find *one/him'.
+
+
+\ctnm{kelepir01} draws attention to the fact that \acc-indefinites
+while receiving transparent interpretations do not trigger specificity
+effects in the sense of \cttx{enc91}. There is no requirement that the
+child sought in \xref{exseeka} be familiar from the previous
+discourse.  On the basis of this observation, \ctnm{kelepir01}
+rightly, I think, claims that \acc-marking cannot be totally about
+linking to discourse.
+
+The present semantics provides an explanation for \ctnms{kelepir01}
+observation. The only auxiliary assumption we need is to model
+referentially opaque verbs as providing a non-local accommodation site
+for the presupposition triggered by the \acc-indefinite. In an
+admittedly sketchy formulation, this would look like: 
+
+\ex.
+\udrs{x}
+{police'(x)\\
+		\udrs[<W>]{z}
+		{find'(x,z)}
 }
 
-\ex.
-\a. Ali öğle yemeğinde bazen cips, bazen küçük bir elma, bazen de evden getirdiği yemeği yiyor. 
-\b. Doğumgününde ben Ayşe'ye eski bir kolye verdim, Ali de babannesinden kalan yüzüğü. 
 
-\ex.
-\a. Ahmet ve Ayşe bana geldiklerinde, masanın üzerinde bir dolu kitap vardı.
-\b.\label{typeell} Ayşeye bir romanı verdim, Ahmet'e de bir kadeh viski.
+\subsection{Lexical matters}
 
-TODO: Explain the examples
-
-On account of these observations, I assume that all the four types of nominal
-objects are of, or can be shifted to, the same semantic type. I also take the
-verb semantics to be constant. This decision is justified in Turkish for the
-following reason: The verbs that take optional accusative are not a small
-special class, it is quite common among Turkish verbs, and this contrasts with
-the typical example of this kind of verbal ambiguity, namely Greenlandic
-\cttxp{geenhoven98}.
-
-Taking the possibly shifted types of objects and their verbs constant also
-fixes the mode of combination. I simply take the object-verb combination to be
-function application. In this regime, objects are functions from transitive
-verb meanings to intransitive verb meanings (or verb phrase meanings):
-
-\ex.
-\a. verb type: \smtyp{e}{\smtyp{s}{t}} 
-\b. object type: \smtyp{\smtyp{e}{\smtyp{s}{t}}}{\smtyp{s}{t}} 
-
-\subsection{Bare objects}
-
-The syntax of bare objects has received considerable attention in the
-literature, where the central discussion was around the issue of whether the
-bare objects are phrasal (pseudo-incorporated) or not (head incorporated) (see,
-among others,
-\cttx{erguvanli79,nilsson85,knecht86,kornfilt03,aydemir04,kechriotis06,ozturk05,ozturk09,gracaninissever11}).
-Here I am not concerned with the details of syntactic issues. I would, however,
-like to distinguish three cases:
-
-\ex.
-\label{exbalik1}
-\a. Ahmet balık tuttu.
-\b. *Ahmet levreğ(i) balık tuttu.
-
-In \xxref{exbalik1}{a} we have a bare object composed with the verb giving a
-stereotypical verb phrase (= `fishing'). The ungrammaticality of
-\xxref{exbalik1}{b} indicates that the (pseudo-)incorporation operation
-saturates the argument slot of the verb \trtx{tut}{catch}, leaving no room for
-a direct object \trtx{levreğ(i)}{sea bass(-Acc)}, with or without the
-accusative.
-
-\ex.\label{exbalik2} 
-\a.
-Ahmet balık aldı.
-\b.
-*Ahmet levreği balık aldı.
-
-In \xxref{exbalik2}{a} bare object-verb composition yields a non-stereotypical
-verb phrase, and \xxref{exbalik2}{b} likewise indicates that the direct object
-is saturated by this composition.
-
-\ex.
-\label{exbalik3}
-Ahmet (konuşmasında) Mehmet'i hedef aldı.
-
-\xref{exbalik3} shows the composition of the verb we had in the previous two
-examples with the bare object \trtx{hedef}{target} constructing the complex
-verb \trtx{hedef al}{target}, which is still transitive after the composition,
-as it can still combine with the acc-marked direct object
-\trtx{Mehmet'i}{M.-Acc}.
-
-In what follows I will unite the cases exemplified in \xref{exbalik1} and
-\xref{exbalik2} under the name ``bare object'', and leave out the complex verb
-structures exemplified in \xref{exbalik3}. I cannot see any difference between
-such verbs and lexical transitives that would concern us in this paper.
-
-I first establish at an intuitive level that bare objects are predicative
-rather than referential. The argument is based on an observation about
-kind-level interpretation in Turkish.\footnote{As \cttx[15]{krifkaetal95}
-observe, all semantic distinctions we are interested in this paper, like
-specific/non-specific, predicative/referential etc.\ apply at kind-level as
-well.} The reason I employ a kind-level example is that the predicative nature
-of bare objects is most perspicuous at this level. Take the minimal pair:
-
-\ex.\label{exzimba}
-\a. Amerikalılar 19. yüzyılda  zımbayı icat etti.
-\b. Amerikalılar 19. yüzyılda zımba icat etti.
-
-In \xxref{exzimba}{a} there is a direct reference to the kind \emph{stapler}, while \xxref{exzimba}{b} carries a kind-level predication, resulting in what \ctnm{krifkaetal95} calls a ``taxonomic'' reading.
-
-One way to integrate this predicative meaning into the verb phrase semantics
-would be to use \ctnms{chungladusaw04} Restrict. This would additionally call
-for an existential closure operation, since Restrict does not saturate argument
-slots, while Turkish bare objects do. Assuming that kinds are atoms of type
-$k$, a Restrict + EC derivation would look like:
-
-\ex.
-
-\begin{tikzpicture}
-\tikzset{level distance=40pt, sibling distance=10pt}
-\tikzset{every tree node/.style={align=center, anchor=north}}
-
-\Tree[.{EC}\\{\sysm{\lam{e_s}\exists x_k.invent'x\cnct{e} \land stapler'x}} [.{Restrict}\\{\sysm{\lam{x_k}\lam{e_s}.invent'x\cnct{e} \land stapler'x}} [.{NP}\\{\sysm{\lam{x_k}.stapler'x}} ] [.{V}\\{\sysm{\lam{x_k}\lam{e_s}.invent'x\cnct{e}}} ] ] ]
-
-\end{tikzpicture}
-
-The same mechanism would give a parallel interpretation for a non-kind example like \trtx{kitap oku}{`book read'}:
-
-\ex.
-\interp{\lbrac{VP}{kitap oku}} $=$ \sysm{\lam{e_s}\exists x_e.read'x\cnct{e} \land book'x}
-
-
-The problem with this solution lies in the existential quantification of the
-object argument of the verb, directly delivered via semantics. Existential
-quantification always affords (possibly modally subordinated) discourse
-reference. But, as first observed by \ctnm{erguvanli79}, Turkish bare objects
-do not readily contribute discourse referents and usually result in
-number-neutral interpretations.
-
-\ex. ??Bugünlerde kitap okuyorum, bitirince sana vereceğim.
-
-\ex. Kampın ilk gününde çocuklar sahilde balık tuttular. Maalesef çoğu tek balık bile yakalayamadı.
-
-(activity with a perfective aspect)
-
-
-\ex.
-\a. Ahmet keman çalıyor.
-\b.  Yeni mi?
-
-
-\ex.
-\a. Dün bütün gece şiir yazdım.
-\b. Kaç tane yazdın?
-\b. Sıfır!/Çok!
-
-As we will see in the next section, this behavior sharply contrasts with zero
-indefinites, where discourse reference is guaranteed.
-
-There are cases where bare objects seem to contribute discourse referents,
-however. This possibility appears to be dependent on the aspectual class and
-conceptual details of the verb. For instance, it seems rather impossible to
-think of an onion chopping process that does not involve some amount of onions,
-and it is also expected that the use of a bare object expression may foreground
-the amount or kind of onions involved.  The point is that such contributions to
-the discourse model by bare objects are not semantically driven, but possible,
-thanks to some inferential processes that we do not examine here.
-
-The present paper proposes that what is contributed by a bare object
-construction is the instantiation of an eventuality type rather than an
-individual discourse referent. In this proposal the bare object is a sort of
-event modifier in a fashion very similar to \cttx{carlson03}. In this respect I
-take bare objects to be basically denoting properties, totally devoid of
-quantificational force and not contributing discourse referents into the
-discourse model. There is an apparent conflict in this list of requirements. On
-one hand we do not want a discourse referent to be contributed, on the other
-hand we know from above that the bare object saturates the direct object slot
-of its verb. I deal with this conflict by stipulating that bare objects
-contribute a semantically inert argument to the verb, which I will represent as
-\sysm{null'}. A type-raised bare object takes the following interpretation:
-
-\ex.\label{exintbare}
-\interp{\lbrac{NP}{kitap}} $=$ \sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{}Book'null'e}
-
-The derivation of the VP semantics is as follows:
-
-\ex.\label{exdervpbare}
-\begin{tabular}[t]{l@{\hspace{0.2em}}l}
-\interp{\lbrac{VP}{kitap oku}} &$=$  (\sysm{\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.v\cnct{Book'}null'e}) (\sysm{\lam{p_p}\lam{x_e}\lam{e_s}.read'p\cnct{}x\cnct e})\\
-&$=$ \sysm{\lam{e_s}.read'Book'null'e} \\
-\end{tabular}
-
-Integrating the subject via the X head and closing the event argument with
-inflection head yields the final result through the following steps:
-
-\ex.\label{exbareresult} 
-\a.
-\begin{tabular}[t]{l@{\hspace{0.2em}}l}
-\interp{\lbrac{\ubar{X}}{\lbrac{VP}{kitap oku} \lbrac{X}{$\emptyset$}}} & \\
-&\kern -60pt $=$  \sysm{(\lam{p_{\smtyp{s}{t}}}\lam{x_e}\lam{e_s}.p\cnct{e}\land agent'x\cnct{e})(\sysm{\lam{e_s}.read'\cnct{Book'}\cnct{null'}\cnct{e}})}\\
-&\kern -60pt $=$  \sysm{\lam{x_e}\lam{e_s}.read'\cnct{Book'}\cnct{null'}\cnct{e}\land agent'x\cnct{e}}
-\end{tabular}
-\b.
-\begin{tabular}[t]{l@{\hspace{0.2em}}l}
-\interp{\lbrac{XP}{\lbrac{NP}{John} \lbrac{\ubar{X}}{kitap oku $\emptyset$}}} & \\
-&\kern -40pt  $=$ \sysm{(\lam{x_e}\lam{e_s}.read'\cnct{Book'}\cnct{null'}\cnct{e}\land agent'x\cnct{e})j'}\\
-&\kern -40pt  $=$ \sysm{\lam{e_s}.read'Book'null'e \land agent'j'\cnct{e}}\\
-\end{tabular}
-\b.
-\begin{tabular}[t]{l@{\hspace{0.2em}}l}
-\interp{\lbrac{\ubar{Fin}}{\lbrac{XP}{John kitap oku $\emptyset$} \lbrac{Fin}{-du}}} & \\
-& \kern -120pt $=$ \sysm{(\lam{q_{\smtyp{s}{t}}}.\exists e. q\cnct{e} \land past'e)(\lam{e_s}.read'Book'null'e \land agent'j'e)}\\
-& \kern -120pt $=$ \sysm{\exists e.read'Book'null'e \land agent'j'e \land past'e}\\
-\end{tabular}
-
-\textcolor{red}{ The reader might wonder why I choose a little complex
-mechanics to model the argument decrement behavior of bare objects, wouldn't a
-valence-changing operation suffice. The reason is that bare objects show some
-degree of syntactic flexibility, therefore they live in syntax rather than
-morphology.}
-
-With this formulation we model the following empirical facts:
-
-\ex.
-\a. Bare objects yield number neutral interpretations.
-\b. They do not readily provide discourse referents.
-\b. They saturate the internal argument of the verb. 
-\b. They foreground the type of the eventuality rather than the internal argument.
-
-
-\subsection{Zero indefinites}
-
-I will argue that the only difference between a bare object and a zero indefinite is the discourse referent contributed by the latter. The common denominator of the two NP types is that their predications are at the property (or concept) level. They are contextually unbound in the sense that the eventuality in the bare object case and the discourse referent in the zero indefinite case carries no information beyond what is available at the general concept level. In exactly this respect they will differ from acc-indefinites.
-
-%I will assume that the expression \emph{bir} is ambiguous between the numeral one and the indefinite determiner, and likewise for other numerals. It may be possible to collapse the two interpretations into one, but I will not attempt this here.
-
-The function of the indefinite determiner is to carve out individuals from properties and predicates. The number semantics carried by the determiner determines the cardinality of these individuals. A zero indefinite has the following interpretation:
-
-\ex.
-\interp{\lbrac{DP}{\lbrac{D}{bir} \lbrac{NP}{kitap}}} =
-\sysm{
-	\lam{v_{\smtyp{p}{\smtyp{e}{\smtyp{s}{t}}}}}\lam{e_s}.
-	v\cnct{Book'}(sk'(
-					   \lam{x}.ins'Book'x \land |x|=1))e}
-
-The function \sysm{sk'} is a non-parametrized Skolem function and when applied to a property, returns a prototypical/arbitrary instance of that property.
-
-The most crucial aspect of this formulation is that there is no way the sentential or utterance context to affect the interpretation of the book instance. Different from the bare object case, this time we have an individual, albeit a generic one, contributed to the discourse model.
-
-\ex.\label{exbolbol}
-\a. Bugünlerde bol bol kitap okuyorum.
-\b. *Bugünlerde bol bol bir kitap okuyorum.
-
-\xref{exbolbol} shows that with zero indefinites individual reading is foregrounded where the eventuality denotation is not available for adverbial modification (see also \cttx{aydemir04}).
-
-
-
-\subsection{Acc-indefinites}
-
-
-Now we can turn to the semantics of acc-marked indefinites.
-
-The account I will provide here concurs with the proposal of \ctnm{enc91} in taking the interpretative effect of \acc-marking to be related to definiteness. I will however diverge from \ctnm{enc91} in the exact nature of this definiteness, as her account misses the ``strength`` of \acc-indefinites, demonstrated above in Section~\ref{scstrong}.
-
-Semantics of definiteness is usually associated with (subsets of) the following notions: uniqueness, exhaustivity, identifiability, existence and familiarity (TODO:refs). Some of these dimensions may apply both at the referent and restrictor level. I will argue that for an \acc-indefinite, the relevant notions are familiarity and existence, and that familiarity and existence applies at the restrictor level only. In this picture referents are indefinite and the restrictor is definite, akin to \ctnm{enc91}. For \ctnm{enc91} definiteness involves the existence of a familiar superset of the restrictor, while in the present account, what is definite is the restrictor itself, where what is meant by definiteness is familiarity and existence. 
-
-\ex. \a. Ali bana bir koli kitap bırakmıştı.
-\b. Geçen hafta iki romanı okudum.
-\b. Geçen hafta iki roman okudum.
-
-To better assess the function of \acc-marking, consider further the following minimal pair:
-
-\ex.
-\a. Bunların yerine geçen hafta iki roman okudum.
-\b. Bunların yerine geçen hafta iki romanı okudum.
-
-Here the speaker does not have any commitment to the identifiability of the
-novels, the hearer may well have no idea about the identity of the novels.
-There also exists no commitment on the size of the restrictor \sysm{novel'},
-there may be just two or more than two novels, no choice is indicated.
-Therefore the \acc-indefinite does not indicate any of identifiability,
-uniqueness or exhaustivity. Incidentally, the \acc-indefinite also does not
-indicate non-exhaustivity, which might have been suggested by an error in one
-of \ctnms{enc91}  glosses (TODO:ex), it simply has no say on the exhaustivity
-dimension.
-
-
-PERHAPS: drt formulation'inin son kismini buraya tasi.
-
+% TODO: Verbs of creation: (iddaname) duzenle/hazirla; non-vreation: temsil
+% et, sakla, verbs of destruction, kopyala, (bir turku) yargila. 
 
 \ex. \a.Yarin toplantiya bir moderator getirecegim.
 \b. \#Yarin toplantiya bir moderatoru getirecegim.
 
-TODO: Bir Nazim Hikmet siirine yapilmis ilk beste: Bana Bak Hey Avanak
 
-\section{Empty item}
+Ayse elbiselerden iki takim(i) begendi.
 
+Argue over this that the choice of marking affects the argument
+structure of the verb -- or the identity of the verb -- you can do
+this by introducing small v level boxes. 
 
-To summarize:
+% TODO: entity introducing diagnostics from Coppock and Beaver 2015.
 
-\ex.
-\a. Bare objects are contextually unbound eventuality modifiers.
-\b. Zero-indefinites are contextually unbound individual contributors.
-\b. Acc-indefinites are contextually bound individual contributors with presupposed restrictors.
-
+bestelemek, bir siir versus bir siiri bestelemek.
 
 
+Bir Nazim hikmet siirini besteleyen ilk besteci
+Bir Nazim hikmet siirini besteleyen sanatci, gazetecilerin sorularini yanitladi.
+
+\section{Some loose ends}
+\label{scloose}
+
+\subsection{Intelligent accommodation}
+
+Caution: $V$ should be guaranteed to exhaust the errors in the article
+-- presumably by inference.
+
+\subsection{Compositionality}
+
+\intx{bir} is an operator, can be poly-typed or not; it applies to a
+bare NP which is a kind term, and carves out a brand-new individual
+untied to the context. The same operator applies to an \acc-marked NP
+which is in a sense definite. In the absence of \intx{bir} the NP
+becomes standard definite due to maximality. In the presence of
+\intx{bir} a partitivity is indicated, while the restrictor is still
+definite. What do I do with scope then? Either schwarzschild -- for
+some reason I do not like that idea, or some other explanation. Other
+possibility is this: in the absence of an operator like negation, the
+two interpretations collapse. But still we need an explanation for why
+the scope is flexible for \acc-marked indefinites. This I can explain
+from the other direction. \zero-marked indefinites have an adjacency
+condition, they are the exceptional ones, not the \acc-marked ones.
+This in turn might be motivated by information structural concerns.    
+
+\subsection{Disjointness condition for Zero-indefinites}
+
+As for the zero marking, I do not propose anything special about it.
+It is a standard indefinite analysis and I do not claim a disjointness
+semantics. I leave it open that there arise disjointness implicatures,
+supported by the existence of a formal device to signal
+presuppositionality, it is natural to expect the zero-marked version
+to implicate disjointness. 
+
+
+\subsection{Indefinite to definite}
+
+The ultimate point where context affects the interpretation of an
+indefinite is yielding a maximal reading equivalent to that obtained
+by a definite description in English. Take the following example.
+First a discourse opener:
+
+\ex.\label{exikicocukw}Sınıfın yarısını bana emanet ettiler. 
+
+Then we have the usual minimal pair:
+
+\ex. 
+\a.\label{exikicocukz}İki çocuk çalıştırmakta çok zorlandım.
+\b.\label{exikicocuka}İki çocuğu çalıştırmakta çok zorlandım.
+
+
+The \zero-marked \xref{exikicocukz} is again not appropriate without
+further assumptions. It roughly states the difficulty of making two
+kids work, what is at issue is the number of the kids, it is
+implicated that if it were just one kid, the task would be easier.
+
+The \acc-marked \xref{exikicocuka} on the other hand smoothly connects
+to the opening sentence \xref{exikicocukw}. The speaker states the
+difficulty of making two kids from among the half of the class work.
+As the restrictor of the indefinite and the antecedent overlap, we
+have a partitive implication. And, again, if the restrictor of the
+indefinite were different from that of the antecedent, say \trtx{iki
+kızı}{two girl.Acc}, then we would lose this implication. 
+
+Now we consider \ref{exikicocuka} as a continuation to
+\ref{exikicocukn}:
+
+\ex.\label{exikicocukn} Elif ve Ayşeyi bana emanet ettiler. 
+
+When posed in this context the same sentence receives a definite
+translation. Turkish does not have a definite article that could be
+used to disambiguate \xref{exikicocuka}, in the absence of such a
+device, it is left to inferential mechanisms to decide on maximality.
+If you infer maximality, you get a definite interpretation, otherwise
+you get a partitive indefinite interpretation. 
 
 
 
-TODO: Bir soru(yu) *bile* sormadim.
+\section{Conclusion}
+\label{scconc}
 
-TODO: Give a list of interpretative/scopal/IS-related effects in the first section.
+The main arguments and contributions of the paper can be listed as
+follows:
 
-TODO: Acc marking does not necessarily have functional readings (contra KvH).
 
-TODO: negative verbs require the marker: engelle. durdur, (relate this discussion to verbs of creation).
+The paper argued that the accusative marker in Turkish marks definiteness minus
+uniqueness.
 
-TODO: Dün ikişer görevli her hücreyi ziyaret etmiş.
+Turkish is important as it shows us that various components of the grammar of quantification and reference can have separate morphological reflexes, and thereby provides evidence for a case of compositionality in quantification \cttxp{szabolcsi10}.
 
-TODO: strong quans are scope rigid but acc-marked indefs are not.
+% TODO: Why Turkish is important: \cttx{ludlowneale91} \cttx{matthewson99}
 
-TODO: Evidence that Possessives cannot stay VP internal.
+% TODO: Start by \cttx[153, Section  9.4]{szabolcsi10}
 
-TODO: Acc is not related to scope, it marks an anaphoric dependency of the restrictor.
+% TODO: Bir soru(yu) *bile* sormadim.
 
-TODO: Ali projede iki yabanci(yi) calistiriyor.
+% TODO: Give a list of interpretative/scopal/IS-related effects in the first section.
 
-TODO: Ali annesine bir ogrenci*(yi) sikayet etti.
+% TODO: Acc marking does not necessarily have functional readings (contra KvH).
 
-TODO: Zero do not introduce discourse marker;
+% TODO: negative verbs require the marker: engelle. durdur, (relate this discussion to verbs of creation).
+
+% TODO: Dün ikişer görevli her hücreyi ziyaret etmiş.
+
+% TODO: strong quans are scope rigid but acc-marked indefs are not.
+
+% TODO: Evidence that Possessives cannot stay VP internal.
+
+% TODO: Acc is not related to scope, it marks an anaphoric dependency of the restrictor.
+
+% TODO: Ali projede iki yabanci(yi) calistiriyor.
+
+% TODO: Ali annesine bir ogrenci*(yi) sikayet etti.
+
+% TODO: Zero do not introduce discourse marker;
 
 Ahmet bana bir cocuk gosterdi; annesini kaybetmis yeni. 
 
 Annesine *Bir cocuk gostermeye gitti.
 
-TODO: The domain that contains bare objects is sensitive (or closely related) to information structure. Focus domain can expand to left, but it cannot contract to right excluding a bare object.
-
-TODO: 
-Rize'de balik yiyeceksin.
-Baligi Rize'de yiyeceksin. 
-Hamsiyi bugulama yapacaksin.
-Hamsiyi buzluga atacaksin. 
-Buzluga hamsi atacaksin.
-
-Ruslar zimbayi icat etmis.
-Ruslar zimba icat etmis.
-
-Zimba is a kind predicate (true or false of kinds). It is then <s,t>. But zimbayi is referential, it refers to the kind zimba, therefore it is of type s.
-
-Zimbayi bana uzat.
-
-This is reference to an ordinary individual.
-
-Conclusion: there is a merger that merges and <x,t> with a transitive; it saturates the object argument.
-
-
-It is also important to notice that the zero versus case-marked distinction crosscuts nominal types. I give examples somewhere else.
-
-I start with the following key observation:
-
-\ex.\label{ex:doktor} 
-\a. Ali doktor.
-\b. Ali bir doktor.
-
-Basic assumptions: I follow \cite[p.\ 64]{krifkaetal95} and commit to a basic type of kinds alongside with standard individuals, I will have types \sysm{e} and \sysm{k}. The relation between a kind and its instances will be handled by \sysm{Ins} -- this is Carlson's R, Krifkaetal just remove the stages. The relation is many-to-many, a given object may be an instance of more than one kind and, more obviously, a kind may have more than one instance. Predicates can be true of standard or kind individuals. For instance, the predicate \textit{is invented by Americans} ranges over kind individuals. One alternative would be to take kind-referring NPs to denote the sum of all the individuals that the nominal applies to (see \cite{krifkaetal95} for references).
-
-If I take the genericbook route, which is to take a kind as basic and define the associated property as (lambda x: R(x,k)), then I need genericbooks `We leave it open as to whether every predicate has a corresponding kind'.
-
-Syntax: case filter is fulfilled under adjacency, so bare NPs are also assigned case, but accusative indicates that the NP is not in the adjacent position. Bir is the manifestation of the Carlsonian Realization Relation. When out of the existential closure domain of the immediately preverbal slot, nominals are forced to get argumental/referential interpretation.
-
-\begin{comment}
-Krifkaetal
-* p87 incorporation and kind-reference.
-\end{comment}
-
-Our dimensions are count/mass, generic/kind/weak indefinite/definite.
-
-FACT 1: Kinds are referred to by singular bare NPs, regardless of count/mass distinction:
-
-\ex.
-\a. Leopar(?*lar)a Anadolu'da rastlanmaz.
-\b. Kemençe(*ler)nin anavatanı Görele'dir.
-\b. Kayısı(*lar) Malatya'da ilk defa 19. Yüzyıl'da yetiştirildi. 
-\b. Kayısı(*lar) Malatya'nın sembolüdür.
-\b. Zımba(*lar) 19. yy'da ABD'de icat edildi.
-
-are all kind predications in the sense of \cttx{krifkaetal95}.
-
-
-\ex.
-\a. Son yillarda adada köpek(*ler) bulunmuyor.
-
-
-
-It is also important to observe that a kind-referring NP at the direct object position requires an accusative case:
-
-\ex.
-\a. Amerikalılar zımbayı icat etti.
-\b. Amerkalılar zımba icat etti.
-\b. Amerkalılar yeni bir zımba icat etti.
-
-The second one means that Americans invented a new kind of stapler. The interpretation is still kind-referring. Therefore kind/non-kind distinction is orthogonal to acc-marking (see \cttxp[p.\ 15]{krifkaetal95})
-
-The question here is whether the kind denotation is a lexical property or these NPs are just definites -- remember that Turkish does not have a definite article and case-marked NPs in argument positions get interpreted as definite. I will now try to find a principled reason to choose one type of interpretation as basic and the other derived.
-
-It appears that kind reference is not uniquely possible by bare NPs, bare plurals seem also fine with denoting kinds, especially with animals. The following pair is apparently synonymous:\footnote{`Motosiklet tehlikelidir' gets 1010 Google hits while `Motosikletler tehlikelidir' gets 162 -- Thu 25 Feb 2021 09:27:48}
-
-
-\ex.
-\a. Aslan etobur bir hayvandır.
-\b. Aslanlar etobur hayvanlardır.
-\b. Timsah olan bir suda yüzülmez.
-\b. Timsahların olduğu bir suda yüzülmez.
-\b. *Timsahın olduğu bir suda yüzülmez.
-\b. Yılanlar (Latince: Serpentes), Pullular (Latince: Squamata) takımına ait uzun, ayaksız etçil sürüngenlerdir. (Vikipedi -- Thu 25 Feb 2021 09:36:50 AM +03)
-
-The plurals here, however, seem to refer to the families of kinds rather than a unique kind:
-
-\ex.
-\a. Çobanaldatan (Caprimulgus europaeus), Çobanaldatanlar (Caprimulgiformes) takımının çobanaldatangiller (Caprimulgidae) familyasına ait Caprimulgus cinsinden bir gece kuşu türü.
-\b. Gitar, parmakla veya pena ile çalınan, esasen sekiz şekline benzeyen, yan kısımları oval, sap üzerinde ses perdeleri olan, telli bir çalgı türü. Gitarlar genelde altı tellidir ve farklı çeşitlerdeki ağaç türlerinden yapılabilirler. Gitar neredeyse her türlü müzik türünde kullanılan bir müzik aletidir. 
-
-
-Nationalities on the other hand are always plural:
-
-\ex.
-\a. İtalyan*(lar) akşamları şarap içer.
-
-I conclude that bare singular NPs denote kinds in Turkish, bare plurals are just plural kind reference, resorted to when the sub-kinds of a kind are at issue.
-
-Bare plural NPs are for generic reference, plural definite descriptions and weak indefinite reference.
-
-\ex.
-\a. Köpekler bahçeye girmiş. (plural definite)
-\b. Bahçeye köpekler girmiş. (weak indefinite)
-\b. Köpekler çocukları sever. (generic)
-
-I assume that generic statements are also possible with kind terms TODO:check Generic Book.
-
-One interesting aspect of the Turkish nominal system is that weak indefinite interpretation is also possible with bare NPs: 
-
-\ex.
-\a. Bahçeye köpek girmiş. (weak indefinite)
-\b. Köpek bahçeye girmiş. (definite)
-\b. Muz yemek mideme iyi geldi. (weak indefinite)
-\b. Dolapta muz kalmamış. (weak indefinite)
-
-here number is not implied, at least one dog is enough to make the proposition true.
-
-There is one aspect of the NP that differs with respect to its location. What is that aspect?
-
-Kind predicates:
-Faks kalmadi/yok.
-Yakinda Hamsi tarihe karisacak.
-
-
-
-The effect of the marker is related to definiteness.
-
-\intx{bir} is an operator, can be poly-typed or not; it applies to a bare NP which is a kind term, and carves out a brand-new individual untied to the context. The same operator app		 lies to an \acc-marked NP which is in a sense definite. In the absence of \intx{bir} the NP becomes standard definite due to maximality. In the presence of \intx{bir} a partitivity is indicated, while the restrictor is still definite. What do I do with scope then? Either schwarzschild -- for some reason I do not like that idea, or some other explanation. Other possibility is this: in the absence of an operator like negation, the two interpretations collapse. But still we need an explanation for why the scope is flexible for \acc-marked indefinites. This I can explain from the other direction. \zero-marked indefinites have an adjacency condition, they are the exceptional ones, not the \acc-marked ones. This in turn might be motivated by information structural concerns.    
-
-
-
-I claim that Turkish data can be captured in a model where syntactic saturation is isomorphic to semantic saturation and where the semantic composition is restricted to function application. The proposed model is most closely related to the combinatory varieties of categorial grammar (\cite{steedman00b,jacobson99}). 
-
-I leave it to a later occasion the discussion of whether the wide-scope
-reading (Rd.\ 2) comes from a raising mechanism or via restriction to a
-singleton domain ala \ctnm{schwarzschild02}.
-
-A Diesingian account would have that \acc-marking is a trigger (or indicator) of
-raising out of a verbal domain associated with existential closure. Such objects
-would require their own quantificational force. On the other hand NPs that
-already carry quantificational force will be forced out of the existential
-closure domain, thereby obligatorily receiving the \acc-marker.
-
-
-\begin{uquestion}
-Why anti-uniqueness effect is not observed for IPV acc-NPs.
-\end{uquestion}
+% TODO: The domain that contains bare objects is sensitive (or closely related) to information structure. Focus domain can expand to left, but it cannot contract to right excluding a bare object.
 
 \begin{comment}
 
@@ -1626,62 +2038,12 @@ in the VP domain. p20.
 
 \end{comment}
 
-\begin{udefinition}
-A nominal is weak if its dref gets created at the point it is first evaluated; and there exists no dref that is identical to it in the previous discourse as a variable or as a member of an accessible set. Except accidental coreference.
-\end{udefinition}
+%\begin{udefinition}
+%A nominal is weak if its dref gets created at the point it is first evaluated; and there exists no dref that is identical to it in the previous discourse as a variable or as a member of an accessible set. Except accidental coreference.
+%\end{udefinition}
+%
 
 
-\section{Conclusion}
-
-The main arguments and contributions of the paper can be listed as
-follows:
-
-
-The paper argued that the accusative marker in Turkish marks definiteness minus
-uniqueness.
-
-Turkish is important as it shows us that various components of the grammar of quantification and reference can have separate morphological reflexes, and thereby provides evidence for a case of compositionality in quantification \cttxp{szabolcsi10}.
-
-\appendix
-
-\section{The formalism}
-
-As the semantic representation language I use DRT. I use a non-boxed notation, which is a little harder to read but saves space.  
-
-We do not have any simple DRSs; each sentence, regardless of being quantificational or not, gets interpreted as a tripartite structure. 
-
-
-\ex. 
-\a. Mary sleeps.
-\b. \sysm{[x:mary'x,sleeps'x]}
-
-
-VP interpretation:
-
-\ex. sleeps \sysm{:= \lambda x.[: sleeps'x]}
-
-\ex. Mary   \sysm{:= \lambda p.[x: x = m']\langle \forall \rangle p\, m'}
-
-\ex.\a. Mary sleeps.
-\b. \sysm{[x: x = m']\langle \forall \rangle [: sleeps'm']} 
-
-
-The generalized quantifier interpretation for the proper name \intx{Mary} puts into a higher DRS
-
-\ex. every woman \sysm{:= \lambda p.[x: woman'x]\langle\forall\rangle p x} 
-
-\ex.\a. Every woman sleeps.
-\b. \sysm{[x: woman'x]\langle\forall\rangle [: sleeps'x]}
-
-Every sentence applies to a DRS and inserts its condition into it. I model this with a two-place mood operator which applies to a sentence  and a DRS representing the current state of the discourse, and updates the DRS with the sentence. 
-
-\ex. UPDATE$_{DEC}$ \sysm{:= \lambda s\lambda k. k\oplus s} 
-
-I do not give the algorithm for $\oplus$; informally what it does is to append the complex condition to its right to the conditions on the top most level at the DRS to its left. It also resolves all the presuppositions present in the complex condition argument. I also do not give the resolution algorithm.
-
-
-
-\section{The fragment}
 
 \setlength{\bibsep}{0pt}
 \renewcommand{\bibfont}{\small}
